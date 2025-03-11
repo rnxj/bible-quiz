@@ -8,17 +8,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { getAvailableBooks } from "@/lib/quiz-loader";
+import { useAvailableBooks } from "@/hooks/use-quiz-data";
+import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import type { BookInfo } from "@/types/quiz";
 import { Book, BookOpen, ChevronRight, Sparkles } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function Page() {
   const router = useRouter();
   const [selectedBook, setSelectedBook] = useState<BookInfo | null>(null);
-  const books = getAvailableBooks();
+  const locale = useLocale() as Locale;
+  const { books, loading, error } = useAvailableBooks(locale);
+  const t = useTranslations("HomePage");
 
   const handleBookSelect = (book: BookInfo) => {
     setSelectedBook(book);
@@ -27,6 +31,22 @@ export default function Page() {
   const navigateToChapter = (bookId: string, chapterNumber: number) => {
     router.push(`/${bookId}/${chapterNumber}`);
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-[calc(100vh-65px)] flex items-center justify-center">
+        <div className="animate-pulse text-muted-foreground">{t("loading")}</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-[calc(100vh-65px)] flex items-center justify-center">
+        <div className="text-destructive">{t("errorLoading")}</div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-start py-12 px-4 sm:px-6 md:px-8 overflow-x-hidden">
@@ -46,13 +66,12 @@ export default function Page() {
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 animate-in fade-in duration-700">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary/90 to-primary/70">
-              பைபிள் வினாடி வினா
+              {t("title")}
             </span>
           </h1>
 
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in duration-700 delay-150">
-            Test your knowledge of the Bible with interactive quizzes from various books and
-            chapters.
+            {t("subtitle")}
           </p>
         </section>
 
@@ -74,7 +93,7 @@ export default function Page() {
               <h2 className="text-xl font-semibold mb-5 flex items-center">
                 <span className="inline-block w-1.5 h-5 bg-primary/80 rounded-full mr-2.5" />
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-                  Select a Book
+                  {t("selectBook")}
                 </span>
               </h2>
 
@@ -118,7 +137,7 @@ export default function Page() {
                 <h2 className="text-xl font-semibold mb-5 flex items-center">
                   <span className="inline-block w-1.5 h-5 bg-primary/80 rounded-full mr-2.5" />
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-                    {selectedBook.name}: Select a Chapter
+                    {t("selectChapter", { bookName: selectedBook.name })}
                   </span>
                 </h2>
 
@@ -135,17 +154,17 @@ export default function Page() {
                       >
                         <CardHeader className="pb-2 relative">
                           <CardTitle className="flex justify-between items-center text-lg">
-                            <span>Chapter {chapter.number}</span>
+                            <span>{t("chapter", { number: chapter.number })}</span>
                             <BookOpen className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
                           </CardTitle>
                           <CardDescription className="flex items-center">
                             <Sparkles className="h-3.5 w-3.5 mr-1.5 text-primary/70" />
-                            {chapter.questionCount} questions
+                            {t("questions", { count: chapter.questionCount || 0 })}
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="text-sm">
                           <p className="line-clamp-2 text-muted-foreground">
-                            {chapter.description || "Take a quiz on this chapter"}
+                            {chapter.description || t("chapterDescription")}
                           </p>
                         </CardContent>
                         <CardFooter className="pt-0">
@@ -153,7 +172,7 @@ export default function Page() {
                             variant="ghost"
                             className="w-full hover:bg-primary/10 hover:text-primary group-hover:bg-primary/5 transition-all duration-300"
                           >
-                            Start Quiz
+                            {t("startQuiz")}
                           </Button>
                         </CardFooter>
                       </Card>
@@ -167,9 +186,7 @@ export default function Page() {
 
         {/* Footer */}
         <footer className="mt-16 text-center animate-in fade-in duration-700">
-          <p className="text-sm text-muted-foreground max-w-lg mx-auto pb-4">
-            Study the Bible, grow in knowledge, and deepen your faith through interactive learning
-          </p>
+          <p className="text-sm text-muted-foreground max-w-lg mx-auto pb-4">{t("footer")}</p>
         </footer>
       </div>
     </div>

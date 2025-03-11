@@ -1,0 +1,98 @@
+{
+  "Common": {
+    "close": "Close",
+    "menu": "Menu"
+  },
+  "HomePage": {
+    "title": "Bible Quiz App",
+    "subtitle": "Test your knowledge of the Bible with interactive quizzes from various books and chapters.",
+    "loading": "Loading books...",
+    "selectBook": "Select a Book",
+    "selectChapter": "{bookName}: Select a Chapter",
+    "chapter": "Chapter {number}",
+    "questions": "{count} questions",
+    "chapterDescription": "Take a quiz on this chapter",
+    "startQuiz": "Start Quiz",
+    "footer": "Study the Bible, grow in knowledge, and deepen your faith through interactive learning"
+  },
+  "Nav": {
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "UserAvatar": {
+    "signIn": "Sign In",
+    "dashboard": "Dashboard",
+    "signOut": "Sign out"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}!",
+    "startNewQuiz": "Start a New Quiz",
+    "totalQuizzes": "Total Quizzes",
+    "quizzesCompleted": "Quizzes completed",
+    "correctAnswers": "Correct Answers",
+    "questionsAnsweredCorrectly": "Questions answered correctly",
+    "accuracy": "Accuracy",
+    "accuracyRate": "Overall accuracy rate",
+    "lastQuiz": "Last Quiz",
+    "noQuizzesTaken": "No quizzes taken yet",
+    "recentActivity": "Recent Activity",
+    "quizHistory": "Your quiz history and progress",
+    "noQuizzesTakenYet": "You haven't taken any quizzes yet.",
+    "startFirstQuiz": "Start your first quiz",
+    "yourProfile": "Your Profile",
+    "accountInfo": "Your account information",
+    "joined": "Joined recently",
+    "editProfile": "Edit Profile",
+    "signOut": "Sign Out"
+  },
+  "Auth": {
+    "welcomeBack": "Welcome Back",
+    "signInContinue": "Sign in to continue your Bible quiz journey",
+    "signIn": "Sign In",
+    "chooseMethod": "Choose your preferred sign in method",
+    "signingIn": "Signing in...",
+    "signInWithGoogle": "Sign in with Google",
+    "termsNotice": "By signing in, you agree to our Terms of Service and Privacy Policy.",
+    "noAccount": "Don't have an account?",
+    "signUpWithGoogle": "Sign up with Google"
+  },
+  "Quiz": {
+    "loading": "Loading quiz...",
+    "backToBooks": "Back to Books",
+    "quizOverview": "Quiz Overview",
+    "questionsFromChapter": "{count} questions from chapter {chapter}",
+    "defaultDescription": "This quiz will test your knowledge of the selected chapter.",
+    "instructions": "Quiz Instructions",
+    "chapter": "Chapter {number}",
+    "instructionsList": {
+      "item1": "Read each question carefully",
+      "item2": "Select the best answer from the options provided",
+      "item3": "Submit your answer before moving to the next question",
+      "item4": "Review your answers at the end if needed",
+      "item5": "View your final score and correct answers"
+    },
+    "startQuiz": "Start Quiz",
+    "bibleVerse": "Study to show thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. - 2 Timothy 2:15",
+    "question": "Question {current} of {total}",
+    "previous": "Previous",
+    "next": "Next",
+    "reviewAnswers": "Review Answers",
+    "seeResults": "See Results",
+    "finishQuiz": "Finish Quiz",
+    "quizCompleted": "Quiz Completed!",
+    "tryAgain": "Try Again",
+    "returnHome": "Return Home",
+    "scoreDisplay": {
+      "title": "Quiz Results",
+      "description": "You've completed the quiz! Here's how you did:",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "accuracy": "Accuracy"
+    }
+  },
+  "Metadata": {
+    "title": "Bible Quiz App",
+    "description": "Test your knowledge of the Bible with interactive quizzes from various books and chapters."
+  }
+}

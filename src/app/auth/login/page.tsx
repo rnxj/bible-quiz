@@ -11,10 +11,12 @@ import {
 } from "@/components/ui/card";
 import { authClient } from "@/lib/auth-client";
 import { Loader2Icon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false);
+  const t = useTranslations("Auth");
 
   const handleGoogleSignIn = async () => {
     try {
@@ -33,16 +35,14 @@ export default function LoginPage() {
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-65px)]">
       <div className="w-full max-w-md px-4 space-y-6">
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold">Welcome Back</h1>
-          <p className="text-muted-foreground">Sign in to continue your Bible quiz journey</p>
+          <h1 className="text-3xl font-bold">{t("welcomeBack")}</h1>
+          <p className="text-muted-foreground">{t("signInContinue")}</p>
         </div>
 
         <Card>
           <CardHeader className="space-y-1">
-            <CardTitle className="text-2xl font-bold text-center">Sign In</CardTitle>
-            <CardDescription className="text-center">
-              Choose your preferred sign in method
-            </CardDescription>
+            <CardTitle className="text-2xl font-bold text-center">{t("signIn")}</CardTitle>
+            <CardDescription className="text-center">{t("chooseMethod")}</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
             <Button
@@ -54,7 +54,7 @@ export default function LoginPage() {
               {isLoading ? (
                 <div className="flex items-center">
                   <Loader2Icon className="animate-spin -ml-1 mr-3 h-5 w-5 text-primary" />
-                  <span>Signing in...</span>
+                  <span>{t("signingIn")}</span>
                 </div>
               ) : (
                 <>
@@ -86,24 +86,22 @@ export default function LoginPage() {
                       />
                     </svg>
                   </span>
-                  <span>Sign in with Google</span>
+                  <span>{t("signInWithGoogle")}</span>
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-primary transition-opacity duration-300" />
                 </>
               )}
             </Button>
           </CardContent>
           <CardFooter className="flex flex-col">
-            <p className="text-xs text-center text-muted-foreground mt-4">
-              By signing in, you agree to our Terms of Service and Privacy Policy.
-            </p>
+            <p className="text-xs text-center text-muted-foreground mt-4">{t("termsNotice")}</p>
           </CardFooter>
         </Card>
 
         <div className="text-center">
           <p className="text-sm text-muted-foreground">
-            Don&apos;t have an account?{" "}
+            {t("noAccount")}{" "}
             <Button variant="link" className="p-0 h-auto" onClick={handleGoogleSignIn}>
-              Sign up with Google
+              {t("signUpWithGoogle")}
             </Button>
           </p>
         </div>

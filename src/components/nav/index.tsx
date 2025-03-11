@@ -13,9 +13,11 @@ import {
 } from "@/components/ui/drawer";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { BookOpenIcon, Menu } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { LocaleSwitcher } from "./locale-switcher";
 import { ThemeSwitcher } from "./theme-switcher";
 import { UserAvatar } from "./user-avatar";
 
@@ -68,6 +70,7 @@ const links: {
 const NavList = ({ isExpanded }: { isExpanded: boolean }) => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const t = useTranslations("Nav");
 
   const isActiveLink = (href: string) => {
     return pathname === href;
@@ -96,6 +99,7 @@ const NavList = ({ isExpanded }: { isExpanded: boolean }) => {
       <div className="flex items-center gap-2">
         <SearchCommand />
         <div className="hidden md:flex md:items-center md:gap-2">
+          <LocaleSwitcher />
           <ThemeSwitcher />
           <UserAvatar />
         </div>
@@ -108,7 +112,7 @@ const NavList = ({ isExpanded }: { isExpanded: boolean }) => {
           <DrawerContent>
             <DrawerHeader>
               <DrawerTitle className="border-b border-border p-4 text-center text-lg font-semibold">
-                Menu
+                {t("menu")}
               </DrawerTitle>
             </DrawerHeader>
             <div className="mt-8 flex flex-col gap-4 px-4 text-center">
@@ -129,12 +133,13 @@ const NavList = ({ isExpanded }: { isExpanded: boolean }) => {
             </div>
             <DrawerFooter>
               <div className="flex items-center justify-center gap-4">
+                <LocaleSwitcher />
                 <ThemeSwitcher />
                 <UserAvatar />
               </div>
               <DrawerClose asChild>
                 <Button variant="outline" className="w-full rounded-full">
-                  Close
+                  {t("close")}
                 </Button>
               </DrawerClose>
             </DrawerFooter>

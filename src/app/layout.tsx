@@ -3,6 +3,8 @@ import { Nav } from "@/components/nav";
 import { ThemeProvider } from "@/components/providers/theme";
 import { TRPCReactProvider } from "@/trpc/react";
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
@@ -17,35 +19,43 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "பைபிள் வினாடி வினா | Bible Quiz App",
-  description:
-    "Test your knowledge of the Bible with interactive quizzes from various books and chapters.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Metadata");
 
-export default function RootLayout({
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <TRPCReactProvider>
-            <div>
-              <Nav />
-              <main>{children}</main>
-              <OneTapLogin />
-            </div>
-          </TRPCReactProvider>
-          <Toaster />
-        </ThemeProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <TRPCReactProvider>
+              <div>
+                <Nav />
+                <main>{children}</main>
+                <OneTapLogin />
+              </div>
+            </TRPCReactProvider>
+            <Toaster />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
