@@ -1,6 +1,8 @@
 import { OneTapLogin } from "@/components/auth/one-tap-login";
 import { Nav } from "@/components/nav";
 import { ThemeProvider } from "@/components/providers/theme";
+import { SyncStatusIndicator } from "@/components/quiz/sync-status-indicator";
+import { QuizStorageProvider } from "@/providers/quiz-storage-provider";
 import { TRPCReactProvider } from "@/trpc/react";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
@@ -47,11 +49,14 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <TRPCReactProvider>
-              <div>
-                <Nav />
-                <main>{children}</main>
-                <OneTapLogin />
-              </div>
+              <QuizStorageProvider>
+                <div>
+                  <Nav />
+                  <main>{children}</main>
+                  <OneTapLogin />
+                  <SyncStatusIndicator />
+                </div>
+              </QuizStorageProvider>
             </TRPCReactProvider>
             <Toaster />
           </ThemeProvider>
