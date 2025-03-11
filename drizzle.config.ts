@@ -6,6 +6,7 @@ export default {
   dialect: "turso",
   dbCredentials: {
     url: env.DATABASE_URL,
+    authToken: env.AUTH_TOKEN_SECRET,
   },
   tablesFilter: ["bible-quiz_*"],
 } satisfies Config;
