@@ -1,0 +1,65 @@
+{
+  "$id": "https://bible-quiz.app/schemas/bible-quiz-schema.json",
+  "title": "Bible Quiz Chapter",
+  "description": "Schema for Bible quiz questions organized by book and chapter",
+  "type": "object",
+  "required": ["book", "chapter", "description", "questions"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "The schema reference"
+    },
+    "book": {
+      "type": "string",
+      "description": "The name of the Bible book"
+    },
+    "chapter": {
+      "type": "integer",
+      "description": "The chapter number",
+      "minimum": 1
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of the chapter's content"
+    },
+    "questions": {
+      "type": "array",
+      "description": "The list of quiz questions for this chapter",
+      "items": {
+        "type": "object",
+        "required": ["id", "verse", "question", "options", "correctAnswer"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique identifier for the question within the chapter",
+            "minimum": 1
+          },
+          "verse": {
+            "type": "integer",
+            "description": "The verse number this question relates to",
+            "minimum": 1
+          },
+          "question": {
+            "type": "string",
+            "description": "The question text"
+          },
+          "options": {
+            "type": "array",
+            "description": "Multiple choice options for the question",
+            "minItems": 2,
+            "items": {
+              "type": "string"
+            }
+          },
+          "correctAnswer": {
+            "type": "integer",
+            "description": "The index of the correct answer in the options array (0-based)",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
