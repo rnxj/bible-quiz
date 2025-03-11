@@ -18,7 +18,6 @@ interface QuizCardProps {
 export const QuizCard = ({ question, onAnswer, showResult, userAnswer }: QuizCardProps) => {
   const [selectedOption, setSelectedOption] = useState<number | null>(userAnswer);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(userAnswer !== null);
-  const [animateIn] = useState<boolean>(true);
 
   // Reset state when userAnswer changes
   useEffect(() => {
@@ -50,15 +49,10 @@ export const QuizCard = ({ question, onAnswer, showResult, userAnswer }: QuizCar
   };
 
   return (
-    <Card
-      className={cn(
-        "w-full overflow-hidden glass-panel transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm",
-        animateIn ? "animate-scale-in" : "animate-fade-out",
-      )}
-    >
+    <Card>
       <CardHeader className="pb-2">
         <div className="flex justify-between items-center mb-2">
-          <Badge variant="outline" className="text-xs bg-white/70">
+          <Badge variant="outline" className="text-xs">
             {question.book || "Book"} {question.chapter || "Chapter"}:{question.verse}
           </Badge>
         </div>
@@ -73,9 +67,6 @@ export const QuizCard = ({ question, onAnswer, showResult, userAnswer }: QuizCar
               variant="outline"
               className={cn(
                 "justify-start h-auto min-h-[3rem] py-3 px-5 text-left w-full break-words whitespace-normal",
-                "transition-all duration-300 border bg-white/70 backdrop-blur-sm",
-                "hover:shadow-md hover:bg-primary/5",
-                "focus:outline-none focus:ring-2 focus:ring-primary/50",
                 getOptionClass(index),
               )}
               onClick={() => handleOptionSelect(index)}

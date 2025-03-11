@@ -53,7 +53,7 @@ export const ScoreDisplay = ({ summary, className }: ScoreDisplayProps) => {
             </div>
           </div>
 
-          <div className="text-center animate-slide-up" style={{ animationDelay: "0.3s" }}>
+          <div className="text-center">
             <p className="text-sm text-muted-foreground mb-1">Accuracy</p>
             <p className={cn("text-4xl font-bold", getAccuracyColor())}>{accuracyPercentage}%</p>
           </div>

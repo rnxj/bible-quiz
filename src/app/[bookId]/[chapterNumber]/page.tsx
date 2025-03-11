@@ -70,7 +70,7 @@ const Quiz = () => {
   // If quiz data is not loaded yet, show loading state
   if (!quizData) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-[calc(100vh-65px)] flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0.5 }}
           animate={{ opacity: 1 }}
@@ -222,7 +222,7 @@ const Quiz = () => {
   // Render the start screen
   const renderStartScreen = () => {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-accent/30 p-4 page-transition">
+      <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-center p-4">
         <motion.div
           className="w-full max-w-3xl mx-auto"
           initial="hidden"
@@ -307,7 +307,7 @@ const Quiz = () => {
   // Render the quiz screen
   const renderQuizScreen = () => {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-white to-accent/20 page-transition">
+      <div className="min-h-[calc(100vh-65px)]">
         <motion.div
           className="w-full max-w-4xl mx-auto px-4 py-8 sm:px-6 min-h-[calc(100vh-8rem)]"
           initial={{ opacity: 0 }}
@@ -420,7 +420,7 @@ const Quiz = () => {
     if (!summary) return null;
 
     return (
-      <div className="min-h-screen bg-gradient-to-b from-white to-accent/30 py-12 page-transition">
+      <div className="min-h-[calc(100vh-65px)] py-12">
         <motion.div
           className="w-full max-w-3xl mx-auto px-4"
           initial="hidden"
