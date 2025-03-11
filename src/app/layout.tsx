@@ -1,3 +1,4 @@
+import { OneTapLogin } from "@/components/auth/one-tap-login";
 import { Nav } from "@/components/nav";
 import { TRPCReactProvider } from "@/trpc/react";
 import type { Metadata } from "next";
@@ -33,6 +34,7 @@ export default function RootLayout({
           <div>
             <Nav />
             <main>{children}</main>
+            <OneTapLogin />
           </div>
         </TRPCReactProvider>
         <Toaster />
