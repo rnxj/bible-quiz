@@ -135,7 +135,10 @@
     "yourAnswer": "உங்கள் பதில்",
     "correctAnswer": "சரியான பதில்",
     "showAnswers": "பதில்களைக் காட்டு",
-    "hideAnswers": "பதில்களை மறை"
+    "hideAnswers": "பதில்களை மறை",
+    "leaderboard": "முன்னேற்ற பட்டியல்",
+    "errorLoading": "முன்னேற்ற பட்டியல் ஏற்றப்படுகிறது",
+    "correctAnswers": "சரியான பதில்கள்"
   },
   "Metadata": {
     "title": "பைபிள் வினாடி வினா செயலி",

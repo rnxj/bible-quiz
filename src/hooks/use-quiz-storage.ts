@@ -256,6 +256,27 @@ export function useQuizStorage() {
     [session.isPending, session.data?.user?.id, clearHistoryMutation, trpc.quiz],
   );
 
+  /**
+   * Get leaderboard data for a specific book chapter
+   */
+  const useGetLeaderboard = (bookId: string, chapterNumber: number, limit = 10) => {
+    // Use TRPC query to get leaderboard data
+    const query = api.quiz.getLeaderboard.useQuery(
+      { bookId, chapterNumber, limit },
+      {
+        staleTime: 1000 * 60 * 5, // 5 minutes
+      },
+    );
+
+    return {
+      data: query.data || [],
+      isLoading: query.isLoading,
+      isError: query.isError,
+      error: query.error,
+      refetch: query.refetch,
+    };
+  };
+
   // Expose the storage methods
   return {
     addAttempt,
@@ -263,6 +284,7 @@ export function useQuizStorage() {
     getLatestAttempt,
     useGetAttempts,
     useGetLatestAttempt,
+    useGetLeaderboard,
     clearHistory,
     syncStatus,
     isSynced,

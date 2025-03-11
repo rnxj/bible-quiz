@@ -1,7 +1,7 @@
 import { loadQuizData } from "@/lib/quiz-loader";
 import type { createTRPCContext } from "@/server/api/trpc";
-import { createTRPCRouter, protectedProcedure } from "@/server/api/trpc";
-import { quizAttempts, syncStatus } from "@/server/db/schema";
+import { createTRPCRouter, protectedProcedure, publicProcedure } from "@/server/api/trpc";
+import { quizAttempts, syncStatus, user } from "@/server/db/schema";
 import type { QuizData } from "@/types/quiz";
 import type { inferAsyncReturnType } from "@trpc/server";
 import { and, eq, sql } from "drizzle-orm";
@@ -536,6 +536,67 @@ export const quizRouter = createTRPCRouter({
         await ctx.db.delete(quizAttempts).where(whereClause);
 
         return { success: true };
+      },
+    ),
+
+  // Get leaderboard for a specific book chapter
+  getLeaderboard: publicProcedure
+    .input(
+      z.object({
+        bookId: z.string(),
+        chapterNumber: z.number(),
+        limit: z.number().min(1).max(100).default(10),
+      }),
+    )
+    .query(
+      async ({
+        ctx,
+        input,
+      }: {
+        ctx: inferAsyncReturnType<typeof createTRPCContext>;
+        input: { bookId: string; chapterNumber: number; limit: number };
+      }) => {
+        // Get the top attempts for this book and chapter
+        // We need to get the best attempt per user (highest score)
+        const leaderboardQuery = await ctx.db
+          .select({
+            userId: quizAttempts.userId,
+            userName: user.name,
+            userImage: user.image,
+            correctAnswers: sql<number>`MAX(${quizAttempts.correctAnswers})`,
+            totalQuestions: quizAttempts.totalQuestions,
+            bestAccuracy: sql<number>`MAX(${quizAttempts.correctAnswers} * 100.0 / ${quizAttempts.totalQuestions})`,
+            attemptCount: sql<number>`COUNT(*)`,
+            lastAttemptTime: sql<Date>`MAX(${quizAttempts.timestamp})`,
+          })
+          .from(quizAttempts)
+          .leftJoin(user, eq(quizAttempts.userId, user.id))
+          .where(
+            and(
+              eq(quizAttempts.bookId, input.bookId),
+              eq(quizAttempts.chapterNumber, input.chapterNumber),
+            ),
+          )
+          .groupBy(quizAttempts.userId, user.name, user.image, quizAttempts.totalQuestions)
+          .orderBy(
+            sql`${quizAttempts.correctAnswers} * 100.0 / ${quizAttempts.totalQuestions} DESC, 
+                ${quizAttempts.timestamp} ASC`,
+          )
+          .limit(input.limit);
+
+        return leaderboardQuery.map((entry) => ({
+          userId: entry.userId,
+          userName: entry.userName || "Anonymous User",
+          userImage: entry.userImage,
+          correctAnswers: Number(entry.correctAnswers),
+          totalQuestions: entry.totalQuestions,
+          accuracy: Math.round(Number(entry.bestAccuracy)),
+          attemptCount: Number(entry.attemptCount),
+          lastAttemptTime:
+            entry.lastAttemptTime instanceof Date
+              ? entry.lastAttemptTime.getTime()
+              : Number(entry.lastAttemptTime),
+        }));
       },
     ),
 });
