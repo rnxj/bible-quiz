@@ -15,7 +15,7 @@ import type { BookInfo } from "@/types/quiz";
 import { Book, BookOpen, ChevronRight, Sparkles } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Page() {
   const router = useRouter();
@@ -23,6 +23,17 @@ export default function Page() {
   const locale = useLocale() as Locale;
   const { books, loading, error } = useAvailableBooks(locale);
   const t = useTranslations("HomePage");
+
+  useEffect(() => {
+    if (selectedBook && books.length > 0) {
+      const updatedBook = books.find((book) => book.id === selectedBook.id);
+      if (updatedBook) {
+        setSelectedBook(updatedBook);
+      } else {
+        setSelectedBook(null);
+      }
+    }
+  }, [books, selectedBook]);
 
   const handleBookSelect = (book: BookInfo) => {
     setSelectedBook(book);
@@ -35,7 +46,7 @@ export default function Page() {
   if (loading) {
     return (
       <div className="min-h-[calc(100vh-65px)] flex items-center justify-center">
-        <div className="animate-pulse text-muted-foreground">{t("loading")}</div>
+        <div className="text-muted-foreground">{t("loading")}</div>
       </div>
     );
   }
@@ -49,68 +60,45 @@ export default function Page() {
   }
 
   return (
-    <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-start py-12 px-4 sm:px-6 md:px-8 overflow-x-hidden">
+    <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-start py-12 px-4 sm:px-6 md:px-8">
       <div className="w-full max-w-6xl mx-auto">
         {/* Hero Section */}
-        <section
-          className={cn(
-            "mb-12 text-center transition-all duration-500",
-            selectedBook ? "transform -translate-y-4" : "",
-          )}
-        >
-          <div className="mb-6 animate-in fade-in duration-700">
+        <section className="mb-12 text-center">
+          <div className="mb-6">
             <div className="inline-flex items-center justify-center p-5 rounded-full bg-primary/10">
               <Book className="h-12 w-12 text-primary" />
             </div>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 animate-in fade-in duration-700">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary/90 to-primary/70">
-              {t("title")}
-            </span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
+            <span className="text-primary">{t("title")}</span>
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in duration-700 delay-150">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </section>
 
         {/* Content Section */}
-        <div
-          className={cn(
-            "grid grid-cols-1 lg:grid-cols-12 gap-8 transition-all duration-500",
-            selectedBook ? "animate-in fade-in duration-500" : "",
-          )}
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Book Selection */}
           <div className={cn("flex flex-col", selectedBook ? "lg:col-span-4" : "lg:col-span-12")}>
-            <div
-              className={cn(
-                "bg-muted/20 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-accent/20 transition-all duration-500",
-                selectedBook ? "h-full" : "",
-              )}
-            >
+            <div className="bg-muted/20 rounded-xl p-6 border border-accent/20">
               <h2 className="text-xl font-semibold mb-5 flex items-center">
                 <span className="inline-block w-1.5 h-5 bg-primary/80 rounded-full mr-2.5" />
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
-                  {t("selectBook")}
-                </span>
+                <span className="text-primary">{t("selectBook")}</span>
               </h2>
 
               <div
                 className={cn(
-                  "grid gap-2.5 transition-all duration-500",
+                  "grid gap-2.5",
                   selectedBook
                     ? "grid-cols-1"
                     : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
                 )}
               >
-                {books.map((book, index) => (
-                  <div
-                    key={book.id}
-                    className="animate-in fade-in duration-500"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
+                {books.map((book) => (
+                  <div key={book.id}>
                     <Button
                       variant={selectedBook?.id === book.id ? "default" : "outline"}
                       className={cn(
@@ -132,27 +120,23 @@ export default function Page() {
 
           {/* Chapter Selection - Only show if book is selected */}
           {selectedBook && (
-            <div className="lg:col-span-8 animate-in slide-in-from-right duration-500">
-              <div className="bg-muted/20 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-accent/20 h-full">
+            <div className="lg:col-span-8">
+              <div className="bg-muted/20 rounded-xl p-6 border border-accent/20 h-full">
                 <h2 className="text-xl font-semibold mb-5 flex items-center">
                   <span className="inline-block w-1.5 h-5 bg-primary/80 rounded-full mr-2.5" />
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+                  <span className="text-primary">
                     {t("selectChapter", { bookName: selectedBook.name })}
                   </span>
                 </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {selectedBook.chapters.map((chapter, index) => (
-                    <div
-                      key={chapter.number}
-                      className="animate-in fade-in duration-500"
-                      style={{ animationDelay: `${index * 75}ms` }}
-                    >
+                  {selectedBook.chapters.map((chapter) => (
+                    <div key={chapter.number}>
                       <Card
                         className="border border-accent/50 hover:border-primary/50 hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden group"
                         onClick={() => navigateToChapter(selectedBook.id, chapter.number)}
                       >
-                        <CardHeader className="pb-2 relative">
+                        <CardHeader className="pb-2">
                           <CardTitle className="flex justify-between items-center text-lg">
                             <span>{t("chapter", { number: chapter.number })}</span>
                             <BookOpen className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
@@ -164,7 +148,7 @@ export default function Page() {
                         </CardHeader>
                         <CardContent className="text-sm">
                           <p className="line-clamp-2 text-muted-foreground">
-                            {chapter.description || t("chapterDescription")}
+                            {chapter.description}
                           </p>
                         </CardContent>
                         <CardFooter className="pt-0">
@@ -185,7 +169,7 @@ export default function Page() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-16 text-center animate-in fade-in duration-700">
+        <footer className="mt-16 text-center">
           <p className="text-sm text-muted-foreground max-w-lg mx-auto pb-4">{t("footer")}</p>
         </footer>
       </div>
