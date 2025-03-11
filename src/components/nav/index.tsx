@@ -16,7 +16,7 @@ import { BookOpenIcon, Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LocaleSwitcher } from "./locale-switcher";
 import { ThemeSwitcher } from "./theme-switcher";
 import { UserAvatar } from "./user-avatar";
@@ -24,7 +24,16 @@ import { UserAvatar } from "./user-avatar";
 export const Nav = () => {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
-  const isExpanded = false;
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsExpanded(window.innerWidth < 768);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;

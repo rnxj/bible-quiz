@@ -94,5 +94,21 @@
   "Metadata": {
     "title": "Bible Quiz App",
     "description": "Test your knowledge of the Bible with interactive quizzes from various books and chapters."
+  },
+  "NotFound": {
+    "title": "404",
+    "description": "Oops! The page you're looking for cannot be found.",
+    "returnHome": "Return Home"
+  },
+  "Search": {
+    "buttonPlaceholder": "Search...",
+    "inputPlaceholder": "Type to search...",
+    "noResults": "No results found.",
+    "navigation": "Navigation",
+    "home": "Home",
+    "theme": "Theme",
+    "toggleDarkMode": "Toggle Dark Mode",
+    "toggleLightMode": "Toggle Light Mode",
+    "availableBooks": "Available Books"
   }
 }
