@@ -10,8 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { authClient } from "@/lib/auth-client";
-import { BookOpenIcon, Loader2Icon } from "lucide-react";
-import Link from "next/link";
+import { Loader2Icon } from "lucide-react";
 import { useState } from "react";
 
 export default function LoginPage() {
@@ -31,21 +30,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
-      <div className="absolute top-8 left-8 md:left-12">
-        <Link href="/" className="flex items-center text-primary hover:text-primary/90">
-          <BookOpenIcon className="h-6 w-6 mr-2" />
-          <span className="font-bold text-xl">Bible Quiz</span>
-        </Link>
-      </div>
-
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-65px)]">
       <div className="w-full max-w-md px-4 space-y-6">
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold">Welcome Back</h1>
           <p className="text-muted-foreground">Sign in to continue your Bible quiz journey</p>
         </div>
 
-        <Card className="w-full shadow-lg border-0">
+        <Card>
           <CardHeader className="space-y-1">
             <CardTitle className="text-2xl font-bold text-center">Sign In</CardTitle>
             <CardDescription className="text-center">
@@ -109,7 +101,7 @@ export default function LoginPage() {
 
         <div className="text-center">
           <p className="text-sm text-muted-foreground">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Button variant="link" className="p-0 h-auto" onClick={handleGoogleSignIn}>
               Sign up with Google
             </Button>

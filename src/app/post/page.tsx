@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <HydrateClient>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-background">
+      <main className="flex min-h-[calc(100vh-65px)] flex-col items-center justify-center bg-background">
         <div className="container flex flex-col items-center justify-center gap-8 px-4 py-16">
           <h1 className="text-4xl font-bold tracking-tight">Post Manager</h1>
 

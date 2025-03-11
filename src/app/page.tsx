@@ -11,19 +11,8 @@ import {
 import { getAvailableBooks } from "@/lib/quiz-loader";
 import type { BookInfo } from "@/types/quiz";
 import { Book, BookOpen, ChevronRight } from "lucide-react";
-import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5 } },
-};
-
-const slideDown = {
-  hidden: { opacity: 0, y: -20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
 
 export default function Page() {
   const router = useRouter();
@@ -39,14 +28,9 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-accent/30 p-4 sm:p-6">
+    <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-center p-4 sm:p-6">
       <div className="w-full max-w-4xl mx-auto">
-        <motion.div
-          className="mb-10 text-center"
-          initial="hidden"
-          animate="visible"
-          variants={slideDown}
-        >
+        <div className="mb-10 text-center">
           <div className="inline-flex items-center justify-center p-4 mb-4 rounded-full bg-primary/10">
             <Book className="h-10 w-10 text-primary" />
           </div>
@@ -57,17 +41,12 @@ export default function Page() {
             Test your knowledge of the Bible with interactive quizzes from various books and
             chapters.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Book Selection */}
-          <motion.div
-            className={`${selectedBook ? "md:col-span-4" : "md:col-span-12"}`}
-            initial="hidden"
-            animate="visible"
-            variants={fadeIn}
-          >
-            <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 shadow-sm border border-accent/20">
+          <div className={`${selectedBook ? "md:col-span-4" : "md:col-span-12"}`}>
+            <div className="bg-muted/20 rounded-lg p-4 shadow-sm border border-accent/20">
               <h2 className="text-xl font-semibold mb-4 text-primary">Select a Book</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-2">
                 {books.map((book) => (
@@ -87,28 +66,18 @@ export default function Page() {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Chapter Selection - Only show if book is selected */}
           {selectedBook && (
-            <motion.div
-              className="md:col-span-8"
-              initial="hidden"
-              animate="visible"
-              variants={fadeIn}
-            >
-              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 shadow-sm border border-accent/20">
+            <div className="md:col-span-8">
+              <div className="bg-muted/20 rounded-lg p-4 shadow-sm border border-accent/20">
                 <h2 className="text-xl font-semibold mb-4 text-primary">Select a Chapter</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {selectedBook.chapters.map((chapter, index) => (
-                    <motion.div
-                      key={chapter.number}
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: index * 0.05 }}
-                    >
+                  {selectedBook.chapters.map((chapter) => (
+                    <div key={chapter.number}>
                       <Card
-                        className="border border-accent/50 hover:border-primary/50 hover:shadow-md transition-all cursor-pointer bg-white/80"
+                        className="border border-accent/50 hover:border-primary/50 hover:shadow-md transition-all cursor-pointer"
                         onClick={() => navigateToChapter(selectedBook.id, chapter.number)}
                       >
                         <CardHeader className="pb-2">
@@ -132,22 +101,17 @@ export default function Page() {
                           </Button>
                         </CardFooter>
                       </Card>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
           )}
         </div>
 
-        <motion.p
-          className="text-sm text-muted-foreground mt-10 text-center"
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
-        >
+        <p className="text-sm text-muted-foreground mt-10 text-center">
           Study the Bible, grow in knowledge, and deepen your faith
-        </motion.p>
+        </p>
       </div>
     </div>
   );

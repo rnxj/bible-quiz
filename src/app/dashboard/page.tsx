@@ -23,8 +23,8 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="bg-gray-50 min-h-[calc(100vh-4rem)]">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    <div className="min-h-[calc(100vh-4rem)]">
+      <div className="container mx-auto py-8 space-y-8">
         <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
           <div>
             <h1 className="text-3xl font-bold">Dashboard</h1>
@@ -91,7 +91,9 @@ export default function DashboardPage() {
             </CardHeader>
             <CardContent className="min-h-[200px] flex items-center justify-center">
               <div className="text-center">
-                <p className="text-muted-foreground mb-4">You haven't taken any quizzes yet.</p>
+                <p className="text-muted-foreground mb-4">
+                  You haven&apos;t taken any quizzes yet.
+                </p>
                 <Button asChild variant="outline">
                   <Link href="/quiz">Start your first quiz</Link>
                 </Button>
