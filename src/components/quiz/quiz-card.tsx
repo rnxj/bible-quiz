@@ -38,11 +38,11 @@ export const QuizCard = ({ question, onAnswer, showResult, userAnswer }: QuizCar
     }
 
     if (index === question.correctAnswer) {
-      return "correct border-green-500 bg-green-50 text-green-800";
+      return "correct border-green-500 bg-green-50 dark:bg-green-900 text-green-800 dark:text-green-100";
     }
 
     if (index === selectedOption && selectedOption !== question.correctAnswer) {
-      return "incorrect border-red-500 bg-red-50 text-red-800";
+      return "incorrect border-red-500 bg-red-50 dark:bg-red-900 text-red-800 dark:text-red-100";
     }
 
     return "";

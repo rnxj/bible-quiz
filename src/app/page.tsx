@@ -9,8 +9,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { getAvailableBooks } from "@/lib/quiz-loader";
+import { cn } from "@/lib/utils";
 import type { BookInfo } from "@/types/quiz";
-import { Book, BookOpen, ChevronRight } from "lucide-react";
+import { Book, BookOpen, ChevronRight, Sparkles } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -28,41 +29,83 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-center p-4 sm:p-6">
-      <div className="w-full max-w-4xl mx-auto">
-        <div className="mb-10 text-center">
-          <div className="inline-flex items-center justify-center p-4 mb-4 rounded-full bg-primary/10">
-            <Book className="h-10 w-10 text-primary" />
+    <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-start py-12 px-4 sm:px-6 md:px-8 overflow-x-hidden">
+      <div className="w-full max-w-6xl mx-auto">
+        {/* Hero Section */}
+        <section
+          className={cn(
+            "mb-12 text-center transition-all duration-500",
+            selectedBook ? "transform -translate-y-4" : "",
+          )}
+        >
+          <div className="mb-6 animate-in fade-in duration-700">
+            <div className="inline-flex items-center justify-center p-5 rounded-full bg-primary/10">
+              <Book className="h-12 w-12 text-primary" />
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            பைபிள் வினாடி வினா
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 animate-in fade-in duration-700">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary/90 to-primary/70">
+              பைபிள் வினாடி வினா
+            </span>
           </h1>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto animate-in fade-in duration-700 delay-150">
             Test your knowledge of the Bible with interactive quizzes from various books and
             chapters.
           </p>
-        </div>
+        </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        {/* Content Section */}
+        <div
+          className={cn(
+            "grid grid-cols-1 lg:grid-cols-12 gap-8 transition-all duration-500",
+            selectedBook ? "animate-in fade-in duration-500" : "",
+          )}
+        >
           {/* Book Selection */}
-          <div className={`${selectedBook ? "md:col-span-4" : "md:col-span-12"}`}>
-            <div className="bg-muted/20 rounded-lg p-4 shadow-sm border border-accent/20">
-              <h2 className="text-xl font-semibold mb-4 text-primary">Select a Book</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-2">
-                {books.map((book) => (
-                  <Button
+          <div className={cn("flex flex-col", selectedBook ? "lg:col-span-4" : "lg:col-span-12")}>
+            <div
+              className={cn(
+                "bg-muted/20 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-accent/20 transition-all duration-500",
+                selectedBook ? "h-full" : "",
+              )}
+            >
+              <h2 className="text-xl font-semibold mb-5 flex items-center">
+                <span className="inline-block w-1.5 h-5 bg-primary/80 rounded-full mr-2.5" />
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+                  Select a Book
+                </span>
+              </h2>
+
+              <div
+                className={cn(
+                  "grid gap-2.5 transition-all duration-500",
+                  selectedBook
+                    ? "grid-cols-1"
+                    : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
+                )}
+              >
+                {books.map((book, index) => (
+                  <div
                     key={book.id}
-                    variant={selectedBook?.id === book.id ? "default" : "outline"}
-                    className={`justify-between h-auto py-3 text-left ${
-                      selectedBook?.id === book.id
-                        ? "bg-primary text-primary-foreground"
-                        : "hover:bg-accent/20"
-                    }`}
-                    onClick={() => handleBookSelect(book)}
+                    className="animate-in fade-in duration-500"
+                    style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    <span className="font-medium">{book.name}</span>
-                    <ChevronRight className="h-4 w-4 ml-2 flex-shrink-0" />
-                  </Button>
+                    <Button
+                      variant={selectedBook?.id === book.id ? "default" : "outline"}
+                      className={cn(
+                        "justify-between h-auto py-3 text-left w-full transition-all duration-300",
+                        selectedBook?.id === book.id
+                          ? "bg-primary text-primary-foreground shadow-md"
+                          : "hover:bg-accent/20 hover:border-primary/30 hover:shadow-sm",
+                      )}
+                      onClick={() => handleBookSelect(book)}
+                    >
+                      <span className="font-medium">{book.name}</span>
+                      <ChevronRight className="h-4 w-4 ml-2 flex-shrink-0" />
+                    </Button>
+                  </div>
                 ))}
               </div>
             </div>
@@ -70,22 +113,35 @@ export default function Page() {
 
           {/* Chapter Selection - Only show if book is selected */}
           {selectedBook && (
-            <div className="md:col-span-8">
-              <div className="bg-muted/20 rounded-lg p-4 shadow-sm border border-accent/20">
-                <h2 className="text-xl font-semibold mb-4 text-primary">Select a Chapter</h2>
+            <div className="lg:col-span-8 animate-in slide-in-from-right duration-500">
+              <div className="bg-muted/20 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-accent/20 h-full">
+                <h2 className="text-xl font-semibold mb-5 flex items-center">
+                  <span className="inline-block w-1.5 h-5 bg-primary/80 rounded-full mr-2.5" />
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+                    {selectedBook.name}: Select a Chapter
+                  </span>
+                </h2>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {selectedBook.chapters.map((chapter) => (
-                    <div key={chapter.number}>
+                  {selectedBook.chapters.map((chapter, index) => (
+                    <div
+                      key={chapter.number}
+                      className="animate-in fade-in duration-500"
+                      style={{ animationDelay: `${index * 75}ms` }}
+                    >
                       <Card
-                        className="border border-accent/50 hover:border-primary/50 hover:shadow-md transition-all cursor-pointer"
+                        className="border border-accent/50 hover:border-primary/50 hover:shadow-md transition-all duration-300 cursor-pointer overflow-hidden group"
                         onClick={() => navigateToChapter(selectedBook.id, chapter.number)}
                       >
-                        <CardHeader className="pb-2">
+                        <CardHeader className="pb-2 relative">
                           <CardTitle className="flex justify-between items-center text-lg">
                             <span>Chapter {chapter.number}</span>
-                            <BookOpen className="h-5 w-5 text-muted-foreground" />
+                            <BookOpen className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
                           </CardTitle>
-                          <CardDescription>{chapter.questionCount} questions</CardDescription>
+                          <CardDescription className="flex items-center">
+                            <Sparkles className="h-3.5 w-3.5 mr-1.5 text-primary/70" />
+                            {chapter.questionCount} questions
+                          </CardDescription>
                         </CardHeader>
                         <CardContent className="text-sm">
                           <p className="line-clamp-2 text-muted-foreground">
@@ -95,7 +151,7 @@ export default function Page() {
                         <CardFooter className="pt-0">
                           <Button
                             variant="ghost"
-                            className="w-full hover:bg-primary/10 hover:text-primary"
+                            className="w-full hover:bg-primary/10 hover:text-primary group-hover:bg-primary/5 transition-all duration-300"
                           >
                             Start Quiz
                           </Button>
@@ -109,9 +165,12 @@ export default function Page() {
           )}
         </div>
 
-        <p className="text-sm text-muted-foreground mt-10 text-center">
-          Study the Bible, grow in knowledge, and deepen your faith
-        </p>
+        {/* Footer */}
+        <footer className="mt-16 text-center animate-in fade-in duration-700">
+          <p className="text-sm text-muted-foreground max-w-lg mx-auto pb-4">
+            Study the Bible, grow in knowledge, and deepen your faith through interactive learning
+          </p>
+        </footer>
       </div>
     </div>
   );
