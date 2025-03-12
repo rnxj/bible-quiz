@@ -222,7 +222,7 @@ const Quiz = () => {
   // Render the start screen
   const renderStartScreen = () => {
     return (
-      <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-center p-4">
+      <div className="min-h-[calc(100vh-65px)] flex flex-col items-center justify-center px-4 py-8">
         <motion.div
           className="w-full max-w-3xl mx-auto"
           initial="hidden"
