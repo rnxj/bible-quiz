@@ -1,5 +1,6 @@
 import { OneTapLogin } from "@/components/auth/one-tap-login";
 import { Nav } from "@/components/nav";
+import { ThemeProvider } from "@/components/providers/theme";
 import { TRPCReactProvider } from "@/trpc/react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -30,14 +31,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <TRPCReactProvider>
-          <div>
-            <Nav />
-            <main>{children}</main>
-            <OneTapLogin />
-          </div>
-        </TRPCReactProvider>
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TRPCReactProvider>
+            <div>
+              <Nav />
+              <main>{children}</main>
+              <OneTapLogin />
+            </div>
+          </TRPCReactProvider>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
