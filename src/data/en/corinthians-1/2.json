@@ -1,0 +1,328 @@
+{
+  "$schema": "../../../data/schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 2,
+  "description": "This chapter contrasts worldly wisdom with God's wisdom and explains how spiritual truths are revealed through the Holy Spirit.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "How did Paul come to the Corinthians when proclaiming the testimony about God?",
+      "options": [
+        "With eloquence and human wisdom",
+        "Not with eloquence or human wisdom",
+        "With power and authority",
+        "With new prophecies"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 2,
+      "question": "What did Paul resolve to know while he was with the Corinthians?",
+      "options": [
+        "Old Testament prophecies",
+        "Nothing except Jesus Christ and him crucified",
+        "The laws of the new covenant",
+        "The teachings of the apostles"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "verse": 3,
+      "question": "In what condition did Paul come to the Corinthians?",
+      "options": [
+        "With power and courage",
+        "In weakness with great fear and trembling",
+        "With joy and enthusiasm",
+        "With anger and condemnation"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "verse": 4,
+      "question": "How does Paul describe his message and preaching?",
+      "options": [
+        "With wise and persuasive words",
+        "Not with wise and persuasive words, but with a demonstration of the Spirit's power",
+        "With philosophical wisdom",
+        "With literary style"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 5,
+      "question": "On what did Paul want the Corinthians' faith to rest?",
+      "options": ["Human wisdom", "God's power", "Paul's teaching", "Church tradition"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 6,
+      "question": "Among whom does Paul speak a message of wisdom?",
+      "options": ["All people", "New believers", "The mature", "Only Jews"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "verse": 6,
+      "question": "What kind of wisdom does Paul NOT speak?",
+      "options": [
+        "God's wisdom",
+        "The wisdom of this age or of the rulers of this age",
+        "Christ's wisdom",
+        "The Holy Spirit's wisdom"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "verse": 7,
+      "question": "What wisdom does Paul declare?",
+      "options": [
+        "Human wisdom",
+        "Greek wisdom",
+        "God's wisdom, a mystery that has been hidden and that God destined for our glory before time began",
+        "Jewish wisdom"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 9,
+      "verse": 8,
+      "question": "What would the rulers of this age not have done if they had understood God's wisdom?",
+      "options": [
+        "Hidden the wisdom",
+        "Crucified the Lord of glory",
+        "Changed themselves",
+        "Followed it"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 9,
+      "question": "How is it written about what God has prepared for those who love him?",
+      "options": [
+        "What no eye has seen, what no ear has heard, and what no human mind has conceived",
+        "It is written in books",
+        "It was foretold by prophets",
+        "It has been conceived in human minds"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 11,
+      "verse": 10,
+      "question": "How has God revealed his wisdom to us?",
+      "options": [
+        "Through the Bible",
+        "Through the prophets",
+        "By his Spirit",
+        "Through the apostles"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 12,
+      "verse": 10,
+      "question": "What does the Spirit search?",
+      "options": [
+        "Human hearts",
+        "All things, even the deep things of God",
+        "The secrets of the world",
+        "The future"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "verse": 11,
+      "question": "Who can know the thoughts of God?",
+      "options": [
+        "Wise people",
+        "No one knows the thoughts of God except the Spirit of God",
+        "The apostles",
+        "The prophets"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 12,
+      "question": "What spirit have believers received?",
+      "options": [
+        "The spirit of the world",
+        "The spirit of knowledge",
+        "The Spirit who is from God",
+        "The spirit of wisdom"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "verse": 12,
+      "question": "Why have we received the Spirit who is from God?",
+      "options": [
+        "To perform miracles",
+        "To prophetically know about others",
+        "So that we may understand what God has freely given us",
+        "To know the future"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "verse": 13,
+      "question": "How does Paul explain spiritual realities?",
+      "options": [
+        "In words taught by human wisdom",
+        "With Spirit-taught words, explaining spiritual realities with Spirit-taught words",
+        "With philosophical wisdom",
+        "With logical explanations"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "verse": 14,
+      "question": "How does the person without the Spirit view the things that come from the Spirit of God?",
+      "options": ["As valuable", "As foolishness", "As interesting", "As understandable"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "verse": 14,
+      "question": "Why can't the person without the Spirit understand the things that come from the Spirit of God?",
+      "options": [
+        "Because they don't have time",
+        "Because they aren't intelligent",
+        "Because they are discerned only through the Spirit",
+        "Because they hate them"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 19,
+      "verse": 15,
+      "question": "What does the person with the Spirit make judgments about?",
+      "options": ["Only their own sins", "All things", "Only others", "Only certain matters"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "verse": 15,
+      "question": "Is the person with the Spirit subject to judgments by others?",
+      "options": [
+        "Yes, by everyone",
+        "Yes, by other believers",
+        "No, such a person is not subject to merely human judgments",
+        "Yes, but only by other spiritual people"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 21,
+      "verse": 16,
+      "question": "What question does Paul ask in verse 16?",
+      "options": [
+        "Who has known the mind of the Lord so as to instruct him?",
+        "Who has known the Lord?",
+        "Who hates the Lord?",
+        "Who has served the Lord?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "verse": 16,
+      "question": "What do believers have according to the end of the chapter?",
+      "options": ["Salvation", "Gifts of the Holy Spirit", "The mind of Christ", "Eternal life"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 23,
+      "verse": 1,
+      "question": "What did Paul proclaim to the Corinthians?",
+      "options": [
+        "His own experiences",
+        "The testimony about God",
+        "Jewish laws",
+        "Greek philosophies"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "verse": 4,
+      "question": "What demonstrated the truth of Paul's preaching?",
+      "options": [
+        "His knowledge and education",
+        "The Spirit's power",
+        "His personal experience",
+        "His eloquence"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 25,
+      "verse": 7,
+      "question": "How is God's wisdom described?",
+      "options": [
+        "Known to all",
+        "A mystery that has been hidden",
+        "Easy to understand",
+        "Broad and expansive"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 8,
+      "question": "Who was crucified according to verse 8?",
+      "options": ["Paul", "The apostles", "The Lord of glory", "The prophets"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 27,
+      "verse": 9,
+      "question": "For whom has God prepared things?",
+      "options": ["Everyone", "The apostles", "Those who love him", "The wise"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 28,
+      "verse": 10,
+      "question": "Who searches all things?",
+      "options": ["Paul", "The wise", "The Spirit", "Believers"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 29,
+      "verse": 13,
+      "question": "What words does Paul use to explain spiritual realities?",
+      "options": [
+        "Words from Greek philosophers",
+        "Spirit-taught words",
+        "Old Testament vocabulary",
+        "His own words"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "verse": 7,
+      "question": "When did God destine his wisdom for our glory?",
+      "options": [
+        "Since the birth of Jesus",
+        "Since Paul's conversion",
+        "Before time began",
+        "Since the time of the apostles"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}
