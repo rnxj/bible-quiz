@@ -1,14 +1,22 @@
 "use server";
 
-import type { Locale } from "@/i18n/config";
-import type { BookInfo, ChapterInfo, QuizData } from "@/types/quiz";
 import fs from "node:fs";
 import path from "node:path";
+import type { Locale } from "@/i18n/config";
+import type { BookInfo, ChapterInfo, QuizData } from "@/types/quiz";
 
 // Function to get all available books by scanning the directory structure
 export async function getAvailableBooks(language: Locale = "en"): Promise<BookInfo[]> {
   try {
+    // Use process.cwd() to get the correct path in both development and production
     const dataDir = path.join(process.cwd(), "src", "data", language);
+
+    // Add error handling for directory existence
+    if (!fs.existsSync(dataDir)) {
+      console.error(`Data directory does not exist: ${dataDir}`);
+      return [];
+    }
+
     const bookDirs = fs
       .readdirSync(dataDir, { withFileTypes: true })
       .filter((dirent) => dirent.isDirectory())
@@ -21,6 +29,15 @@ export async function getAvailableBooks(language: Locale = "en"): Promise<BookIn
         .filter((file) => file.endsWith(".json"))
         .map((file) => Number.parseInt(file.replace(".json", ""), 10))
         .sort((a, b) => a - b);
+
+      // Handle case where no chapter files are found
+      if (chapterFiles.length === 0) {
+        return {
+          id: bookId,
+          name: bookId, // Use bookId as fallback name
+          chapters: [],
+        };
+      }
 
       // Load the first chapter to get the book name
       const firstChapterPath = path.join(bookDir, `${chapterFiles[0]}.json`);
@@ -65,6 +82,13 @@ export async function loadQuizData(
       bookId,
       `${chapterNumber}.json`,
     );
+
+    // Add error handling for file existence
+    if (!fs.existsSync(filePath)) {
+      console.error(`Quiz data file does not exist: ${filePath}`);
+      throw new Error(`Quiz data not found for ${bookId} chapter ${chapterNumber}`);
+    }
+
     const quizData = JSON.parse(fs.readFileSync(filePath, "utf8")) as QuizData;
     return quizData;
   } catch (error) {
