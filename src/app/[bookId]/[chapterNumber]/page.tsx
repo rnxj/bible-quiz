@@ -146,7 +146,7 @@ const Quiz = () => {
   // Handle next question navigation
   const handleNextQuestion = () => {
     if (currentQuestionIndex < quizData.questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
     } else if (!isReviewing && results.length === quizData.questions.length) {
       // All questions answered, go to results
       calculateSummary();
@@ -306,6 +306,7 @@ const Quiz = () => {
 
             <div>
               <QuizCard
+                key={currentQuestion.id}
                 question={currentQuestion}
                 onAnswer={handleAnswer}
                 showResult={Boolean(currentResult?.userAnswer !== null) || isReviewing}
