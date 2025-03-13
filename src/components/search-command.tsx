@@ -4,7 +4,7 @@ import { useAvailableBooks } from "@/hooks/use-quiz-data";
 import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Book, Moon, Search, Sun } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import * as React from "react";
@@ -52,6 +52,7 @@ export function SearchCommand({ onClick }: SearchCommandProps) {
   const { theme, setTheme } = useTheme();
   const locale = useLocale() as Locale;
   const { books: availableBooks, loading } = useAvailableBooks(locale);
+  const t = useTranslations("Search");
 
   React.useEffect(() => {
     setIsMac(navigator.platform.toLowerCase().includes("mac"));
@@ -126,7 +127,7 @@ export function SearchCommand({ onClick }: SearchCommandProps) {
         onClick={handleButtonClick}
       >
         <Search className="h-4 w-4 xl:mr-2" />
-        <span className="hidden xl:inline-flex">Search...</span>
+        <span className="hidden xl:inline-flex">{t("buttonPlaceholder")}</span>
         <div className="ml-auto hidden h-6 select-none items-center gap-1 xl:flex">
           <Kbd>
             {isMac === null ? (
@@ -142,15 +143,15 @@ export function SearchCommand({ onClick }: SearchCommandProps) {
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput
-          placeholder="Type to search..."
+          placeholder={t("inputPlaceholder")}
           value={search}
           onValueChange={setSearch}
           className="border-b border-border"
         />
         <CommandList className="max-h-[60vh] overflow-y-auto">
-          <CommandEmpty className="py-6 text-center text-sm">No results found.</CommandEmpty>
+          <CommandEmpty className="py-6 text-center text-sm">{t("noResults")}</CommandEmpty>
 
-          <CommandGroup heading="Navigation" className="py-2">
+          <CommandGroup heading={t("navigation")} className="py-2">
             <CommandItem
               onSelect={() => {
                 router.push("/");
@@ -160,12 +161,12 @@ export function SearchCommand({ onClick }: SearchCommandProps) {
             >
               <div className="absolute left-0 top-1/2 h-4 w-1 -translate-y-1/2 rounded-r bg-primary opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
               <Book className="h-4 w-4 text-blue-500" />
-              <div className="flex-grow">Home</div>
+              <div className="flex-grow">{t("home")}</div>
               <ArrowRight className="h-4 w-4 transform opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:opacity-100" />
             </CommandItem>
           </CommandGroup>
 
-          <CommandGroup heading="Theme" className="py-2">
+          <CommandGroup heading={t("theme")} className="py-2">
             <CommandItem
               onSelect={() => {
                 setTheme(theme === "light" ? "dark" : "light");
@@ -179,13 +180,15 @@ export function SearchCommand({ onClick }: SearchCommandProps) {
               ) : (
                 <Sun className="h-4 w-4 text-yellow-500" />
               )}
-              <div className="flex-grow">Toggle {theme === "light" ? "Dark" : "Light"} Mode</div>
+              <div className="flex-grow">
+                {theme === "light" ? t("toggleDarkMode") : t("toggleLightMode")}
+              </div>
               <ArrowRight className="h-4 w-4 transform opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:opacity-100" />
             </CommandItem>
           </CommandGroup>
 
           {!loading && (
-            <CommandGroup heading="Available Books" className="py-2">
+            <CommandGroup heading={t("availableBooks")} className="py-2">
               {filterBooks(availableBooks, search).map((book) => (
                 <CommandItem
                   key={book.id}
