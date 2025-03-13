@@ -18,15 +18,6 @@ export interface QuizData {
 export interface QuizResult {
   questionId: number;
   userAnswer: number | null;
-  isCorrect: boolean;
-}
-
-export interface QuizSummary {
-  totalQuestions: number;
-  correctAnswers: number;
-  incorrectAnswers: number;
-  accuracy: number;
-  results: QuizResult[];
 }
 
 export interface BookInfo {

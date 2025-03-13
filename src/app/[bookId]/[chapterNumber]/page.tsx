@@ -1,5 +1,7 @@
 "use client";
 
+import { HistoryChart } from "@/components/quiz/history-chart";
+import { ImprovementBadge } from "@/components/quiz/improvement-badge";
 import { ProgressBar } from "@/components/quiz/progress-bar";
 import { QuizCard } from "@/components/quiz/quiz-card";
 import { ScoreDisplay } from "@/components/quiz/score-display";
@@ -14,15 +16,35 @@ import {
 } from "@/components/ui/card";
 import { useQuizData } from "@/hooks/use-quiz-data";
 import type { Locale } from "@/i18n/config";
-import type { QuizResult, QuizSummary } from "@/types/quiz";
-import { ArrowLeft, Book, ChevronLeft, ChevronRight, PlayCircle } from "lucide-react";
+import type { QuizAttempt } from "@/store/quiz-history";
+import { useQuizHistory } from "@/store/quiz-history";
+import type { QuizData, QuizQuestion, QuizResult } from "@/types/quiz";
+import { formatDate } from "@/utils/date-format";
+import {
+  ArrowLeft,
+  Book,
+  ChevronLeft,
+  ChevronRight,
+  History,
+  PlayCircle,
+  RotateCcw,
+} from "lucide-react";
 import { motion } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 // Define the quiz states
-type QuizState = "start" | "quiz" | "result";
+type QuizState = "start" | "quiz" | "result" | "history";
+
+// Define the summary type for internal use
+interface QuizSummary {
+  totalQuestions: number;
+  correctAnswers: number;
+  incorrectAnswers: number;
+  accuracy: number;
+  results: QuizResult[];
+}
 
 const Quiz = () => {
   const router = useRouter();
@@ -32,6 +54,20 @@ const Quiz = () => {
   const locale = useLocale() as Locale;
   const t = useTranslations("Quiz");
 
+  // Helper function to calculate correct answers for an attempt
+  const calculateCorrectAnswers = (attempt: QuizAttempt, quizData: QuizData): number => {
+    return attempt.results.filter((r: QuizResult) => {
+      const question = quizData.questions.find((q: QuizQuestion) => q.id === r.questionId);
+      return question && r.userAnswer === question.correctAnswer;
+    }).length;
+  };
+
+  // Helper function to calculate accuracy percentage for an attempt
+  const calculateAccuracyPercentage = (attempt: QuizAttempt, quizData: QuizData): number => {
+    const correctAnswers = calculateCorrectAnswers(attempt, quizData);
+    return Math.round((correctAnswers / attempt.totalQuestions) * 100);
+  };
+
   // State machine state
   const [quizState, setQuizState] = useState<QuizState>("start");
 
@@ -39,6 +75,19 @@ const Quiz = () => {
   const [results, setResults] = useState<QuizResult[]>([]);
   const [isReviewing, setIsReviewing] = useState(false);
   const [summary, setSummary] = useState<QuizSummary | null>(null);
+
+  // State for showing/hiding answers - moved to top level
+  const [, setShowAnswers] = useState(false);
+
+  // State for tracking the selected attempt
+  const [selectedAttemptId, setSelectedAttemptId] = useState<string | null>(null);
+
+  // Quiz history store
+  const { getLatestAttempt, getAttempts, addAttempt } = useQuizHistory();
+
+  // Get quiz history for this chapter
+  const latestAttempt = getLatestAttempt(bookId, Number.parseInt(chapterNumber, 10));
+  const allAttempts = getAttempts(bookId, Number.parseInt(chapterNumber, 10));
 
   const { quizData, loading, error } = useQuizData(
     bookId,
@@ -51,7 +100,39 @@ const Quiz = () => {
     if (!bookId || !chapterNumber) {
       router.push("/");
     }
-  }, [bookId, chapterNumber, router]);
+
+    // If there's a latest attempt, show it on initial load
+    if (latestAttempt && quizState === "start" && !loading && quizData) {
+      // Calculate correct answers for the latest attempt
+      const correctAnswers = latestAttempt.results.filter((r: QuizResult) => {
+        const question = quizData.questions.find((q: QuizQuestion) => q.id === r.questionId);
+        return question && r.userAnswer === question.correctAnswer;
+      }).length;
+      const incorrectAnswers = latestAttempt.totalQuestions - correctAnswers;
+      const accuracy = correctAnswers / latestAttempt.totalQuestions;
+
+      setSummary({
+        totalQuestions: latestAttempt.totalQuestions,
+        correctAnswers,
+        incorrectAnswers,
+        accuracy,
+        results: latestAttempt.results,
+      });
+      setQuizState("history");
+      setSelectedAttemptId(latestAttempt.id);
+    }
+  }, [bookId, chapterNumber, router, latestAttempt, quizState, loading, quizData]);
+
+  // Reset showAnswers when changing quiz state
+  useEffect(() => {
+    // Show answers by default on result screen, hide on others
+    setShowAnswers(quizState === "result");
+
+    // When entering history screen, set the selected attempt to the latest one
+    if (quizState === "history" && latestAttempt) {
+      setSelectedAttemptId(latestAttempt.id);
+    }
+  }, [quizState, latestAttempt]);
 
   // If quiz data is loading, show loading state
   if (loading) {
@@ -109,7 +190,7 @@ const Quiz = () => {
     const isCorrect = selectedOption === question.correctAnswer;
     const isLastQuestion = currentQuestionIndex === quizData.questions.length - 1;
 
-    // Update results
+    // Update results with only essential information
     setResults((prev) => {
       const existingResultIndex = prev.findIndex((r) => r.questionId === questionId);
 
@@ -118,7 +199,6 @@ const Quiz = () => {
         newResults[existingResultIndex] = {
           questionId,
           userAnswer: selectedOption,
-          isCorrect,
         };
         return newResults;
       }
@@ -128,7 +208,6 @@ const Quiz = () => {
         {
           questionId,
           userAnswer: selectedOption,
-          isCorrect,
         },
       ];
     });
@@ -173,17 +252,34 @@ const Quiz = () => {
   // Calculate summary data for results
   const calculateSummary = () => {
     const totalQuestions = quizData.questions.length;
-    const correctAnswers = results.filter((r) => r.isCorrect).length;
+    // Calculate correct answers by checking each result against the quiz data
+    const correctAnswers = results.filter((r: QuizResult) => {
+      const question = quizData.questions.find((q: QuizQuestion) => q.id === r.questionId);
+      return question && r.userAnswer === question.correctAnswer;
+    }).length;
     const incorrectAnswers = totalQuestions - correctAnswers;
     const accuracy = correctAnswers / totalQuestions;
 
-    setSummary({
+    const newSummary = {
       totalQuestions,
       correctAnswers,
       incorrectAnswers,
       accuracy,
       results,
-    });
+    };
+
+    setSummary(newSummary);
+
+    // Save to history when quiz is completed
+    if (quizState === "quiz") {
+      addAttempt({
+        bookId,
+        book: quizData.book,
+        chapterNumber: Number.parseInt(chapterNumber, 10),
+        totalQuestions,
+        results,
+      });
+    }
   };
 
   // Finish quiz
@@ -198,6 +294,11 @@ const Quiz = () => {
     setCurrentQuestionIndex(0);
     setResults([]);
     setIsReviewing(false);
+  };
+
+  // View quiz history
+  const viewHistory = () => {
+    setQuizState("history");
   };
 
   // Go back to books
@@ -264,12 +365,45 @@ const Quiz = () => {
                     <li>{t("instructionsList.item5")}</li>
                   </ul>
                 </div>
+
+                {latestAttempt && (
+                  <div className="mt-4 p-4 bg-primary/10 rounded-lg">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-medium">{t("previousAttempt")}</h3>
+                      <span className="text-sm text-muted-foreground">
+                        {formatDate(latestAttempt.timestamp, "relative")}
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm">
+                          {t("score")}: {calculateAccuracyPercentage(latestAttempt, quizData)}%
+                        </p>
+                        <p className="text-sm">
+                          {t("correct")}: {calculateCorrectAnswers(latestAttempt, quizData)}/
+                          {latestAttempt.totalQuestions}
+                        </p>
+                        {allAttempts.length >= 2 && (
+                          <div className="mt-1">
+                            <ImprovementBadge attempts={allAttempts} quizData={quizData} />
+                          </div>
+                        )}
+                      </div>
+                      <Button variant="outline" size="sm" onClick={viewHistory}>
+                        <History className="h-4 w-4 mr-1" />
+                        {t("viewResults")}
+                      </Button>
+                    </div>
+                  </div>
+                )}
               </CardContent>
               <CardFooter className="flex justify-center pt-2">
                 <div>
                   <Button size="lg" onClick={startQuiz} className="relative overflow-hidden">
                     <PlayCircle className="mr-2 h-5 w-5" />
-                    <span className="relative z-10">{t("startQuiz")}</span>
+                    <span className="relative z-10">
+                      {latestAttempt ? t("retakeQuiz") : t("startQuiz")}
+                    </span>
                   </Button>
                 </div>
               </CardFooter>
@@ -381,6 +515,17 @@ const Quiz = () => {
       );
     }
 
+    // Create an attempt object from the summary for ScoreDisplay
+    const currentAttempt = {
+      id: "current",
+      bookId,
+      book: quizData.book,
+      chapterNumber: Number.parseInt(chapterNumber, 10),
+      totalQuestions: summary.totalQuestions,
+      results: summary.results,
+      timestamp: Date.now(),
+    };
+
     return (
       <div className="min-h-[calc(100vh-65px)] py-12">
         <div className="w-full max-w-3xl mx-auto px-4">
@@ -392,7 +537,7 @@ const Quiz = () => {
           </div>
 
           <div>
-            <ScoreDisplay summary={summary} className="mb-8" />
+            <ScoreDisplay attempt={currentAttempt} quizData={quizData} />
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mt-10">
@@ -412,6 +557,134 @@ const Quiz = () => {
     );
   };
 
+  // Render the history screen
+  const renderHistoryScreen = () => {
+    if (!quizData) {
+      return (
+        <div className="min-h-[calc(100vh-65px)] flex items-center justify-center">
+          <div className="text-muted-foreground">Loading history...</div>
+        </div>
+      );
+    }
+
+    // Find the selected attempt
+    const selectedAttempt =
+      allAttempts.find((attempt) => attempt.id === selectedAttemptId) || allAttempts[0];
+
+    if (!selectedAttempt) {
+      return (
+        <div className="min-h-[calc(100vh-65px)] flex items-center justify-center">
+          <div className="text-muted-foreground">No quiz attempts found</div>
+        </div>
+      );
+    }
+
+    return (
+      <div className="min-h-[calc(100vh-65px)] py-12">
+        <div className="w-full max-w-3xl mx-auto px-4">
+          <div>
+            <Button variant="ghost" className="mb-8" onClick={() => router.back()}>
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              {t("back")}
+            </Button>
+          </div>
+
+          <div className="flex flex-col items-center mb-10">
+            <h1 className="text-3xl font-bold text-center mb-1">{t("quizHistory")}</h1>
+            <p className="text-center text-muted-foreground">
+              {quizData.book} {t("chapter", { number: quizData.chapter })}
+            </p>
+            {allAttempts.length >= 2 && (
+              <div className="mt-2">
+                <ImprovementBadge attempts={allAttempts} quizData={quizData} />
+              </div>
+            )}
+          </div>
+
+          <div>
+            <ScoreDisplay attempt={selectedAttempt} quizData={quizData} />
+          </div>
+
+          {/* Add the history chart */}
+          {allAttempts.length >= 2 && (
+            <HistoryChart attempts={allAttempts} quizData={quizData} className="my-8" />
+          )}
+
+          {allAttempts.length > 1 && (
+            <div className="mb-8">
+              <h2 className="text-xl font-semibold mb-4">{t("previousAttempts")}</h2>
+              <div className="space-y-4">
+                {allAttempts
+                  .sort((a, b) => b.timestamp - a.timestamp)
+                  .map((attempt, index) => (
+                    <Card
+                      key={attempt.id}
+                      className={attempt.id === selectedAttemptId ? "border-primary" : ""}
+                    >
+                      <CardHeader className="py-3">
+                        <div className="flex justify-between items-center">
+                          <CardTitle className="text-base">
+                            {index === 0
+                              ? t("latestAttempt")
+                              : t("attempt", { number: allAttempts.length - index })}
+                          </CardTitle>
+                          <span className="text-xs text-muted-foreground">
+                            {formatDate(attempt.timestamp, "long")}
+                          </span>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="py-2">
+                        <div className="flex justify-between items-center">
+                          <div>
+                            <p className="text-sm">
+                              {t("score")}:{" "}
+                              <span className="font-medium">
+                                {calculateAccuracyPercentage(attempt, quizData)}%
+                              </span>
+                            </p>
+                            <p className="text-sm">
+                              {t("correct")}:{" "}
+                              <span className="font-medium">
+                                {calculateCorrectAnswers(attempt, quizData)}/
+                                {attempt.totalQuestions}
+                              </span>
+                            </p>
+                          </div>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={() => {
+                              setSelectedAttemptId(attempt.id); // Update the selected attempt
+                            }}
+                            className={attempt.id === selectedAttemptId ? "bg-primary/10" : ""}
+                          >
+                            {t("view")}
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+              </div>
+            </div>
+          )}
+
+          <div className="flex flex-wrap justify-center gap-4 mt-10">
+            <div>
+              <Button variant="outline" onClick={startQuiz} className="flex items-center gap-2">
+                <RotateCcw className="h-4 w-4" />
+                {t("retakeQuiz")}
+              </Button>
+            </div>
+
+            <div>
+              <Button onClick={goBack}>{t("returnHome")}</Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   switch (quizState) {
     case "start":
       return renderStartScreen();
@@ -419,6 +692,8 @@ const Quiz = () => {
       return renderQuizScreen();
     case "result":
       return renderResultScreen();
+    case "history":
+      return renderHistoryScreen();
     default:
       return renderStartScreen();
   }
