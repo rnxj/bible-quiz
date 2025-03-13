@@ -1,8 +1,10 @@
 "use client";
 
-import { getAvailableBooks } from "@/lib/quiz-loader";
+import { useAvailableBooks } from "@/hooks/use-quiz-data";
+import type { Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 import { ArrowRight, Book, Moon, Search, Sun } from "lucide-react";
+import { useLocale } from "next-intl";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import * as React from "react";
@@ -48,7 +50,8 @@ export function SearchCommand({ onClick }: SearchCommandProps) {
   const router = useRouter();
   const [isMac, setIsMac] = React.useState<boolean | null>(null);
   const { theme, setTheme } = useTheme();
-  const availableBooks = getAvailableBooks();
+  const locale = useLocale() as Locale;
+  const { books: availableBooks, loading } = useAvailableBooks(locale);
 
   React.useEffect(() => {
     setIsMac(navigator.platform.toLowerCase().includes("mac"));
@@ -181,25 +184,27 @@ export function SearchCommand({ onClick }: SearchCommandProps) {
             </CommandItem>
           </CommandGroup>
 
-          <CommandGroup heading="Available Books" className="py-2">
-            {filterBooks(availableBooks, search).map((book) => (
-              <CommandItem
-                key={book.id}
-                onSelect={() => {
-                  router.push(`/quiz/${book.id}/1`);
-                  setOpen(false);
-                }}
-                className="group relative m-1 flex cursor-pointer items-center gap-2 rounded-lg border border-transparent px-2 py-2 transition-all duration-200 hover:border-border hover:bg-accent hover:pl-4"
-              >
-                <div className="absolute left-0 top-1/2 h-4 w-1 -translate-y-1/2 rounded-r bg-primary opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
-                <Book className="h-4 w-4 text-green-500" />
-                <div className="flex flex-col">
-                  <div className="font-medium">{highlightMatch(book.name, search)}</div>
-                </div>
-                <ArrowRight className="h-4 w-4 transform opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:opacity-100" />
-              </CommandItem>
-            ))}
-          </CommandGroup>
+          {!loading && (
+            <CommandGroup heading="Available Books" className="py-2">
+              {filterBooks(availableBooks, search).map((book) => (
+                <CommandItem
+                  key={book.id}
+                  onSelect={() => {
+                    router.push(`/${book.id}/1`);
+                    setOpen(false);
+                  }}
+                  className="group relative m-1 flex cursor-pointer items-center gap-2 rounded-lg border border-transparent px-2 py-2 transition-all duration-200 hover:border-border hover:bg-accent hover:pl-4"
+                >
+                  <div className="absolute left-0 top-1/2 h-4 w-1 -translate-y-1/2 rounded-r bg-primary opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+                  <Book className="h-4 w-4 text-green-500" />
+                  <div className="flex flex-col">
+                    <div className="font-medium">{highlightMatch(book.name, search)}</div>
+                  </div>
+                  <ArrowRight className="h-4 w-4 transform opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:opacity-100" />
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          )}
         </CommandList>
       </CommandDialog>
     </>

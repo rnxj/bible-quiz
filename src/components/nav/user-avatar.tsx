@@ -12,12 +12,14 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { authClient } from "@/lib/auth-client";
 import { LayoutDashboardIcon, LogOutIcon, UserIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export function UserAvatar() {
   const router = useRouter();
   const session = authClient.useSession();
+  const t = useTranslations("UserAvatar");
 
   if (session.isPending) {
     return (
@@ -30,7 +32,7 @@ export function UserAvatar() {
       <Button asChild className="flex items-center gap-1 rounded-full">
         <Link href="/auth/login">
           <UserIcon className="h-4 w-4 mr-1" />
-          Sign In
+          {t("signIn")}
         </Link>
       </Button>
     );
@@ -64,7 +66,7 @@ export function UserAvatar() {
         <DropdownMenuItem asChild>
           <Link href="/dashboard" className="flex items-center cursor-pointer">
             <LayoutDashboardIcon className="h-4 w-4 mr-2" />
-            Dashboard
+            {t("dashboard")}
           </Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
@@ -76,7 +78,7 @@ export function UserAvatar() {
           className="flex items-center cursor-pointer text-red-500 focus:text-red-500"
         >
           <LogOutIcon className="h-4 w-4 mr-2" />
-          Sign out
+          {t("signOut")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

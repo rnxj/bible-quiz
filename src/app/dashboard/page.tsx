@@ -11,12 +11,14 @@ import {
 } from "@/components/ui/card";
 import { authClient } from "@/lib/auth-client";
 import { BarChartIcon, BookOpenIcon, CalendarIcon, TrophyIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function DashboardPage() {
   const router = useRouter();
   const session = authClient.useSession();
+  const t = useTranslations("Dashboard");
 
   if (!session) {
     router.push("/auth/login");
@@ -26,15 +28,15 @@ export default function DashboardPage() {
     <div className="container mx-auto px-4 py-8 space-y-8">
       <div className="flex flex-col md:flex-row justify-between gap-4 md:items-center">
         <div>
-          <h1 className="text-3xl font-bold">Dashboard</h1>
+          <h1 className="text-3xl font-bold">{t("title")}</h1>
           <p className="text-muted-foreground mt-1">
-            Welcome back, {session.data?.user?.name?.split(" ")[0] || "User"}!
+            {t("welcome", { name: session.data?.user?.name?.split(" ")[0] || "User" })}
           </p>
         </div>
         <Button asChild size="lg" className="gap-2">
           <Link href="/quiz">
             <BookOpenIcon className="h-4 w-4" />
-            Start a New Quiz
+            {t("startNewQuiz")}
           </Link>
         </Button>
       </div>
@@ -42,42 +44,42 @@ export default function DashboardPage() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Total Quizzes</CardTitle>
+            <CardTitle className="text-sm font-medium">{t("totalQuizzes")}</CardTitle>
             <BookOpenIcon className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">0</div>
-            <p className="text-xs text-muted-foreground">Quizzes completed</p>
+            <p className="text-xs text-muted-foreground">{t("quizzesCompleted")}</p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Correct Answers</CardTitle>
+            <CardTitle className="text-sm font-medium">{t("correctAnswers")}</CardTitle>
             <TrophyIcon className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">0</div>
-            <p className="text-xs text-muted-foreground">Questions answered correctly</p>
+            <p className="text-xs text-muted-foreground">{t("questionsAnsweredCorrectly")}</p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Accuracy</CardTitle>
+            <CardTitle className="text-sm font-medium">{t("accuracy")}</CardTitle>
             <BarChartIcon className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">0%</div>
-            <p className="text-xs text-muted-foreground">Overall accuracy rate</p>
+            <p className="text-xs text-muted-foreground">{t("accuracyRate")}</p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Last Quiz</CardTitle>
+            <CardTitle className="text-sm font-medium">{t("lastQuiz")}</CardTitle>
             <CalendarIcon className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">-</div>
-            <p className="text-xs text-muted-foreground">No quizzes taken yet</p>
+            <p className="text-xs text-muted-foreground">{t("noQuizzesTaken")}</p>
           </CardContent>
         </Card>
       </div>
@@ -85,14 +87,14 @@ export default function DashboardPage() {
       <div className="grid gap-6 md:grid-cols-2">
         <Card className="col-span-1">
           <CardHeader>
-            <CardTitle>Recent Activity</CardTitle>
-            <CardDescription>Your quiz history and progress</CardDescription>
+            <CardTitle>{t("recentActivity")}</CardTitle>
+            <CardDescription>{t("quizHistory")}</CardDescription>
           </CardHeader>
           <CardContent className="min-h-[200px] flex items-center justify-center">
             <div className="text-center">
-              <p className="text-muted-foreground mb-4">You haven&apos;t taken any quizzes yet.</p>
+              <p className="text-muted-foreground mb-4">{t("noQuizzesTakenYet")}</p>
               <Button asChild variant="outline">
-                <Link href="/quiz">Start your first quiz</Link>
+                <Link href="/quiz">{t("startFirstQuiz")}</Link>
               </Button>
             </div>
           </CardContent>
@@ -100,8 +102,8 @@ export default function DashboardPage() {
 
         <Card className="col-span-1">
           <CardHeader>
-            <CardTitle>Your Profile</CardTitle>
-            <CardDescription>Your account information</CardDescription>
+            <CardTitle>{t("yourProfile")}</CardTitle>
+            <CardDescription>{t("accountInfo")}</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="flex items-center space-x-4">
@@ -112,13 +114,13 @@ export default function DashboardPage() {
               <div>
                 <h3 className="text-lg font-semibold">{session.data?.user?.name || "User"}</h3>
                 <p className="text-muted-foreground">{session.data?.user?.email}</p>
-                <p className="text-xs text-muted-foreground mt-1">Joined recently</p>
+                <p className="text-xs text-muted-foreground mt-1">{t("joined")}</p>
               </div>
             </div>
           </CardContent>
           <CardFooter className="border-t pt-4 flex justify-between">
             <Button variant="outline" size="sm">
-              Edit Profile
+              {t("editProfile")}
             </Button>
             <Button
               variant="ghost"
@@ -128,7 +130,7 @@ export default function DashboardPage() {
                 router.push("/auth/login");
               }}
             >
-              Sign Out
+              {t("signOut")}
             </Button>
           </CardFooter>
         </Card>

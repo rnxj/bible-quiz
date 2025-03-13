@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import type { QuizSummary } from "@/types/quiz";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 interface ScoreDisplayProps {
@@ -10,6 +11,7 @@ interface ScoreDisplayProps {
 
 export const ScoreDisplay = ({ summary, className }: ScoreDisplayProps) => {
   const [showScore, setShowScore] = useState(false);
+  const t = useTranslations("Quiz.scoreDisplay");
 
   useEffect(() => {
     const timer = setTimeout(() => setShowScore(true), 400);
@@ -29,10 +31,8 @@ export const ScoreDisplay = ({ summary, className }: ScoreDisplayProps) => {
   return (
     <Card className={className}>
       <CardHeader className="pb-2">
-        <CardTitle className="text-2xl font-semibold text-center">Quiz Results</CardTitle>
-        <CardDescription className="text-center text-base">
-          You&apos;ve completed the quiz! Here&apos;s how you did:
-        </CardDescription>
+        <CardTitle className="text-2xl font-semibold text-center">{t("title")}</CardTitle>
+        <CardDescription className="text-center text-base">{t("description")}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="space-y-6 py-4">
@@ -43,18 +43,18 @@ export const ScoreDisplay = ({ summary, className }: ScoreDisplayProps) => {
             )}
           >
             <div className="flex flex-col items-center p-4 rounded-lg bg-primary/5 min-w-32">
-              <span className="text-sm text-muted-foreground mb-1">Correct</span>
+              <span className="text-sm text-muted-foreground mb-1">{t("correct")}</span>
               <span className="text-3xl font-bold text-green-600">{summary.correctAnswers}</span>
             </div>
 
             <div className="flex flex-col items-center p-4 rounded-lg bg-primary/5 min-w-32">
-              <span className="text-sm text-muted-foreground mb-1">Incorrect</span>
+              <span className="text-sm text-muted-foreground mb-1">{t("incorrect")}</span>
               <span className="text-3xl font-bold text-red-600">{summary.incorrectAnswers}</span>
             </div>
           </div>
 
           <div className="text-center">
-            <p className="text-sm text-muted-foreground mb-1">Accuracy</p>
+            <p className="text-sm text-muted-foreground mb-1">{t("accuracy")}</p>
             <p className={cn("text-4xl font-bold", getAccuracyColor())}>{accuracyPercentage}%</p>
           </div>
         </div>

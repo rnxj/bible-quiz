@@ -1,0 +1,397 @@
+{
+  "book": "1 Corinthians",
+  "chapter": 1,
+  "description": "This chapter focuses on Paul's introduction to the Corinthian church, addressing themes of unity and wisdom.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "How was Paul called to be an apostle of Christ Jesus?",
+      "options": [
+        "By his own desire",
+        "By the will of God",
+        "By the church's appointment",
+        "By direct selection from Jesus"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 2,
+      "question": "How does Paul address the church of God in Corinth?",
+      "options": [
+        "Those sanctified in Christ Jesus",
+        "New believers",
+        "The church of God",
+        "Mature Christians"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "verse": 3,
+      "question": "What blessing does Paul pronounce upon the Corinthians?",
+      "options": [
+        "Grace and peace to you from God our Father and the Lord Jesus Christ",
+        "May you be healthy and successful in life",
+        "May your faith increase",
+        "God bless you"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "verse": 4,
+      "question": "What does Paul always thank God for regarding the Corinthians?",
+      "options": [
+        "For the grace of God given to you in Christ Jesus",
+        "For their warm welcome",
+        "For their generous offerings",
+        "For their church growth"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "verse": 5,
+      "question": "In what ways were the Corinthians enriched in Christ?",
+      "options": [
+        "In money and wealth",
+        "In all speech and all knowledge",
+        "In spiritual gifts and miracles",
+        "In numbers and influence"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 7,
+      "question": "What did the Christians not lack while waiting for the revelation of Jesus Christ?",
+      "options": ["Patience", "Faith", "Any spiritual gift", "Love"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "verse": 8,
+      "question": "How will believers be presented on the day of our Lord Jesus Christ?",
+      "options": ["As holy ones", "As joyful ones", "As blameless", "As confirmed ones"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "verse": 9,
+      "question": "To what has God called you?",
+      "options": [
+        "To His kingdom",
+        "To fellowship with His Son, Jesus Christ our Lord",
+        "To eternal life",
+        "To serve"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "verse": 10,
+      "question": "How does Paul urge the Corinthians to live?",
+      "options": [
+        "That all of you worship God",
+        "That all of you agree with one another and that there be no divisions among you, but that you be perfectly united in mind and thought",
+        "That you all love one another",
+        "That you all remain in meditation"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 12,
+      "question": "What was the sign of divisions in the Corinthian church?",
+      "options": [
+        "Their offerings",
+        "One says, 'I follow Paul,' another, 'I follow Apollos,' another, 'I follow Cephas,' still another, 'I follow Christ'",
+        "Their different worship styles",
+        "Their preaching styles"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 13,
+      "question": "What question does Paul ask the Corinthians?",
+      "options": [
+        "Is Christ divided?",
+        "Do you love me?",
+        "Do you follow my teaching?",
+        "Why do you oppose me?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 12,
+      "verse": 17,
+      "question": "What was Christ's purpose in sending Paul?",
+      "options": [
+        "Not to baptize but to preach the gospel",
+        "To establish churches",
+        "To perform miracles",
+        "To appoint apostles"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "verse": 18,
+      "question": "How does the message of the cross appear to those who are perishing?",
+      "options": ["Valuable", "Foolishness", "Doubtful", "Meaningless"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 25,
+      "question": "What is the foolishness of God wiser than?",
+      "options": ["Human strength", "Human counsel", "Human wisdom", "Human knowledge"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "verse": 30,
+      "question": "What has Christ Jesus become for us from God?",
+      "options": [
+        "Wisdom, righteousness, holiness and redemption",
+        "Savior and priest",
+        "Prophet and king",
+        "Priest and judge"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 16,
+      "verse": 6,
+      "question": "How was God's testimony about Christ confirmed in the Corinthians?",
+      "options": [
+        "By Paul's prophecy",
+        "By the apostles' testimony",
+        "By the Spirit's revelation",
+        "By their devotion"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "verse": 11,
+      "question": "From whom did Paul learn about the divisions among the Corinthians?",
+      "options": ["From Peter", "From some from Chloe's household", "From Apollos", "From Timothy"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "verse": 14,
+      "question": "Whom did Paul baptize in the Corinthian church?",
+      "options": ["Everyone", "Ten people", "Only Crispus and Gaius", "No one"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 19,
+      "verse": 15,
+      "question": "Why did Paul baptize so few people?",
+      "options": [
+        "Because he didn't have time",
+        "Because others had the gift of baptizing",
+        "So no one can say that you were baptized in my name",
+        "Because others refused to be baptized"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 20,
+      "verse": 16,
+      "question": "Who else did Paul baptize?",
+      "options": [
+        "The church elders",
+        "The household of Stephanas",
+        "All disciples",
+        "Everyone else"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 21,
+      "verse": 19,
+      "question": "Where is it written: \"I will destroy the wisdom of the wise; the intelligence of the intelligent I will frustrate\"?",
+      "options": ["In Psalms", "In Isaiah", "In Proverbs", "In Jeremiah"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "verse": 20,
+      "question": "How has God treated the wisdom of this world?",
+      "options": [
+        "He has exalted it",
+        "He has clarified it",
+        "He has made it foolish",
+        "He has strengthened it"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 23,
+      "verse": 21,
+      "question": "What did the world fail to know through its wisdom?",
+      "options": ["God", "Christ", "The gospel", "The Holy Spirit"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 24,
+      "verse": 22,
+      "question": "What did Jews demand to accept Christ?",
+      "options": ["Wisdom", "Signs", "Teaching", "Prophecy"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 25,
+      "verse": 23,
+      "question": "How did preaching Christ crucified appear to the Jews?",
+      "options": ["As foolishness", "As a stumbling block", "As joyful", "As acceptable"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 24,
+      "question": "To those who are called, both Jews and Greeks, what is Christ?",
+      "options": ["The power of God and the wisdom of God", "A prophet", "A savior", "A mediator"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 27,
+      "verse": 26,
+      "question": "How many in the church were wise by human standards when God called them?",
+      "options": ["Many", "All", "Half", "Not many"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 28,
+      "verse": 27,
+      "question": "What did God choose to shame the wise?",
+      "options": ["The honorable", "The foolish things of the world", "Kings", "Nobles"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "verse": 28,
+      "question": "What did God choose to nullify the things that are?",
+      "options": [
+        "The things that are not",
+        "The strong things",
+        "The wise things",
+        "The weak things"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "verse": 29,
+      "question": "Why did God act this way?",
+      "options": [
+        "To confuse people",
+        "So that no one may boast before him",
+        "To show His power",
+        "To humble the wealthy"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "verse": 31,
+      "question": "How should the one who boasts, boast?",
+      "options": ["About his strength", "About his wisdom", "In the Lord", "About his influence"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 32,
+      "verse": 1,
+      "question": "Who wrote to the Corinthians along with Paul?",
+      "options": ["Apollos", "Sosthenes", "Cephas", "Timothy"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "verse": 2,
+      "question": "Whose name do the Corinthians call on?",
+      "options": [
+        "Paul's name",
+        "Peter's name",
+        "The name of our Lord Jesus Christ",
+        "Sosthenes' name"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 34,
+      "verse": 5,
+      "question": "In what ways were the Corinthians made complete in Christ Jesus?",
+      "options": [
+        "In all speech and all knowledge",
+        "In all preaching and all wisdom",
+        "In all strength and all power",
+        "In all love and all patience"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 35,
+      "verse": 10,
+      "question": "By whose name does Paul appeal to the Corinthians?",
+      "options": [
+        "In the name of God",
+        "In the name of our Lord Jesus Christ",
+        "In the name of the Holy Spirit",
+        "In the name of the apostles"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "verse": 17,
+      "question": "How was Paul sent to preach the gospel so that the cross would not be emptied of its power?",
+      "options": ["Not with wisdom of words", "With power", "With might", "With miracles"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 37,
+      "verse": 20,
+      "question": "Who does Paul ask about in his writing regarding the world?",
+      "options": [
+        "Kings and officials",
+        "Temple priests and Levites",
+        "The wise, the scholar, the philosopher of this age",
+        "Preachers and teachers"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 38,
+      "verse": 25,
+      "question": "What is God's weakness stronger than?",
+      "options": ["Human strength", "Human wisdom", "Human knowledge", "Human influence"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 39,
+      "verse": 26,
+      "question": "How many in the called Corinthian church were of noble birth?",
+      "options": ["Many", "Some", "Not many", "None"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 40,
+      "verse": 27,
+      "question": "What did God choose to shame the strong?",
+      "options": [
+        "The foolish things",
+        "The weak things of the world",
+        "The lowly things",
+        "The despised things"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}
