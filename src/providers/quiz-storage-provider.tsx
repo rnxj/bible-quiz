@@ -29,6 +29,26 @@ interface QuizStorageContextType {
     error: unknown;
     refetch: () => Promise<unknown>;
   };
+  useGetLeaderboard: (
+    bookId: string,
+    chapterNumber: number,
+    limit?: number,
+  ) => {
+    data:
+      | Array<{
+          userId: string | null;
+          correctAnswers: number;
+          totalQuestions: number;
+          accuracy: number;
+          attemptCount: number;
+          lastAttemptTime: number;
+        }>
+      | undefined;
+    isLoading: boolean;
+    isError: boolean;
+    error: unknown;
+    refetch: () => Promise<unknown>;
+  };
   clearHistory: (bookId?: string, chapterNumber?: number) => Promise<void>;
   syncStatus: "idle" | "syncing" | "success" | "error";
   isSynced: boolean;

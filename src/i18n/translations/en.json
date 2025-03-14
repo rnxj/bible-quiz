@@ -131,7 +131,10 @@
     "decrease": "decrease",
     "comparedToFirstAttempt": "compared to your first attempt",
     "showAnswers": "Show Answers",
-    "hideAnswers": "Hide Answers"
+    "hideAnswers": "Hide Answers",
+    "leaderboard": "Leaderboard",
+    "errorLoading": "Error loading leaderboard",
+    "correctAnswers": "Correct Answers"
   },
   "Metadata": {
     "title": "Bible Quiz App",
