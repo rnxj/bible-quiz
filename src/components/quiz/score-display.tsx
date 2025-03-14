@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import type { QuizAttempt } from "@/store/quiz-history";
 import type { QuizData } from "@/types/quiz";
+import { calculateAccuracyPercentage, calculateCorrectAnswers } from "@/utils/quiz-calculations";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { AnswerReview } from "./answer-review";
@@ -17,14 +18,10 @@ export function ScoreDisplay({ attempt, quizData }: ScoreDisplayProps) {
   const t = useTranslations("Quiz");
   const [showAnswers, setShowAnswers] = useState(false);
 
-  // Calculate correct answers by checking each result against the quiz data
-  const correctCount = attempt.results.filter((r) => {
-    const question = quizData.questions.find((q) => q.id === r.questionId);
-    return question && r.userAnswer === question.correctAnswer;
-  }).length;
-
+  // Calculate correct answers and score percentage using our utility functions
+  const correctCount = calculateCorrectAnswers(attempt, quizData);
   const totalQuestions = attempt.results.length;
-  const scorePercentage = Math.round((correctCount / totalQuestions) * 100);
+  const scorePercentage = calculateAccuracyPercentage(attempt, quizData);
 
   return (
     <Card className="w-full">

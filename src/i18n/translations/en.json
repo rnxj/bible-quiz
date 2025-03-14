@@ -3,6 +3,13 @@
     "close": "Close",
     "menu": "Menu"
   },
+  "SyncStatus": {
+    "syncing": "Syncing quiz data...",
+    "syncSuccess": "Quiz data synced successfully!",
+    "syncError": "Failed to sync quiz data",
+    "syncErrorToast": "There was an error syncing your quiz data. Your progress is still saved locally.",
+    "dismiss": "Dismiss"
+  },
   "HomePage": {
     "title": "Bible Quiz App",
     "subtitle": "Test your knowledge of the Bible with interactive quizzes from various books and chapters.",
@@ -44,7 +51,14 @@
     "accountInfo": "Your account information",
     "joined": "Joined recently",
     "editProfile": "Edit Profile",
-    "signOut": "Sign Out"
+    "signOut": "Sign Out",
+    "streak": "Streak",
+    "currentStreak": "Days in a row",
+    "bookStatistics": "Book Statistics",
+    "attempts": "Attempts",
+    "correct": "Correct",
+    "noBookStats": "No book statistics available yet.",
+    "chapter": "Chapter {number}"
   },
   "Auth": {
     "welcomeBack": "Welcome Back",
@@ -109,14 +123,13 @@
       "yourAnswer": "Your answer",
       "correctAnswer": "Correct answer"
     },
+    "progressChart": "Progress Chart",
+    "improvementPositive": "{value}% improvement since your first attempt",
+    "improvementNegative": "{value}% decrease since your first attempt",
     "progressOverTime": "Progress Over Time",
     "improvement": "improvement",
     "decrease": "decrease",
     "comparedToFirstAttempt": "compared to your first attempt",
-    "yourAnswers": "Your Answers",
-    "noDetailedAnswers": "Detailed answer information is not available for this attempt.",
-    "yourAnswer": "Your answer",
-    "correctAnswer": "Correct answer",
     "showAnswers": "Show Answers",
     "hideAnswers": "Hide Answers"
   },

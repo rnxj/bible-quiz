@@ -3,6 +3,7 @@
 import type { Locale } from "@/i18n/config";
 import { getAvailableBooks, getBookById, getChapterInfo, loadQuizData } from "@/lib/quiz-loader";
 import type { BookInfo, ChapterInfo, QuizData } from "@/types/quiz";
+import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 
 export function useAvailableBooks(locale: Locale) {
@@ -92,33 +93,30 @@ export function useChapterInfo(bookId: string, chapterNumber: number, locale: Lo
 }
 
 export function useQuizData(bookId: string, chapterNumber: number, locale: Locale) {
-  const [quizData, setQuizData] = useState<QuizData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
-
-  useEffect(() => {
-    async function fetchQuizData() {
-      try {
-        setLoading(true);
-        const data = await loadQuizData(bookId, chapterNumber, locale);
-        setQuizData(data);
-        setError(null);
-      } catch (err) {
-        console.error(`Error fetching quiz data for ${bookId} chapter ${chapterNumber}:`, err);
-        setError(
-          err instanceof Error
-            ? err
-            : new Error(`Failed to fetch quiz data for ${bookId} chapter ${chapterNumber}`),
-        );
-      } finally {
-        setLoading(false);
+  // Use React Query for data fetching
+  const {
+    data: quizData,
+    isLoading,
+    isError,
+    error: queryError,
+    refetch,
+  } = useQuery<QuizData, Error>({
+    queryKey: ["quizData", bookId, chapterNumber, locale],
+    queryFn: async () => {
+      if (!bookId || !chapterNumber) {
+        throw new Error("Book ID and chapter number are required");
       }
-    }
+      return loadQuizData(bookId, chapterNumber, locale);
+    },
+    enabled: !!bookId && !!chapterNumber,
+    staleTime: 1000 * 60 * 5, // 5 minutes
+  });
 
-    if (bookId && chapterNumber) {
-      fetchQuizData();
-    }
-  }, [bookId, chapterNumber, locale]);
-
-  return { quizData, loading, error };
+  return {
+    quizData: quizData || null,
+    isLoading,
+    isError,
+    error: queryError,
+    refetch,
+  };
 }

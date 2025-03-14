@@ -9,6 +9,7 @@ export interface QuizAttempt {
   book: string;
   chapterNumber: number;
   totalQuestions: number;
+  correctAnswers: number;
   results: QuizResult[];
   timestamp: number;
 }
@@ -22,42 +23,46 @@ interface QuizHistoryState {
   clearHistory: (bookId?: string, chapterNumber?: number) => void;
 }
 
-// Create the store with persistence
+// Create the quiz history store
 export const useQuizHistory = create<QuizHistoryState>()(
   persist(
     (set, get) => ({
       attempts: {},
 
       // Add a new quiz attempt
-      addAttempt: (attemptData) => {
-        const { bookId, chapterNumber } = attemptData;
-        const key = `${bookId}_${chapterNumber}`;
-        const id = `${key}_${Date.now()}`;
-
-        const newAttempt: QuizAttempt = {
-          ...attemptData,
-          id,
-          timestamp: Date.now(),
-        };
+      addAttempt: (attempt) => {
+        const key = `${attempt.bookId}_${attempt.chapterNumber}`;
+        const timestamp = Date.now();
+        const id = `${key}_${timestamp}`;
 
         set((state) => {
           const existingAttempts = state.attempts[key] || [];
           return {
             attempts: {
               ...state.attempts,
-              [key]: [...existingAttempts, newAttempt],
+              [key]: [
+                ...existingAttempts,
+                {
+                  id,
+                  ...attempt,
+                  timestamp,
+                },
+              ],
             },
           };
         });
-
-        return newAttempt;
       },
 
       // Get all attempts for a specific book chapter
       getAttempts: (bookId, chapterNumber) => {
         const key = `${bookId}_${chapterNumber}`;
-        const state = get();
-        return state.attempts[key] || [];
+        const attempts = get().attempts[key] || [];
+
+        // Ensure all attempts have the correctAnswers field
+        return attempts.map((attempt) => ({
+          ...attempt,
+          correctAnswers: attempt.correctAnswers || 0, // Default to 0 if not present
+        }));
       },
 
       // Get the most recent attempt for a specific book chapter
@@ -65,7 +70,7 @@ export const useQuizHistory = create<QuizHistoryState>()(
         const attempts = get().getAttempts(bookId, chapterNumber);
         if (attempts.length === 0) return null;
 
-        // Sort by timestamp (newest first) and return the first one
+        // Sort by timestamp in descending order and return the first one
         return [...attempts].sort((a, b) => b.timestamp - a.timestamp)[0];
       },
 
@@ -77,23 +82,21 @@ export const useQuizHistory = create<QuizHistoryState>()(
           return;
         }
 
-        if (bookId && chapterNumber) {
-          // Clear history for specific chapter
+        if (chapterNumber !== undefined) {
+          // Clear history for a specific book chapter
           const key = `${bookId}_${chapterNumber}`;
-          set((state) => {
-            const newAttempts = { ...state.attempts };
-            delete newAttempts[key];
-            return { attempts: newAttempts };
-          });
+          set((state) => ({
+            attempts: Object.fromEntries(Object.entries(state.attempts).filter(([k]) => k !== key)),
+          }));
           return;
         }
 
-        // Clear history for specific book (all chapters)
+        // Clear history for all chapters of a specific book
         set((state) => {
-          const newAttempts = { ...state.attempts };
-          for (const key of Object.keys(newAttempts)) {
-            if (key.startsWith(`${bookId}_`)) {
-              delete newAttempts[key];
+          const newAttempts: Record<string, QuizAttempt[]> = {};
+          for (const key in state.attempts) {
+            if (!key.startsWith(`${bookId}_`)) {
+              newAttempts[key] = state.attempts[key];
             }
           }
           return { attempts: newAttempts };
@@ -103,8 +106,6 @@ export const useQuizHistory = create<QuizHistoryState>()(
     {
       name: "bible-quiz-history",
       storage: createJSONStorage(() => localStorage),
-      // Only persist the attempts data, not the methods
-      partialize: (state) => ({ attempts: state.attempts }),
     },
   ),
 );
