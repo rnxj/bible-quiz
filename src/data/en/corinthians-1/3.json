@@ -1,0 +1,383 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 3,
+  "description": "This chapter addresses spiritual maturity, the role of church leaders, and the concept of believers as God's temple.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "How did Paul have to address the Corinthians?",
+      "options": [
+        "As people who live by the Spirit",
+        "As people who are still worldly—mere infants in Christ",
+        "As mature believers",
+        "As God's children"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 2,
+      "question": "What did Paul give to the Corinthians?",
+      "options": ["Solid food", "Milk", "Water", "Bread"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "Why couldn't the Corinthians handle solid food?",
+      "options": [
+        "They were not yet ready for it",
+        "Paul refused to give it to them",
+        "They didn't want it",
+        "It wasn't available"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "verse": 3,
+      "question": "What signs showed that the Corinthians were still worldly?",
+      "options": [
+        "Not praying",
+        "Not reading scripture",
+        "Jealousy and quarreling among them",
+        "Not attending church"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "verse": 4,
+      "question": "What were the Corinthians saying that showed they were acting like mere humans?",
+      "options": [
+        "I am a Jew/I am a Greek",
+        "I follow Moses/I follow Elijah",
+        "I follow Paul/I follow Apollos",
+        "I follow Peter/I follow James"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "verse": 5,
+      "question": "What are Paul and Apollos?",
+      "options": ["Leaders", "Priests", "Prophets", "Only servants"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 7,
+      "verse": 6,
+      "question": "What did Paul do?",
+      "options": ["Planted the seed", "Watered it", "Harvested it", "Made it grow"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "verse": 6,
+      "question": "What did Apollos do?",
+      "options": ["Planted the seed", "Watered it", "Harvested it", "Made it grow"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "verse": 6,
+      "question": "Who made the seed grow?",
+      "options": ["Paul", "Apollos", "God", "The Corinthians"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "verse": 7,
+      "question": "What does Paul say about the one who plants and the one who waters?",
+      "options": [
+        "They are important",
+        "Neither is anything",
+        "They are greater than God",
+        "They do everything"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 8,
+      "question": "What is the relationship between the one who plants and the one who waters?",
+      "options": [
+        "They are different",
+        "They have one purpose",
+        "They are enemies",
+        "They are competitors"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 8,
+      "question": "How will the one who plants and the one who waters be rewarded?",
+      "options": [
+        "Equally",
+        "Based on ability",
+        "According to their own labor",
+        "They won't be rewarded"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 13,
+      "verse": 9,
+      "question": "What are Paul and Apollos?",
+      "options": [
+        "Co-workers in God's service",
+        "God's children",
+        "God's friends",
+        "God's leaders"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 14,
+      "verse": 9,
+      "question": "What are the Corinthians?",
+      "options": [
+        "God's servants",
+        "God's church",
+        "God's field, God's building",
+        "Priests in God's temple"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "verse": 10,
+      "question": "To what does Paul compare himself?",
+      "options": ["To God", "To a king", "To a wise builder", "To a good farmer"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "verse": 10,
+      "question": "What did Paul do?",
+      "options": [
+        "Completed the building",
+        "Laid a foundation",
+        "Built the walls",
+        "Put on the roof"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "verse": 11,
+      "question": "What is the only foundation that has been laid?",
+      "options": ["Paul", "Apollos", "Jesus Christ", "God"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 18,
+      "verse": 12,
+      "question": "What materials can be used to build on the foundation?",
+      "options": [
+        "Only gold and silver",
+        "Only silver and costly stones",
+        "Only wood, hay and straw",
+        "Gold, silver, costly stones, wood, hay or straw"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 19,
+      "verse": 13,
+      "question": "When will each person's work be shown for what it is?",
+      "options": [
+        "The Day will bring it to light",
+        "Now",
+        "At the Second Coming",
+        "At the Final Judgment"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 20,
+      "verse": 13,
+      "question": "What will test the quality of each person's work?",
+      "options": ["God", "The church", "Fire", "People"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 21,
+      "verse": 14,
+      "question": "What happens if what has been built survives?",
+      "options": [
+        "The builder will be praised",
+        "The builder will receive a reward",
+        "The builder will be saved",
+        "The builder can build more"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "verse": 15,
+      "question": "What happens if what has been built is burned up?",
+      "options": [
+        "The builder will not be saved",
+        "The builder will suffer loss but yet will be saved—even though only as one escaping through the flames",
+        "Only the builder will be punished",
+        "The builder will not see God"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 23,
+      "verse": 16,
+      "question": "What are believers?",
+      "options": ["God's temple", "God's people", "God's family", "God's army"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 24,
+      "verse": 16,
+      "question": "Who dwells in believers?",
+      "options": ["Jesus", "God", "God's Spirit", "The Holy Spirit"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 25,
+      "verse": 17,
+      "question": "What will happen to anyone who destroys God's temple?",
+      "options": [
+        "They will be punished",
+        "They will be forgiven",
+        "God will destroy them",
+        "They will repent"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 26,
+      "verse": 17,
+      "question": "What is God's temple?",
+      "options": ["Large", "Beautiful", "Sacred", "Exalted"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 27,
+      "verse": 18,
+      "question": "What should one do if they think they are wise by the standards of this age?",
+      "options": [
+        "They should develop their wisdom",
+        "They should become 'fools' so that they may become wise",
+        "They should teach others",
+        "They should display their wisdom"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "verse": 19,
+      "question": "How is the wisdom of this world seen in God's sight?",
+      "options": ["As wisdom", "As foolishness", "As valuable", "As wonderful"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "verse": 19,
+      "question": "How does God catch the wise?",
+      "options": ["In their love", "In their craftiness", "In their strength", "In their money"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "verse": 20,
+      "question": "What are the thoughts of the wise?",
+      "options": ["Intelligent", "Incomprehensible", "Lofty", "Futile"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 31,
+      "verse": 21,
+      "question": "How should believers regard human leaders?",
+      "options": [
+        "They should respect them",
+        "They should worship them",
+        "They should not boast about them",
+        "They should follow them"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 32,
+      "verse": 21,
+      "question": "Who do all things belong to?",
+      "options": ["God", "You (believers)", "Christ", "Paul"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "verse": 22,
+      "question": "Which of these people does Paul NOT mention?",
+      "options": ["Apollos", "Cephas", "James", "Life"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 34,
+      "verse": 22,
+      "question": "Which of these things does Paul NOT mention?",
+      "options": ["Life", "Death", "The present", "The past"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 35,
+      "verse": 23,
+      "question": "Who do believers belong to?",
+      "options": ["God", "Christ", "The world", "Paul"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "verse": 23,
+      "question": "Who does Christ belong to?",
+      "options": ["Paul", "The church", "God", "Us"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 37,
+      "verse": 1,
+      "question": "How does Paul describe the Corinthians?",
+      "options": [
+        "As people who live by the Spirit",
+        "As intelligent people",
+        "As people who are still worldly—mere infants in Christ",
+        "As God's children"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 38,
+      "verse": 15,
+      "question": "What happens to someone whose work is burned up?",
+      "options": [
+        "The builder will suffer loss but yet will be saved",
+        "The builder will lose eternal life",
+        "The builder will be expelled from the church",
+        "The builder must build again"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 39,
+      "verse": 10,
+      "question": "How should others build on the foundation that Paul laid?",
+      "options": ["Quickly", "Beautifully", "With care", "Tall"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 40,
+      "verse": 9,
+      "question": "Who do Paul and his fellow workers work for?",
+      "options": ["Themselves", "The Corinthians", "God", "The world"],
+      "correctAnswer": 2
+    }
+  ]
+}
