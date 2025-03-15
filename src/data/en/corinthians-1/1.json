@@ -1,4 +1,5 @@
 {
+  "$schema": "../../schema/bible-quiz-schema.json",
   "book": "1 Corinthians",
   "chapter": 1,
   "description": "This chapter focuses on Paul's introduction to the Corinthian church, addressing themes of unity and wisdom.",
