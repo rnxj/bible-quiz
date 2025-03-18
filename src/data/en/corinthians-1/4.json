@@ -1,0 +1,418 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 4,
+  "description": "This chapter discusses the true nature of apostleship, Paul's fatherly concern, and spiritual authority.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "How should people regard Paul and his fellow workers?",
+      "options": [
+        "As servants of God",
+        "As servants of Christ and as those entrusted with the mysteries God has revealed",
+        "As apostles",
+        "As preachers"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 2,
+      "question": "What is required of those who have been given a trust?",
+      "options": ["That they prove faithful", "Wisdom", "Knowledge", "Intelligence"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "verse": 3,
+      "question": "What did Paul care very little about?",
+      "options": [
+        "God's judgment",
+        "Christ's opinion",
+        "If he was judged by the Corinthians or by any human court",
+        "The apostles' evaluation"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "verse": 3,
+      "question": "What did Paul not do to himself?",
+      "options": ["Praise himself", "Boast about himself", "Judge himself", "Criticize himself"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "verse": 4,
+      "question": "How did Paul view his own conscience?",
+      "options": [
+        "As guilty",
+        "My conscience is clear",
+        "As needing severe judgment",
+        "As superior"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 4,
+      "question": "Who judges Paul according to his own words?",
+      "options": ["Only himself", "The church", "The apostles", "It is the Lord who judges me"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 7,
+      "verse": 5,
+      "question": "What does Paul warn against doing before the appointed time?",
+      "options": ["Preaching", "Therefore judge nothing", "Praying", "Helping one another"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "verse": 5,
+      "question": "What will the Lord do when He comes?",
+      "options": [
+        "Judge everyone",
+        "Judge the church",
+        "He will bring to light what is hidden in darkness and will expose the motives of the heart",
+        "Create a new world"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 9,
+      "verse": 5,
+      "question": "What will each person receive from God?",
+      "options": ["Judgment", "Their praise", "Destruction", "Blessing"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 6,
+      "question": "To whom did Paul apply these things as an example?",
+      "options": [
+        "Peter and John",
+        "Himself and Silas",
+        "Myself and Apollos",
+        "Himself and Timothy"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "verse": 6,
+      "question": "What should believers not do beyond what is written?",
+      "options": ["Go below", "Do not go beyond", "Go less than", "Go equal to"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 6,
+      "question": "How should one not become puffed up?",
+      "options": [
+        "In being a follower of one of us over against the other",
+        "By hating one another",
+        "By judging one another",
+        "By not forgiving one another"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "verse": 7,
+      "question": "What should a person not boast about as though they did not receive it?",
+      "options": ["Love", "Wisdom", "Faith", "And if you did receive it"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 14,
+      "verse": 8,
+      "question": "How did the Corinthians view themselves?",
+      "options": [
+        "Already you have all you want! Already you have become rich! You have begun to reign—and that without us!",
+        "As weak",
+        "As poor",
+        "As ignorant"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 15,
+      "verse": 9,
+      "question": "How did God put the apostles on display according to Paul?",
+      "options": [
+        "As superior",
+        "As honorable",
+        "At the end of the procession, like those condemned to die in the arena",
+        "As kings"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "verse": 9,
+      "question": "To whom have the apostles been made a spectacle?",
+      "options": [
+        "To God",
+        "To Christ",
+        "To the whole universe, to angels as well as to human beings",
+        "To the church"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "verse": 10,
+      "question": "For whose sake were Paul and his fellow workers fools?",
+      "options": ["For Christ", "For the gospel", "For the Corinthians", "For their faith"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 10,
+      "question": "How did Paul sarcastically describe the Corinthians?",
+      "options": [
+        "You are fools in Christ",
+        "You are so wise in Christ",
+        "You are faithful in Christ",
+        "You are weak in Christ"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "verse": 11,
+      "question": "What conditions did Paul and his fellow workers endure?",
+      "options": [
+        "Contentment and joy",
+        "Riches and glory",
+        "To this very hour we go hungry and thirsty, we are in rags, we are brutally treated, we are homeless",
+        "Honor and respect"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 20,
+      "verse": 12,
+      "question": "With what did Paul and his fellow workers work?",
+      "options": [
+        "We work hard with our own hands",
+        "With others' help",
+        "With church money",
+        "With God's power"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "verse": 1213,
+      "question": "How did Paul and his fellow workers respond when mistreated?",
+      "options": [
+        "When we are cursed, we bless; when we are persecuted, we endure it; when we are slandered, we answer kindly",
+        "When cursed, we curse back",
+        "When persecuted, we seek revenge",
+        "When slandered, we slander back"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "verse": 13,
+      "question": "How were Paul and his fellow workers viewed?",
+      "options": [
+        "As honorable",
+        "As superior",
+        "We have become the scum of the earth, the garbage of the world",
+        "As wise"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 23,
+      "verse": 14,
+      "question": "Why did Paul write these things?",
+      "options": [
+        "To shame the Corinthians",
+        "To rebuke the Corinthians",
+        "To warn you as my dear children",
+        "To anger the Corinthians"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 24,
+      "verse": 14,
+      "question": "How did Paul regard the Corinthians?",
+      "options": ["As enemies", "As my dear children", "As brothers", "As friends"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 25,
+      "verse": 15,
+      "question": "Even if the Corinthians had many guardians in Christ, how many fathers did they have?",
+      "options": [
+        "Ten thousand guardians, many fathers",
+        "Even if you had ten thousand guardians in Christ, you do not have many fathers",
+        "Many guardians, many fathers",
+        "Many guardians, no fathers"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 15,
+      "question": "How did Paul become a father to the Corinthians?",
+      "options": [
+        "For in Christ Jesus I became your father through the gospel",
+        "By meeting them",
+        "By praying for them",
+        "By baptizing them"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 27,
+      "verse": 16,
+      "question": "What did Paul urge the Corinthians to do?",
+      "options": [
+        "Worship God",
+        "Study the Scriptures",
+        "Therefore I urge you to imitate me",
+        "Love one another"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 28,
+      "verse": 17,
+      "question": "Whom did Paul send to the Corinthians?",
+      "options": ["Apollos", "Silas", "Timothy", "Barnabas"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 29,
+      "verse": 17,
+      "question": "How did Paul refer to Timothy?",
+      "options": ["Brother", "Fellow worker", "My son whom I love", "My friend"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 30,
+      "verse": 17,
+      "question": "What would Timothy remind the Corinthians of?",
+      "options": [
+        "My way of life in Christ Jesus",
+        "Christ's teachings",
+        "The apostles' rules",
+        "Paul's sermons"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 31,
+      "verse": 18,
+      "question": "How had some of the Corinthians become?",
+      "options": ["Fearful", "Sorrowful", "Arrogant", "Repentant"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 32,
+      "verse": 18,
+      "question": "Why had some people become arrogant?",
+      "options": [
+        "As if I were not coming to you",
+        "Because Paul was against them",
+        "Because Paul had approved of them",
+        "Because Paul had praised them"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 33,
+      "verse": 19,
+      "question": "When would Paul come to Corinth?",
+      "options": [
+        "Next year",
+        "I will come to you very soon, if the Lord is willing",
+        "In two months",
+        "He would not come"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "verse": 19,
+      "question": "What did Paul want to find out when he came to Corinth?",
+      "options": [
+        "Their wishes",
+        "Their faith",
+        "Not only how these arrogant people are talking, but what power they have",
+        "Their spiritual condition"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 35,
+      "verse": 20,
+      "question": "What is the kingdom of God?",
+      "options": [
+        "For the kingdom of God is not a matter of talk but of power",
+        "Love",
+        "Wisdom",
+        "Peace"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 36,
+      "verse": 21,
+      "question": "What did Paul ask the Corinthians?",
+      "options": [
+        "If they were ready to receive him",
+        "If they were ready to pray for him",
+        "If they were ready to give an offering for him",
+        "What do you prefer? Shall I come to you with a rod of discipline, or shall I come in love and with a gentle spirit?"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 37,
+      "verse": 1,
+      "question": "Who should be regarded as those entrusted with the mysteries God has revealed?",
+      "options": ["Moses", "The apostles", "Paul", "Servants of Christ"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 38,
+      "verse": 7,
+      "question": "Who makes you different from anyone else?",
+      "options": ["Yourself", "Paul", "The Lord", "People"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 39,
+      "verse": 10,
+      "question": "What contrasts does Paul draw between himself and his co-workers versus the Corinthians?",
+      "options": [
+        "We are fools for Christ, but you are so wise in Christ! We are weak, but you are strong! You are honored, we are dishonored!",
+        "We know the truth, you do not",
+        "We are sent by God, you are sent by men",
+        "We are blessed, you are cursed"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 40,
+      "verse": 1920,
+      "question": "What did Paul want to find out about the arrogant people?",
+      "options": [
+        "Both their talk and their power",
+        "Not only how these arrogant people are talking, but what power they have",
+        "Their faith and conduct",
+        "Their worship practices and devotion"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}
