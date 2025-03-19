@@ -1,0 +1,303 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 5,
+  "description": "This chapter addresses dealing with sexual immorality in the church, the importance of church discipline, and the necessity of removing sin from the congregation.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What type of sin was reported in the Corinthian church?",
+      "options": ["Lying", "Theft", "Sexual immorality", "Murder"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "How serious was the sexual immorality in the Corinthian church?",
+      "options": ["Common", "Of a kind that even pagans do not tolerate", "Normal", "Not severe"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "verse": 1,
+      "question": "What was the specific nature of this sexual immorality?",
+      "options": [
+        "A man with his sister",
+        "A man is sleeping with his father's wife",
+        "A man with another man's wife",
+        "A man with multiple women"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "How did the Corinthians respond to this sin?",
+      "options": ["They mourned", "They were angry", "They were indifferent", "And you are proud!"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 5,
+      "verse": 2,
+      "question": "What should the Corinthians have done with the man who did this?",
+      "options": [
+        "Forgiven him",
+        "Judged him",
+        "Have put out of your fellowship the man who has been doing this",
+        "Counseled him"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "verse": 3,
+      "question": "How was Paul present with the Corinthians?",
+      "options": [
+        "Physically present",
+        "Even though I am not physically present, I am with you in spirit",
+        "Spiritually absent",
+        "No connection with them"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "verse": 34,
+      "question": "What had Paul already done regarding the person who committed this sin?",
+      "options": [
+        "Forgiven him",
+        "Counseled him",
+        "Left him unforgiven",
+        "I have already passed judgment in the name of our Lord Jesus"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 8,
+      "verse": 4,
+      "question": "With what power should they be assembled?",
+      "options": [
+        "Paul's power",
+        "Church power",
+        "Apostolic power",
+        "And the power of our Lord Jesus is present"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 9,
+      "verse": 5,
+      "question": "To whom should they hand over this man?",
+      "options": ["To hell", "To suffering", "Hand this man over to Satan", "To punishment"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "verse": 5,
+      "question": "What was the purpose of handing this man over to Satan?",
+      "options": [
+        "To judge him",
+        "To punish him",
+        "For the destruction of the flesh, so that his spirit may be saved on the day of the Lord",
+        "To shame him"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "verse": 6,
+      "question": "How did Paul describe their boasting?",
+      "options": ["Your boasting is not good", "Is appropriate", "Is beneficial", "Is excessive"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 12,
+      "verse": 6,
+      "question": "In Paul's analogy, what does a little yeast do?",
+      "options": [
+        "Purifies the dough",
+        "Leavens the whole batch of dough",
+        "Improves the dough",
+        "Destroys the dough"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "verse": 7,
+      "question": "According to Paul's instruction, what should the Corinthians get rid of?",
+      "options": ["New yeast", "Get rid of the old yeast", "The dough", "The unleavened bread"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 7,
+      "question": "Who is our Passover lamb?",
+      "options": ["Jewish festival", "Moses", "Christ, our Passover lamb", "God"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "verse": 7,
+      "question": "What has happened to Christ, our Passover lamb?",
+      "options": [
+        "He has been glorified",
+        "He has been honored",
+        "Has been sacrificed",
+        "He has been raised"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "verse": 8,
+      "question": "With what should we not keep the Festival?",
+      "options": [
+        "With sadness",
+        "With joy",
+        "Not with the old bread leavened with malice and wickedness",
+        "With noise"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "verse": 8,
+      "question": "With what bread should we keep the Festival?",
+      "options": [
+        "With regular bread",
+        "With leavened bread",
+        "With Christ's bread",
+        "With the unleavened bread of sincerity and truth"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 18,
+      "verse": 9,
+      "question": "What had Paul previously written to the Corinthians?",
+      "options": [
+        "To be loving",
+        "To be humble",
+        "I wrote to you in my letter not to associate with sexually immoral people",
+        "To respect one another"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 19,
+      "verse": 10,
+      "question": "With whom did Paul NOT mean they should avoid associating?",
+      "options": [
+        "Brothers",
+        "Apostles",
+        "Believers",
+        "Not at all meaning the people of this world who are immoral, or the greedy and swindlers, or idolaters"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 20,
+      "verse": 10,
+      "question": "What would happen if they could not associate with immoral people of this world?",
+      "options": [
+        "They would have to punish them",
+        "They would have to judge them",
+        "In that case you would have to leave this world",
+        "They would have to stay away from them"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 21,
+      "verse": 11,
+      "question": "With whom should believers not associate if they claim to be a brother or sister?",
+      "options": [
+        "With angry people",
+        "Anyone who claims to be a brother or sister but is sexually immoral or greedy, an idolater or slanderer, a drunkard or swindler",
+        "With lazy people",
+        "With people who ignore you"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "verse": 11,
+      "question": "What should believers not do with such people?",
+      "options": [
+        "Go to church with them",
+        "Work with them",
+        "Talk to them",
+        "Do not even eat with such people"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 23,
+      "verse": 12,
+      "question": "Who is responsible for judging those outside the church?",
+      "options": ["What business is it of mine", "The Corinthians", "No one", "The church"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 24,
+      "verse": 12,
+      "question": "Who should judge those inside the church?",
+      "options": ["God", "Those outside", "Are you not to judge those inside?", "Paul"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 25,
+      "verse": 13,
+      "question": "Who will judge those outside the church?",
+      "options": ["God will judge those outside", "The church", "Paul", "The Corinthians"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 26,
+      "verse": 13,
+      "question": "What final instruction did Paul give to the Corinthians?",
+      "options": [
+        "Forgive the wicked person",
+        "Counsel the wicked person",
+        "Expel the wicked person from among you",
+        "Punish the wicked person"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 27,
+      "verse": 1,
+      "question": "How was the sexual immorality reported among the Corinthians?",
+      "options": ["Secretly", "It is actually reported", "With suspicion", "Indirectly"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "verse": 7,
+      "question": "How does Paul describe the Corinthians?",
+      "options": ["As leavened", "As you really are", "As new yeast", "As old yeast"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "verse": 8,
+      "question": "What is compared to unleavened bread?",
+      "options": ["Leavened bread", "Sincerity and truth", "Christ's bread", "Bread from heaven"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "verse": 45,
+      "question": "In whose name should they hand over this man?",
+      "options": [
+        "In Paul's name",
+        "In God's name",
+        "In the church's name",
+        "In the name of our Lord Jesus"
+      ],
+      "correctAnswer": 3
+    }
+  ]
+}
