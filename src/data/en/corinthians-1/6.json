@@ -1,0 +1,423 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 6,
+  "description": "This chapter discusses lawsuits among believers, the sanctity of the body, and warnings against sexual immorality.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "Where should believers not take their disputes?",
+      "options": ["To Paul", "To the apostles", "Before the ungodly for judgment", "To the elders"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "Where should believers take their disputes?",
+      "options": ["Before the Lord's people", "To God", "To Jesus", "To the elders"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "Who will the Lord's people judge?",
+      "options": ["The wicked", "The ungodly", "The world", "The sexually immoral"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "If the Lord's people will judge the world, what should they be competent to judge?",
+      "options": ["Major cases", "Trivial cases", "Complex cases", "Controversial cases"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 3,
+      "question": "Who else will believers judge?",
+      "options": ["People", "Angels", "Demons", "Foreign nations"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 3,
+      "question": "What should believers be able to judge?",
+      "options": ["Heavenly matters", "Mysteries", "The things of this life", "Spiritual matters"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "verse": 4,
+      "question": "Who should be appointed to judge disputes about the things of this life?",
+      "options": [
+        "Angels",
+        "The ungodly",
+        "Those whose way of life is scorned in the church",
+        "The respected"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "verse": 5,
+      "question": "Why did Paul say this to the Corinthians?",
+      "options": ["I say this to shame you", "To exalt them", "To bless them", "To guide them"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "verse": 5,
+      "question": "What is needed to judge disputes between believers?",
+      "options": [
+        "Authority",
+        "Money",
+        "Is it possible that there is nobody among you wise enough",
+        "Elders"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "verse": 6,
+      "question": "Before whom does one brother take another to court?",
+      "options": [
+        "Before God",
+        "Before the church",
+        "And this in front of unbelievers",
+        "Before the elders"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "verse": 7,
+      "question": "What does it mean that believers have lawsuits among them?",
+      "options": [
+        "It is good",
+        "It is acceptable",
+        "The very fact that you have lawsuits among you means you have been completely defeated already",
+        "It is normal"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 12,
+      "verse": 7,
+      "question": "Instead of filing lawsuits, what should believers do?",
+      "options": [
+        "Why not rather be wronged? Why not rather be cheated?",
+        "Fight harder",
+        "Consult a lawyer",
+        "File a complaint"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "verse": 8,
+      "question": "What were the Corinthians doing?",
+      "options": [
+        "Acting justly",
+        "Instead, you yourselves cheat and do wrong",
+        "Seeking peace",
+        "Being united"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 9,
+      "question": "What will wrongdoers not inherit?",
+      "options": ["The earth", "Blessings", "The kingdom of God", "The crown of life"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "verse": 9,
+      "question": "Which sins does Paul list as preventing people from inheriting the kingdom of God?",
+      "options": [
+        "Only lying",
+        "Only murder",
+        "Neither the sexually immoral nor idolaters nor adulterers nor men who have sex with men nor thieves nor the greedy nor drunkards nor slanderers nor swindlers",
+        "Only unbelievers"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "verse": 11,
+      "question": "What were some of the Corinthians previously?",
+      "options": ["Educated", "And that is what some of you were", "Wealthy", "Poor"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "verse": 11,
+      "question": "What happened to the believers?",
+      "options": [
+        "But you were washed, you were sanctified, you were justified",
+        "They gained authority",
+        "They became wealthy",
+        "They were honored"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 11,
+      "question": "How were believers washed, sanctified, and justified?",
+      "options": [
+        "By their works",
+        "In the name of the Lord Jesus Christ and by the Spirit of our God",
+        "By baptism",
+        "By holy living"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "verse": 12,
+      "question": "What does Paul claim to have the right to do?",
+      "options": [
+        "Some things",
+        "I have the right to do anything",
+        "Good things",
+        "Church matters"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "verse": 12,
+      "question": "Even though Paul has the right to do anything, what is not everything?",
+      "options": ["Interesting", "Righteous", "But not everything is beneficial", "Possible"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 21,
+      "verse": 12,
+      "question": "What does Paul say he will not be?",
+      "options": [
+        "Subject to the church",
+        "But I will not be mastered by anything",
+        "Subject to sin",
+        "Subject to unbelievers"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "verse": 13,
+      "question": "What is the relationship between the stomach and food?",
+      "options": [
+        "Food for the stomach and the stomach for food",
+        "The stomach craves food",
+        "Food is harmful to the stomach",
+        "Food is good for the stomach"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 23,
+      "verse": 13,
+      "question": "What will God do to the stomach and food?",
+      "options": [
+        "He will increase them",
+        "He will bless them",
+        "He will purify them",
+        "And God will destroy them both"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 24,
+      "verse": 13,
+      "question": "What is the body meant for?",
+      "options": [
+        "Sexual immorality",
+        "Self-pleasure",
+        "The body, however, is not meant for sexual immorality but for the Lord, and the Lord for the body",
+        "For people"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 25,
+      "verse": 14,
+      "question": "How did God raise the Lord?",
+      "options": [
+        "By His love",
+        "By His righteousness",
+        "By his power God raised the Lord from the dead",
+        "By His mercy"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 26,
+      "verse": 14,
+      "question": "How will God raise us?",
+      "options": [
+        "By our power",
+        "And he will raise us also",
+        "By angels' power",
+        "By believers' power"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "verse": 15,
+      "question": "Whose members are believers' bodies?",
+      "options": [
+        "The church's",
+        "God's",
+        "Do you not know that your bodies are members of Christ himself",
+        "The Spirit's"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 28,
+      "verse": 15,
+      "question": "How should the members of Christ not be used?",
+      "options": [
+        "For selfishness",
+        "Shall I then take the members of Christ and unite them with a prostitute?",
+        "For laziness",
+        "To hurt others"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "verse": 16,
+      "question": "What happens to one who unites with a prostitute?",
+      "options": [
+        "He is separate from her",
+        "Do you not know that he who unites himself with a prostitute is one with her in body?",
+        "He becomes her slave",
+        "He is defiled by her"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "verse": 16,
+      "question": "What is said about one who unites with a prostitute?",
+      "options": [
+        "The two will live and die",
+        "For it is said, 'The two will become one flesh'",
+        "The two will perish",
+        "The two will remain separate"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "verse": 17,
+      "question": "What happens to one who is united with the Lord?",
+      "options": [
+        "But whoever is united with the Lord is one with him in spirit",
+        "Is one with him in body",
+        "Is one with him in mind",
+        "Is one with him in heart"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 32,
+      "verse": 18,
+      "question": "What should believers do regarding sexual immorality?",
+      "options": ["Forgive it", "Understand it", "Flee from sexual immorality", "Talk about it"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 33,
+      "verse": 18,
+      "question": "Where are all other sins a person commits?",
+      "options": [
+        "Inside the body",
+        "All other sins a person commits are outside the body",
+        "Harmful to the body",
+        "Destructive to the body"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "verse": 18,
+      "question": "Against what does a person who sins sexually sin?",
+      "options": [
+        "Against others",
+        "Against society",
+        "But whoever sins sexually, sins against their own body",
+        "Against God"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 35,
+      "verse": 19,
+      "question": "What are believers' bodies?",
+      "options": [
+        "God's property",
+        "Do you not know that your bodies are temples of the Holy Spirit",
+        "Jesus' dwelling place",
+        "God's creation"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "verse": 19,
+      "question": "How did believers receive the Holy Spirit?",
+      "options": [
+        "By your effort",
+        "Who is in you, whom you have received from God",
+        "From the church",
+        "By your goodness"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "verse": 19,
+      "question": "To whom do believers belong?",
+      "options": ["To themselves", "You are not your own", "To the church", "To the world"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "verse": 20,
+      "question": "How were believers acquired?",
+      "options": ["For free", "By God's mercy", "You were bought at a price", "As a gift"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 39,
+      "verse": 20,
+      "question": "How should believers honor God?",
+      "options": [
+        "With your mouth",
+        "With your actions",
+        "Therefore honor God with your bodies",
+        "With your time"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 40,
+      "verse": 20,
+      "question": "What is Paul's final instruction to believers in this chapter?",
+      "options": [
+        "Therefore love one another",
+        "Therefore honor God with your bodies",
+        "Therefore persist in prayer",
+        "Therefore study the scriptures"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}
