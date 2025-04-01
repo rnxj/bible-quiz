@@ -1,0 +1,383 @@
+{
+  "$schema": "../../../data/schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 7,
+  "description": "This chapter contains Paul's advice regarding marriage, divorce, and widowhood. Paul addresses questions about marriage relationships, singleness, and how believers should live in various life situations during a time of present distress.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What is good for a man according to verse 1?",
+      "options": [
+        "To have sexual relations with a woman",
+        "Not to have sexual relations with a woman",
+        "To marry quickly",
+        "To remain with his parents"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 2,
+      "question": "But since sexual immorality is occurring, what should each man and woman do?",
+      "options": [
+        "Separate from each other",
+        "Pray for strength",
+        "Each man should have sexual relations with his own wife, and each woman with her own husband",
+        "Seek counseling"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 3,
+      "verse": 3,
+      "question": "What should the husband fulfill to his wife?",
+      "options": [
+        "His marital duty",
+        "His financial obligations",
+        "His promises",
+        "His religious obligations"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "verse": 4,
+      "question": "Who has authority over the wife's body?",
+      "options": ["She herself", "Her husband", "God", "The church"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 4,
+      "question": "Who has authority over the husband's body?",
+      "options": ["He himself", "His wife", "God", "The church"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 5,
+      "question": "When may spouses deprive each other?",
+      "options": [
+        "Never",
+        "During illness",
+        "Perhaps by mutual consent and for a time, so that you may devote yourselves to prayer",
+        "When one is traveling"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "verse": 5,
+      "question": "Why should couples come together again after a time of abstinence?",
+      "options": [
+        "For happiness",
+        "So that Satan will not tempt you because of your lack of self-control",
+        "To have children",
+        "To fulfill obligations"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "verse": 6,
+      "question": "How does Paul describe his statement about temporary separation?",
+      "options": ["As a command", "As a concession", "As a prophecy", "As a tradition"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "verse": 7,
+      "question": "How does Paul wish all people would be?",
+      "options": ["Wealthy", "Religious leaders", "As he is", "Married"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "verse": 7,
+      "question": "What does Paul acknowledge about spiritual gifts?",
+      "options": [
+        "Everyone has the same gift",
+        "Each has their own gift from God; one has this gift, another has that",
+        "Gifts are earned through service",
+        "Only church leaders have gifts"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 8,
+      "question": "What does Paul say is good for the unmarried and widows?",
+      "options": [
+        "To marry quickly",
+        "To stay unmarried, as he does",
+        "To live with relatives",
+        "To serve in the church"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 9,
+      "question": "What should those who cannot control themselves do?",
+      "options": ["Fast and pray", "They should marry", "Seek counseling", "Live in community"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "verse": 9,
+      "question": "According to Paul, what is better than burning with passion?",
+      "options": ["To remain single", "To pray constantly", "To marry", "To work hard"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 14,
+      "verse": 10,
+      "question": "Who gives the command that a wife must not separate from her husband?",
+      "options": ["Paul", "The church", "The Lord", "The apostles"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "verse": 11,
+      "question": "If a wife does separate from her husband, what are her options?",
+      "options": [
+        "She must immediately remarry",
+        "She must remain unmarried or else be reconciled to her husband",
+        "She must leave the church",
+        "She must move to another city"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "verse": 12,
+      "question": "What should a brother do if his wife is not a believer but is willing to live with him?",
+      "options": [
+        "He must divorce her",
+        "He must not divorce her",
+        "He must convert her first",
+        "He must seek church approval"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "verse": 14,
+      "question": "How is the unbelieving husband sanctified?",
+      "options": [
+        "Through his wife",
+        "Through prayer",
+        "Through church attendance",
+        "Through his children"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 15,
+      "question": "What should happen if the unbeliever leaves?",
+      "options": [
+        "The believer must convince them to stay",
+        "The church must intervene",
+        "Let it be so",
+        "They must remain legally married"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 19,
+      "verse": 15,
+      "question": "To what has God called us?",
+      "options": ["To religious service", "To live in peace", "To evangelism", "To suffering"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "verse": 16,
+      "question": "What question does Paul ask about the possibility of a spouse's salvation?",
+      "options": [
+        "Is it guaranteed?",
+        "Is it important?",
+        "How do you know whether you will save your spouse?",
+        "When will it happen?"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 21,
+      "verse": 17,
+      "question": "How should each person live according to Paul?",
+      "options": [
+        "According to church rules",
+        "As a believer in whatever situation the Lord has assigned to them",
+        "Like everyone else",
+        "In constant prayer"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "verse": 19,
+      "question": "What counts according to Paul, not circumcision or uncircumcision?",
+      "options": ["Faith alone", "Love for others", "Keeping God's commands", "Church membership"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 23,
+      "verse": 20,
+      "question": "In what should each person remain?",
+      "options": [
+        "In their faith",
+        "In their ministry",
+        "In the situation they were in when God called them",
+        "In their family"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 24,
+      "verse": 21,
+      "question": "What should those who were slaves when called not do?",
+      "options": [
+        "Don't let it trouble you",
+        "Don't try to escape",
+        "Don't disobey masters",
+        "Don't seek church help"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 25,
+      "verse": 22,
+      "question": "What is a person who was a slave when called to faith in the Lord?",
+      "options": ["Still a slave", "The Lord's freed person", "A church member", "A convert"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 23,
+      "question": "How were believers purchased?",
+      "options": ["Through good works", "At a price", "Through baptism", "By the church"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "verse": 25,
+      "question": "Regarding virgins, from whom does Paul have no command?",
+      "options": ["The Lord", "The church", "The elders", "The apostles"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 28,
+      "verse": 26,
+      "question": "Because of the present crisis, what does Paul think is good?",
+      "options": [
+        "To flee",
+        "To store up provisions",
+        "For a man to remain as he is",
+        "To gather in homes"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 29,
+      "verse": 27,
+      "question": "What should a man pledged to a woman not seek?",
+      "options": ["To be released", "To delay marriage", "To change churches", "To find work"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "verse": 28,
+      "question": "If you do marry, what have you not done?",
+      "options": ["Made a commitment", "Sinned", "Pleased God", "Joined a family"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "verse": 28,
+      "question": "What will those who marry face in this life?",
+      "options": ["Joy", "Financial security", "Many troubles", "Success"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 32,
+      "verse": 29,
+      "question": "What does Paul say about time?",
+      "options": ["It is long", "The time is short", "It is precious", "It is uncertain"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "verse": 31,
+      "question": "What is happening to this world in its present form?",
+      "options": ["It is stable", "It is growing", "It is passing away", "It is improving"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 34,
+      "verse": 32,
+      "question": "How does Paul want believers to be?",
+      "options": ["Happy", "Free from concern", "Loving", "Wise"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 35,
+      "verse": 32,
+      "question": "About what is an unmarried man concerned?",
+      "options": ["His future", "Church activities", "The Lord's affairs", "His career"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 36,
+      "verse": 33,
+      "question": "About what is a married man concerned?",
+      "options": [
+        "The Lord's affairs",
+        "The affairs of this world",
+        "Church affairs",
+        "His personal life"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "verse": 34,
+      "question": "What is an unmarried woman concerned about?",
+      "options": ["Finding a husband", "Her career", "The Lord's affairs", "Her family"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 38,
+      "verse": 35,
+      "question": "Why does Paul give this advice?",
+      "options": [
+        "To restrict believers",
+        "For their own good, not to restrict them",
+        "To increase church membership",
+        "To create rules"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "verse": 39,
+      "question": "How long is a woman bound to her husband?",
+      "options": [
+        "As long as he lives",
+        "Until they separate",
+        "For seven years",
+        "Until the church approves divorce"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 40,
+      "verse": 40,
+      "question": "In Paul's judgment, how is a widow if she stays as she is?",
+      "options": ["Sorrowful", "Happier", "Lonely", "Faithful"],
+      "correctAnswer": 1
+    }
+  ]
+}

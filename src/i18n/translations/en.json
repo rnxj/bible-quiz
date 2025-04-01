@@ -134,7 +134,8 @@
     "hideAnswers": "Hide Answers",
     "leaderboard": "Leaderboard",
     "errorLoading": "Error loading leaderboard",
-    "correctAnswers": "Correct Answers"
+    "correctAnswers": "Correct Answers",
+    "noLeaderboardEntries": "No leaderboard entries yet."
   },
   "Metadata": {
     "title": "Bible Quiz App",

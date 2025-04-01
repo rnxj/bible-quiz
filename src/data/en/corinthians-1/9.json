@@ -1,0 +1,283 @@
+{
+  "$schema": "../../../data/schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 9,
+  "description": "This chapter discusses Paul's rights as an apostle and how he used those rights. Paul explains the sacrifices he made for spreading the gospel, the methods he used to reach different kinds of people, and the importance of self-discipline in the Christian life.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What questions does Paul ask about himself in verse 1?",
+      "options": [
+        "Am I not a priest?",
+        "Am I not an apostle?",
+        "Am I not a prophet?",
+        "Am I not a teacher?"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "What does Paul say about seeing Jesus our Lord?",
+      "options": [
+        "Have I not seen Jesus our Lord?",
+        "I have never seen Jesus our Lord",
+        "I have heard about Jesus our Lord",
+        "I have read about Jesus our Lord"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "verse": 1,
+      "question": "What does Paul call the Corinthians in relation to his work?",
+      "options": ["My friends", "My helpers", "The result of my work in the Lord", "My disciples"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "What are the Corinthians to Paul's apostleship in the Lord?",
+      "options": ["Witnesses", "The seal", "Examples", "Evidence"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 4,
+      "question": "What right does Paul claim to have regarding food and drink?",
+      "options": ["The opportunity", "The prohibition", "The permission", "The right"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 6,
+      "verse": 5,
+      "question": "What did the other apostles do according to verse 5?",
+      "options": [
+        "They worked for a living",
+        "They took a believing wife along with them",
+        "They traveled alone",
+        "They walked from town to town"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "verse": 6,
+      "question": "Who does Paul mention as possibly lacking the right not to work for a living?",
+      "options": ["Only I and Barnabas", "Only I and Peter", "Only I and John", "Only I and James"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "verse": 7,
+      "question": "Who plants a vineyard and does not eat what?",
+      "options": ["Its fruits", "Its harvest", "Its grapes", "Its produce"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 9,
+      "verse": 9,
+      "question": "What is written in the Law of Moses according to verse 9?",
+      "options": [
+        "Tend to your crops",
+        "Do not muzzle an ox while it is treading out the grain",
+        "Take care of your animals",
+        "Plow your fields"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 10,
+      "question": "According to verse 10, whoever plows should plow in what?",
+      "options": ["Hardship", "Carefulness", "Hope", "Haste"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "verse": 11,
+      "question": "What did Paul sow among the Corinthians?",
+      "options": ["Material benefits", "Spiritual seed", "Worldly benefits", "Physical benefits"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 12,
+      "question": "Why did Paul not use his rights according to verse 12?",
+      "options": [
+        "Because he didn't need them",
+        "Because they weren't fair",
+        "Rather than hinder the gospel of Christ",
+        "Because of what others might think"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 13,
+      "verse": 13,
+      "question": "Those who serve in the temple get their food from where?",
+      "options": [
+        "From their homes",
+        "From the church",
+        "From the temple",
+        "From people's donations"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 14,
+      "verse": 14,
+      "question": "What has the Lord commanded about those who preach the gospel?",
+      "options": [
+        "They should receive their living from their work",
+        "They should receive their living from the church",
+        "They should receive their living from donations",
+        "They should receive their living from the gospel"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 15,
+      "verse": 15,
+      "question": "What would Paul rather do than allow anyone to deprive him of his boast?",
+      "options": ["Take money", "Die", "Be famous", "Rest"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "verse": 16,
+      "question": "What can Paul not do when he preaches the gospel?",
+      "options": ["Be happy", "Testify", "Boast", "Be proud"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "verse": 16,
+      "question": "How does Paul describe his obligation to preach the gospel?",
+      "options": ["As a choice", "As freedom", "As a burden", "As a compulsion"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 18,
+      "verse": 17,
+      "question": "If Paul preaches voluntarily, what does he have?",
+      "options": ["A reward", "Fame", "Money", "Praise"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 19,
+      "verse": 18,
+      "question": "What does Paul say is his reward?",
+      "options": [
+        "Building a large church",
+        "People's conversion",
+        "People sharing in salvation",
+        "Offering the gospel free of charge"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 20,
+      "verse": 19,
+      "question": "Though free and belonging to no one, what has Paul made himself to win as many as possible?",
+      "options": ["An authority", "A leader", "A slave to everyone", "A teacher"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 21,
+      "verse": 20,
+      "question": "To win the Jews, what did Paul become?",
+      "options": ["Like a Jew", "Like a Greek", "Like a Roman", "Like a Samaritan"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "verse": 21,
+      "question": "Though not free from God's law, under what law does Paul say he is?",
+      "options": ["The law of Moses", "The law of man", "Christ's law", "The law of the world"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 23,
+      "verse": 22,
+      "question": "What has Paul become to all people to save some?",
+      "options": [
+        "An authority to all",
+        "A teacher to all",
+        "A friend to all",
+        "All things to all people"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 24,
+      "verse": 23,
+      "question": "Why does Paul do all these things?",
+      "options": [
+        "For money",
+        "For fame",
+        "For the sake of the gospel, that he may share in its blessings",
+        "For authority"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 25,
+      "verse": 24,
+      "question": "In a race all the runners run, but how many get the prize?",
+      "options": ["All", "Many", "Only one", "None"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 26,
+      "verse": 25,
+      "question": "Everyone who competes in the games goes into what kind of training?",
+      "options": ["Casual training", "Strict training", "Team training", "Light training"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "verse": 25,
+      "question": "What kind of crown do those who compete in games receive?",
+      "options": [
+        "A golden crown",
+        "A silver crown",
+        "A crown that will not last",
+        "A glorious crown"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 28,
+      "verse": 25,
+      "question": "What kind of crown do believers compete for?",
+      "options": [
+        "A crown of righteousness",
+        "A crown of glory",
+        "A crown of life",
+        "A crown that will last forever"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 29,
+      "verse": 26,
+      "question": "How does Paul say he does NOT run?",
+      "options": ["Quickly", "Like someone running aimlessly", "Slowly", "With fear"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "verse": 27,
+      "question": "What does Paul do to his body according to verse 27?",
+      "options": [
+        "Honors it",
+        "Strengthens it",
+        "Allows it to rest",
+        "Strikes a blow to it and makes it his slave"
+      ],
+      "correctAnswer": 3
+    }
+  ]
+}

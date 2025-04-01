@@ -1,0 +1,183 @@
+{
+  "$schema": "../../../data/schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 8,
+  "description": "This chapter addresses the topic of food sacrificed to idols and how Christians should exercise their freedom. Paul explains the difference between knowledge and love, and emphasizes the importance of not causing weaker believers to stumble by wounding their conscience.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What do we all possess according to verse 1?",
+      "options": ["Faith", "Knowledge", "Love", "Wisdom"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "What does knowledge do according to verse 1?",
+      "options": ["Enlightens", "Brings peace", "Puffs up", "Grows faith"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 3,
+      "verse": 1,
+      "question": "What does love do according to verse 1?",
+      "options": ["Creates division", "Brings knowledge", "Builds up", "Makes perfect"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "What is said about those who think they know something?",
+      "options": [
+        "They are wise",
+        "They should teach others",
+        "They do not yet know as they ought to know",
+        "They are blessed by God"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "verse": 3,
+      "question": "Whoever loves God is what?",
+      "options": ["Saved", "Blessed", "Known by God", "Called righteous"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "verse": 4,
+      "question": "What do we know about an idol according to verse 4?",
+      "options": [
+        "It has great power",
+        "It should be feared",
+        "It is nothing at all in the world",
+        "It is valuable"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "verse": 4,
+      "question": "How many Gods are there according to verse 4?",
+      "options": ["Many gods", "Two gods", "No God but one", "All are gods"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "verse": 5,
+      "question": "What exists in heaven and on earth according to verse 5?",
+      "options": ["So-called gods", "Only angels", "Only one God", "Inanimate objects"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "verse": 6,
+      "question": "For believers, how many Gods are there?",
+      "options": ["Many gods", "One God, the Father", "Only Jesus", "No God"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 6,
+      "question": "From whom did all things come according to verse 6?",
+      "options": ["Only the church", "Only humans", "God, the Father", "Only knowledge"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "verse": 6,
+      "question": "For believers, how many Lords are there?",
+      "options": ["Many lords", "Two lords", "One Lord, Jesus Christ", "No lord"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 12,
+      "verse": 7,
+      "question": "Who does not possess this knowledge about idols?",
+      "options": ["Everyone", "Only Gentiles", "Only Jews", "Not everyone"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 13,
+      "verse": 7,
+      "question": "How do some people think of sacrificial food when they eat it?",
+      "options": [
+        "As normal food",
+        "As having been sacrificed to a god",
+        "As forbidden",
+        "As blessed"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 7,
+      "question": "What happens to those with a weak conscience when they eat food sacrificed to idols?",
+      "options": [
+        "They grow stronger",
+        "They become defiled",
+        "They become wiser",
+        "Nothing happens"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "verse": 8,
+      "question": "What does food not do according to verse 8?",
+      "options": ["Make us stronger", "Bring us near to God", "Make us wiser", "Make us sinners"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "verse": 8,
+      "question": "If we do not eat, what are we according to verse 8?",
+      "options": ["More holy", "More wise", "No worse", "More pleasing to God"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "verse": 9,
+      "question": "The exercise of your rights should not become what?",
+      "options": [
+        "A rule for all",
+        "A source of pride",
+        "A stumbling block to the weak",
+        "A cause for division"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 18,
+      "verse": 11,
+      "question": "What happens to the weak brother or sister for whom Christ died?",
+      "options": [
+        "Is destroyed by your knowledge",
+        "Is saved by your example",
+        "Grows in faith",
+        "Learns from you"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 19,
+      "verse": 12,
+      "question": "When you wound the weak conscience of others, against whom do you sin?",
+      "options": ["Yourself", "The church", "Other believers", "Christ"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 20,
+      "verse": 13,
+      "question": "What will Paul never do if it causes his brother or sister to fall into sin?",
+      "options": [
+        "Attend temple festivals",
+        "Eat meat again",
+        "Speak about freedom",
+        "Visit pagan homes"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

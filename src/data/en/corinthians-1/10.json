@@ -1,0 +1,388 @@
+{
+  "$schema": "../../../data/schema/bible-quiz-schema.json",
+  "book": "1 Corinthians",
+  "chapter": 10,
+  "description": "This chapter contains Paul's warnings from Israel's history, teachings about idol feasts and the Lord's Supper, and guidance on Christian freedom. Paul emphasizes that all things should be done for God's glory and for the benefit of others. The chapter includes important principles about temptation, idolatry, and how believers should exercise their freedom in Christ.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What were the ancestors under?",
+      "options": ["The tabernacle", "The cloud", "The sun", "The mountain"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "What did all the ancestors pass through?",
+      "options": ["The desert", "The mountain", "The sea", "The river"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "Into whom were they all baptized in the cloud and in the sea?",
+      "options": ["Aaron", "The apostles", "Moses", "God"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "verse": 3,
+      "question": "What did they all eat?",
+      "options": [
+        "Manna and quail",
+        "The same spiritual food",
+        "Bread and wine",
+        "Daily provisions"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 4,
+      "question": "What did they all drink?",
+      "options": [
+        "Water from the Jordan",
+        "The same spiritual drink",
+        "Water from wells",
+        "Milk and honey"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 4,
+      "question": "From what did they drink according to verse 4?",
+      "options": [
+        "The spiritual rock that accompanied them",
+        "A flowing stream",
+        "Natural springs",
+        "Rainwater"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "verse": 4,
+      "question": "What was that rock according to Paul?",
+      "options": [
+        "A symbol of God's provision",
+        "A natural formation",
+        "A miracle of Moses",
+        "Christ"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 8,
+      "verse": 5,
+      "question": "How did God feel about most of them?",
+      "options": [
+        "He was pleased with them",
+        "He blessed them abundantly",
+        "God was not pleased with most of them",
+        "He forgave them quickly"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 9,
+      "verse": 5,
+      "question": "What happened to those with whom God was not pleased?",
+      "options": [
+        "They were given second chances",
+        "Their bodies were scattered in the wilderness",
+        "They reached the promised land",
+        "They were sent back to Egypt"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 6,
+      "question": "What were these things that occurred to Israel?",
+      "options": [
+        "Blessings for their faithfulness",
+        "Examples to keep us from setting our hearts on evil things",
+        "Random events in history",
+        "Tests of their character"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 7,
+      "question": "According to verse 7, what did the people sit down to do?",
+      "options": ["Worship and pray", "Eat and drink", "Rest and sleep", "Work and serve"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 7,
+      "question": "After eating and drinking, what did the people get up to do?",
+      "options": [
+        "Return to their tents",
+        "Pray and worship",
+        "Indulge in revelry",
+        "Continue their journey"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 13,
+      "verse": 8,
+      "question": "How many people died in one day because of sexual immorality?",
+      "options": ["Three thousand", "Twelve thousand", "Twenty thousand", "Twenty-three thousand"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 14,
+      "verse": 9,
+      "question": "What killed those who tested Christ?",
+      "options": ["Snakes", "Lions", "Angels", "Disease"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 15,
+      "verse": 10,
+      "question": "Who killed those who grumbled?",
+      "options": ["Korah", "Fire", "The destroying angel", "God directly"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "verse": 11,
+      "question": "For whom were these things written down as warnings?",
+      "options": [
+        "Only for the Israelites",
+        "For the next generation",
+        "For us, on whom the culmination of the ages has come",
+        "For the priests"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "verse": 12,
+      "question": "What warning does Paul give to those who think they are standing firm?",
+      "options": [
+        "Be careful that you don't fall",
+        "Continue to stand strong",
+        "Help others who are falling",
+        "Remain in that position"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 13,
+      "question": "What kind of temptations have overtaken believers?",
+      "options": [
+        "Extraordinary temptations",
+        "Spiritual temptations",
+        "No temptation except what is common to mankind",
+        "Minimal temptations"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 19,
+      "verse": 13,
+      "question": "What will God provide when you are tempted?",
+      "options": [
+        "Strength to resist",
+        "Another person to help",
+        "A way out so that you can endure it",
+        "Immediate removal of the temptation"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 20,
+      "verse": 14,
+      "question": "From what does Paul tell his dear friends to flee?",
+      "options": ["Money", "Idolatry", "The world", "Sin"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 21,
+      "verse": 15,
+      "question": "To what kind of people does Paul say he is speaking?",
+      "options": ["Spiritual people", "Holy people", "Sensible people", "New believers"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 22,
+      "verse": 16,
+      "question": "What is the cup of thanksgiving a participation in?",
+      "options": ["The church", "God's blessing", "The blood of Christ", "The Holy Spirit"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 23,
+      "verse": 16,
+      "question": "What is the bread that we break a participation in?",
+      "options": ["The body of Christ", "The church", "God's provision", "The apostles' teaching"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 24,
+      "verse": 17,
+      "question": "Because there is one loaf, what are we who are many?",
+      "options": ["Many parts", "Different gifts", "One body", "One fellowship"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 25,
+      "verse": 18,
+      "question": "Those who eat the sacrifices participate in what?",
+      "options": ["The temple", "The altar", "The people", "The priests"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 20,
+      "question": "To whom are the sacrifices of pagans offered?",
+      "options": ["To God", "To humans", "To demons", "To themselves"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 27,
+      "verse": 21,
+      "question": "What cup does Paul say you cannot drink along with the cup of the Lord?",
+      "options": [
+        "The cup of water",
+        "The cup of wine",
+        "The cup of demons",
+        "The cup of the house"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 28,
+      "verse": 23,
+      "question": "What does Paul say about things that are permissible?",
+      "options": [
+        "All are beneficial",
+        "All are harmful",
+        "Not everything is beneficial",
+        "All are good"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 29,
+      "verse": 24,
+      "question": "What should no one seek?",
+      "options": ["Their own good", "Their relatives", "Their ministry", "Their wealth"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "verse": 24,
+      "question": "What should everyone seek?",
+      "options": ["Their happiness", "Their protection", "The good of others", "Their family"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 31,
+      "verse": 25,
+      "question": "How should believers eat whatever is sold in the meat market?",
+      "options": [
+        "They should not eat it",
+        "They can eat only a little",
+        "Without raising questions of conscience",
+        "After asking God"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 32,
+      "verse": 26,
+      "question": "Who does the earth and everything in it belong to?",
+      "options": ["Humans", "Jews", "Everyone", "The Lord"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 33,
+      "verse": 27,
+      "question": "What should a believer do if an unbeliever invites them to a meal?",
+      "options": [
+        "They should refuse",
+        "They must go",
+        "They should ask the church",
+        "If they want to go, eat whatever is put before them without raising questions of conscience"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 34,
+      "verse": 28,
+      "question": "What should you do if someone tells you the food has been offered in sacrifice?",
+      "options": [
+        "You can eat it anyway",
+        "You should argue with the person",
+        "Do not eat it",
+        "Bless it and eat it"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 35,
+      "verse": 29,
+      "question": "Whose conscience is Paul referring to in verse 29?",
+      "options": ["His own", "The unbeliever's", "The believer's", "The other person's"],
+      "correctAnswer": 3
+    },
+    {
+      "id": 36,
+      "verse": 31,
+      "question": "Whether you eat or drink or whatever you do, for whose glory should you do it?",
+      "options": ["Your own", "The church's", "God's", "Others'"],
+      "correctAnswer": 2
+    },
+    {
+      "id": 37,
+      "verse": 32,
+      "question": "To whom should you not cause anyone to stumble?",
+      "options": [
+        "Family and friends",
+        "Yourself and your family",
+        "Jews, Greeks or the church of God",
+        "Unbelievers and believers"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 38,
+      "verse": 33,
+      "question": "How does Paul say he tries to act?",
+      "options": [
+        "As he thinks best",
+        "Trying to please everyone in every way",
+        "For his own benefit",
+        "As the church prefers"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "verse": 33,
+      "question": "What does Paul say he is not seeking?",
+      "options": ["His own good", "His family's good", "Church approval", "Community respect"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 40,
+      "verse": 33,
+      "question": "Why does Paul seek the good of many?",
+      "options": [
+        "So that they may be saved",
+        "So they will like him",
+        "So they will come to church",
+        "So they will live well"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}
