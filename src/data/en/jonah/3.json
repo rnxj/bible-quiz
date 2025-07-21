@@ -1,0 +1,248 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "Jonah",
+  "chapter": 3,
+  "description": "This chapter describes Jonah's obedience to the LORD's second command to go to Nineveh, and how the people of Nineveh repented and God spared them.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "How many times did the word of the LORD come unto Jonah?",
+      "options": [
+        "The second time",
+        "The first time",
+        "The third time",
+        "The fourth time"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "verse": 2,
+      "question": "Where did the LORD tell Jonah to go?",
+      "options": [
+        "Unto Nineveh, that great city",
+        "Unto Jerusalem",
+        "Unto Samaria",
+        "Unto Damascus"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "What did the LORD tell Jonah to do in Nineveh?",
+      "options": [
+        "Preach unto it the preaching that I bid thee",
+        "Bless it",
+        "Live there",
+        "Visit it"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "verse": 3,
+      "question": "How did Jonah go unto Nineveh?",
+      "options": [
+        "According to the word of the LORD",
+        "According to his own will",
+        "According to others' advice",
+        "According to his own thinking"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "verse": 3,
+      "question": "What kind of city was Nineveh?",
+      "options": [
+        "An exceeding great city of three days' journey",
+        "A small city",
+        "A medium city",
+        "A large city"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 6,
+      "verse": 4,
+      "question": "How far did Jonah begin to enter into the city?",
+      "options": [
+        "A day's journey",
+        "Two days' journey",
+        "Three days' journey",
+        "Four days' journey"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "verse": 4,
+      "question": "What did Jonah cry and say?",
+      "options": [
+        "Yet forty days, and Nineveh shall be overthrown",
+        "Yet thirty days",
+        "Yet twenty days",
+        "Yet ten days"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "verse": 5,
+      "question": "What did the people of Nineveh do?",
+      "options": [
+        "Believed God, and proclaimed a fast, and put on sackcloth",
+        "Did not believe God",
+        "Ignored God",
+        "Opposed God"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "verse": 5,
+      "question": "How did the people of Nineveh put on sackcloth?",
+      "options": [
+        "From the greatest of them even to the least of them",
+        "From the least of them even to the greatest of them",
+        "All together",
+        "Some only"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "verse": 6,
+      "question": "Who did word come unto?",
+      "options": [
+        "Unto the king of Nineveh",
+        "Unto the nobles of Nineveh",
+        "Unto the people of Nineveh",
+        "Unto the teachers of Nineveh"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 11,
+      "verse": 6,
+      "question": "What did the king do when he arose from his throne?",
+      "options": [
+        "Laid his robe from him, and covered him with sackcloth, and sat in ashes",
+        "Changed his clothes",
+        "Sat on his throne",
+        "Went to his palace"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 12,
+      "verse": 7,
+      "question": "Whose decree did the king cause it to be proclaimed by?",
+      "options": [
+        "By the decree of the king and his nobles",
+        "By the decree of the king only",
+        "By the decree of his nobles only",
+        "By the decree of his people"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "verse": 7,
+      "question": "What did the king command not to be done throughout Nineveh?",
+      "options": [
+        "Let neither man nor beast, herd nor flock, taste any thing: let them not feed, nor drink water",
+        "Let them not work",
+        "Let them not pray",
+        "Let them not sing"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 14,
+      "verse": 8,
+      "question": "What did the king command man and beast to do?",
+      "options": [
+        "Be covered with sackcloth, and cry mightily unto God",
+        "Just be quiet",
+        "Work",
+        "Play"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 15,
+      "verse": 8,
+      "question": "What did the king command everyone to turn from?",
+      "options": [
+        "Turn every one from his evil way, and from the violence that is in their hands",
+        "Turn from their work",
+        "Turn from their home",
+        "Turn from their money"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 16,
+      "verse": 9,
+      "question": "What did the king say about who can tell?",
+      "options": [
+        "Who can tell",
+        "Everyone can tell",
+        "No one can tell",
+        "Some can tell"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 17,
+      "verse": 9,
+      "question": "What did the king say God might do?",
+      "options": [
+        "Turn and repent, and turn away from his fierce anger",
+        "Not forgive them",
+        "Punish them",
+        "Ignore them"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 9,
+      "question": "Why did the king say this?",
+      "options": [
+        "That we perish not",
+        "That we be happy",
+        "That we be rich",
+        "That we be famous"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 19,
+      "verse": 10,
+      "question": "What did God see that made him repent?",
+      "options": [
+        "Their works, that they turned from their evil way",
+        "Their prayer",
+        "Their sacrifice",
+        "Their work"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 20,
+      "verse": 10,
+      "question": "What did God do regarding the evil he had said he would do unto them?",
+      "options": [
+        "Repented of the evil, that he had said that he would do unto them; and he did it not",
+        "Did it",
+        "Postponed it",
+        "Forgot it"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+} 

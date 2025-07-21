@@ -1,0 +1,488 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "Ruth",
+  "chapter": 3,
+  "description": "This chapter focuses on Naomi's counsel for Ruth to approach Boaz at the threshing floor, Ruth's nighttime encounter with Boaz at his feet, Boaz's kind response and promise, and the revelation of a nearer kinsman who has the first right of redemption.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What did Naomi ask Ruth?",
+      "options": [
+        "My daughter, shall I not seek rest for thee, that it may be well with thee?",
+        "Where are you going?",
+        "What are you doing?",
+        "When will you return?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "How did Naomi address Ruth?",
+      "options": [
+        "Woman",
+        "My daughter",
+        "Sister",
+        "Friend"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "How did Naomi describe Boaz's relationship to them?",
+      "options": [
+        "He is our friend",
+        "Is not Boaz of our kindred",
+        "He is a stranger",
+        "He is a neighbor"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "What would Boaz be doing tonight according to Naomi?",
+      "options": [
+        "Sleeping at home",
+        "He winnoweth barley to night in the threshingfloor",
+        "Working in the field",
+        "Going to market"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 3,
+      "question": "What did Naomi tell Ruth to do first?",
+      "options": [
+        "Wash thyself therefore, and anoint thee, and put thy raiment upon thee",
+        "Eat and drink",
+        "Go to sleep",
+        "Pray"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 6,
+      "verse": 3,
+      "question": "Until when should Ruth not make herself known to Boaz?",
+      "options": [
+        "Until he goes home",
+        "Until he shall have done eating and drinking",
+        "Until he finishes working",
+        "Until he sleeps"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "verse": 4,
+      "question": "What should Ruth do when Boaz lies down?",
+      "options": [
+        "Go home",
+        "Thou shalt mark the place where he shall lie, and thou shalt go in, and uncover his feet, and lay thee down",
+        "Wait",
+        "Call him"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "verse": 4,
+      "question": "Who would tell Ruth what she should do according to Naomi?",
+      "options": [
+        "I will tell you",
+        "He will tell thee what thou shalt do",
+        "The LORD will tell you",
+        "The people will tell you"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "verse": 5,
+      "question": "How did Ruth respond to Naomi's counsel?",
+      "options": [
+        "That is difficult",
+        "All that thou sayest unto me I will do",
+        "I am afraid",
+        "I will think about it"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 6,
+      "question": "What did Ruth do?",
+      "options": [
+        "She stayed home",
+        "She went down unto the floor, and did according to all that her mother in law bade her",
+        "She went somewhere else",
+        "She went to her friends"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 7,
+      "question": "How was Boaz's condition after he had eaten and drunk?",
+      "options": [
+        "He was sad",
+        "His heart was merry",
+        "He was angry",
+        "He was afraid"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 7,
+      "question": "Where did Boaz go to lie down?",
+      "options": [
+        "In his house",
+        "At the end of the heap of corn",
+        "Under a tree",
+        "In the temple"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "verse": 7,
+      "question": "How did Ruth approach and what did she do?",
+      "options": [
+        "She came loudly and spoke",
+        "She came softly, and uncovered his feet, and laid her down",
+        "She ran and called him",
+        "She stood and waited"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 8,
+      "question": "When did Boaz become afraid and turn himself?",
+      "options": [
+        "At dawn",
+        "At midnight",
+        "At noon",
+        "At evening"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "verse": 8,
+      "question": "What did Boaz see when he turned?",
+      "options": [
+        "No one was there",
+        "A woman lay at his feet",
+        "A man standing",
+        "An animal"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "verse": 9,
+      "question": "What did Boaz ask?",
+      "options": [
+        "Where did you come from?",
+        "Who art thou?",
+        "What are you doing?",
+        "Why did you come?"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "verse": 9,
+      "question": "How did Ruth identify herself?",
+      "options": [
+        "I am a Moabite woman",
+        "I am Ruth thine handmaid",
+        "I am Naomi's daughter-in-law",
+        "I am a stranger"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "verse": 9,
+      "question": "What did Ruth request from Boaz?",
+      "options": [
+        "Give me food",
+        "Spread therefore thy skirt over thine handmaid",
+        "Give me work",
+        "Send me home"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "verse": 9,
+      "question": "How did Ruth address Boaz's role?",
+      "options": [
+        "You are our relative",
+        "For thou art a near kinsman",
+        "You are a good man",
+        "You are a rich man"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "verse": 10,
+      "question": "By whom did Boaz say Ruth should be blessed?",
+      "options": [
+        "By the people",
+        "Blessed be thou of the LORD",
+        "By the king",
+        "By the family"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 21,
+      "verse": 10,
+      "question": "Which of Ruth's kindness did Boaz say was greater?",
+      "options": [
+        "Thou hast shewed more kindness in the latter end than at the beginning",
+        "Her beauty",
+        "Her wisdom",
+        "Her work"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "verse": 10,
+      "question": "Who did Ruth not follow according to Boaz?",
+      "options": [
+        "The elderly",
+        "Young men, whether poor or rich",
+        "Strangers",
+        "Relatives"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 23,
+      "verse": 11,
+      "question": "What did Boaz tell Ruth not to do?",
+      "options": [
+        "And now, my daughter, fear not",
+        "Don't worry about tomorrow",
+        "Don't fear anyone",
+        "Don't fear anything"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 24,
+      "verse": 11,
+      "question": "What promise did Boaz make to Ruth?",
+      "options": [
+        "I will help you a little",
+        "I will do to thee all that thou requirest",
+        "I will do what I can",
+        "I will think about it"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 25,
+      "verse": 11,
+      "question": "What did all the city know about Ruth according to Boaz?",
+      "options": [
+        "That thou art beautiful",
+        "That thou art a virtuous woman",
+        "That thou art rich",
+        "That thou art wise"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 12,
+      "question": "What did Boaz acknowledge about himself?",
+      "options": [
+        "It is true that I am rich",
+        "It is true that I am thy near kinsman",
+        "It is true that I am good",
+        "It is true that I am a relative"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "verse": 12,
+      "question": "Who else did Boaz mention?",
+      "options": [
+        "A kinsman farther than I",
+        "There is a kinsman nearer than I",
+        "Someone younger than me",
+        "Someone older than me"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "verse": 13,
+      "question": "What did Boaz tell Ruth to do for the night?",
+      "options": [
+        "Go home",
+        "Tarry this night",
+        "Go somewhere",
+        "Go to someone"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 29,
+      "verse": 13,
+      "question": "What would happen if the nearer kinsman agrees to marry Ruth?",
+      "options": [
+        "Let him do the kinsman's part",
+        "Boaz will marry her",
+        "No one will marry her",
+        "Ruth will decide"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "verse": 13,
+      "question": "What would Boaz do if the nearer kinsman refuses?",
+      "options": [
+        "He will find someone else",
+        "Then will I do the part of a kinsman to thee",
+        "He will wait some time",
+        "He will think about what to do"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "verse": 13,
+      "question": "By whose life did Boaz make his oath?",
+      "options": [
+        "By his own life",
+        "As the LORD liveth",
+        "By the king's life",
+        "By his father's life"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 32,
+      "verse": 14,
+      "question": "How long did Ruth lay at his feet?",
+      "options": [
+        "Until midnight",
+        "Until the morning",
+        "Until evening",
+        "For a few hours"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "verse": 14,
+      "question": "When did Ruth rise up?",
+      "options": [
+        "After the sun rose",
+        "Before one could know another",
+        "After everyone woke up",
+        "At midday"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "verse": 14,
+      "question": "What did Boaz say should not be known?",
+      "options": [
+        "Let it not be known that a woman came into the floor",
+        "That he was there",
+        "What they talked about",
+        "What happened"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 35,
+      "verse": 15,
+      "question": "What did Boaz tell Ruth to bring and hold?",
+      "options": [
+        "Bring your hand and hold it",
+        "Bring the vail that thou hast upon thee, and hold it",
+        "Bring a cloth and hold it",
+        "Bring a handkerchief and hold it"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "verse": 15,
+      "question": "How much barley did Boaz measure out?",
+      "options": [
+        "Five measures",
+        "Six measures of barley",
+        "Seven measures",
+        "Eight measures"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "verse": 16,
+      "question": "What did Naomi ask when Ruth came to her?",
+      "options": [
+        "Where did you go?",
+        "Who art thou, my daughter?",
+        "When did you come?",
+        "What did you do?"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "verse": 17,
+      "question": "Why did Boaz give Ruth the six measures of barley?",
+      "options": [
+        "For her work",
+        "For he said to me, Go not empty unto thy mother in law",
+        "Because she was poor",
+        "Because she asked for it"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "verse": 18,
+      "question": "Until when did Naomi tell Ruth to wait?",
+      "options": [
+        "Until tomorrow",
+        "Until thou know how the matter will fall",
+        "For a week",
+        "For a few days"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 40,
+      "verse": 18,
+      "question": "What did Naomi say about the man?",
+      "options": [
+        "He will come tomorrow",
+        "The man will not be in rest, until he have finished the thing this day",
+        "He will be thinking about it",
+        "He will forget about it"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+} 

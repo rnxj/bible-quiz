@@ -1,0 +1,488 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "Ruth",
+  "chapter": 4,
+  "description": "This chapter focuses on Boaz meeting the nearer kinsman at the gate, the legal transaction for the land, Ruth's marriage to Boaz, the birth of Obed, and the genealogy leading to David.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "Where did Boaz go and sit down?",
+      "options": [
+        "In his house",
+        "Up to the gate",
+        "In the field",
+        "In the temple"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "Who came by that way?",
+      "options": [
+        "A stranger",
+        "The kinsman of whom Boaz spake",
+        "A merchant",
+        "A servant"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "verse": 1,
+      "question": "How did Boaz call to him?",
+      "options": [
+        "Ho, such a one!",
+        "Come here",
+        "Friend",
+        "Relative"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "verse": 1,
+      "question": "What did Boaz say to the kinsman?",
+      "options": [
+        "Go home",
+        "Turn aside, sit down here",
+        "Work",
+        "Go away"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 2,
+      "question": "How many men did Boaz take?",
+      "options": [
+        "Five men",
+        "Ten men",
+        "Twelve men",
+        "Fifteen men"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 2,
+      "question": "Who did Boaz take?",
+      "options": [
+        "Merchants",
+        "Ten men of the elders of the city",
+        "Servants",
+        "Friends"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "verse": 2,
+      "question": "What did Boaz say to the elders?",
+      "options": [
+        "Work",
+        "Sit ye down here",
+        "Come here",
+        "Stand"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "verse": 3,
+      "question": "What did Boaz say to the kinsman about Naomi?",
+      "options": [
+        "Naomi, that is come again out of the country of Moab, selleth a parcel of land, which was our brother Elimelech's",
+        "A house is for sale",
+        "A field is empty",
+        "A job is available"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "verse": 4,
+      "question": "Why did Boaz think to advertise him?",
+      "options": [
+        "Buy it before the inhabitants, and before the elders of my people",
+        "So he would know",
+        "So he would pay",
+        "So he would sign"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "verse": 4,
+      "question": "What options did Boaz give him?",
+      "options": [
+        "If thou wilt redeem it, redeem it: but if thou wilt not redeem it, then tell me, that I may know",
+        "You must buy it",
+        "I will buy it",
+        "No one should buy it"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 11,
+      "verse": 4,
+      "question": "Who did Boaz say could redeem it besides him?",
+      "options": [
+        "For there is none to redeem it beside thee; and I am after thee",
+        "Only you and me",
+        "Only him and her",
+        "No one"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 12,
+      "verse": 4,
+      "question": "What did the kinsman say?",
+      "options": [
+        "I will think about it",
+        "I will redeem it",
+        "I refuse",
+        "I will see"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "verse": 5,
+      "question": "What did Boaz say he must also buy when buying the field?",
+      "options": [
+        "Just the field",
+        "Also of Ruth the Moabitess, the wife of the dead, to raise up the name of the dead upon his inheritance",
+        "Just Ruth",
+        "Nothing else"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 6,
+      "question": "Why did the kinsman say he could not redeem it?",
+      "options": [
+        "No money",
+        "I cannot redeem it for myself, lest I mar mine own inheritance",
+        "No work",
+        "No time"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "verse": 6,
+      "question": "What did the kinsman say to Boaz?",
+      "options": [
+        "You think about it",
+        "Redeem thou my right to thyself",
+        "I will see",
+        "I refuse"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "verse": 7,
+      "question": "What was the manner in former time in Israel?",
+      "options": [
+        "A man plucked off his shoe, and gave it to his neighbour",
+        "A man gave money",
+        "A man signed a document",
+        "A man made an oath"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 17,
+      "verse": 7,
+      "question": "What was this for?",
+      "options": [
+        "For to confirm all things",
+        "To collect money",
+        "To do work",
+        "To speak"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 7,
+      "question": "What was this in Israel?",
+      "options": [
+        "A witness",
+        "A testimony in Israel",
+        "A law",
+        "A custom"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "verse": 8,
+      "question": "What did the kinsman say to Boaz?",
+      "options": [
+        "You think about it",
+        "Buy it for thee",
+        "You look at it",
+        "You go"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "verse": 8,
+      "question": "What did the kinsman do?",
+      "options": [
+        "He drew off his shoe",
+        "He gave money",
+        "He signed a document",
+        "He made an oath"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "verse": 9,
+      "question": "Who did Boaz speak to?",
+      "options": [
+        "The elders, and unto all the people",
+        "Ruth and Naomi",
+        "Merchants",
+        "Servants"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "verse": 9,
+      "question": "What did Boaz say he had bought?",
+      "options": [
+        "All that was Elimelech's, and all that was Chilion's and Mahlon's, of the hand of Naomi",
+        "Just a field",
+        "Just a house",
+        "Just money"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 23,
+      "verse": 10,
+      "question": "What did Boaz say he had purchased Ruth for?",
+      "options": [
+        "To be my servant",
+        "To be my wife",
+        "To be my friend",
+        "To be my sister"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "verse": 10,
+      "question": "Why did Boaz purchase Ruth?",
+      "options": [
+        "That the name of the dead be not cut off from among his brethren, and from the gate of his place",
+        "Because she was beautiful",
+        "Because she was rich",
+        "Because she would work"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 25,
+      "verse": 10,
+      "question": "How did Boaz refer to Ruth?",
+      "options": [
+        "Ruth the Moabitess",
+        "Ruth the Moabitess, the wife of Mahlon",
+        "Naomi's daughter-in-law",
+        "A stranger"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 11,
+      "question": "Who spoke to Boaz?",
+      "options": [
+        "All the people that were in the gate, and the elders",
+        "Ruth and Naomi",
+        "Merchants",
+        "Servants"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 27,
+      "verse": 11,
+      "question": "What did the people and elders say?",
+      "options": [
+        "We are witnesses",
+        "We saw",
+        "We heard",
+        "We know"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 28,
+      "verse": 11,
+      "question": "Who did the people and elders say the woman should be like?",
+      "options": [
+        "Like Rachel and like Leah",
+        "Like Sarah and like Rebekah",
+        "Like Rachel and like Rebekah",
+        "Like Leah and like Sarah"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 29,
+      "verse": 11,
+      "question": "Who did the people and elders say built the house of Israel?",
+      "options": [
+        "Rachel and Leah",
+        "Ruth and Naomi",
+        "Rachel and Rebekah",
+        "Leah and Sarah"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "verse": 11,
+      "question": "Where did the people and elders say Boaz should be worthy and famous?",
+      "options": [
+        "Worthily in Ephratah, and be famous in Beth-lehem",
+        "Worthily in Judah, and be famous in Israel",
+        "Worthily in Moab, and be famous in Beth-lehem",
+        "Worthily in Canaan, and be famous in Ephratah"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 31,
+      "verse": 12,
+      "question": "Whose house did they say his house should be like?",
+      "options": [
+        "Like the house of Pharez, whom Tamar bare unto Judah",
+        "Like the house of Joseph, whom Rachel bare unto Jacob",
+        "Like the house of Levi, whom Leah bare unto Jacob",
+        "Like the house of Jacob, whom Rebekah bare unto Isaac"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 32,
+      "verse": 13,
+      "question": "What did Boaz do to Ruth?",
+      "options": [
+        "Took Ruth",
+        "Married Ruth",
+        "Made her his friend",
+        "Made her his sister"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 33,
+      "verse": 13,
+      "question": "What happened when Boaz went in unto her?",
+      "options": [
+        "She was angry",
+        "The LORD gave her conception, and she bare a son",
+        "She was afraid",
+        "She was happy"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "verse": 14,
+      "question": "Who did the women say should be blessed?",
+      "options": [
+        "Boaz",
+        "The LORD, which hath not left thee this day without a kinsman",
+        "Ruth",
+        "The child"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 35,
+      "verse": 14,
+      "question": "Whose name did the women say should be famous in Israel?",
+      "options": [
+        "Boaz's name",
+        "His name",
+        "Ruth's name",
+        "Naomi's name"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 36,
+      "verse": 15,
+      "question": "What did the women say Obed should be to her?",
+      "options": [
+        "A restorer of thy life, and a nourisher of thine old age",
+        "Her rich man",
+        "Her servant",
+        "Her friend"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 37,
+      "verse": 15,
+      "question": "Who did the women say was better than seven sons?",
+      "options": [
+        "Ruth",
+        "Thy daughter in law, which loveth thee, which is better to thee than seven sons",
+        "Naomi",
+        "Boaz"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "verse": 16,
+      "question": "What did Naomi do with the child?",
+      "options": [
+        "Left it in the house",
+        "Took the child, and laid it in her bosom, and became nurse unto it",
+        "Left it in the field",
+        "Left it in the temple"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "verse": 17,
+      "question": "What name did the women neighbors give it?",
+      "options": [
+        "David",
+        "Obed",
+        "Joseph",
+        "Samuel"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 40,
+      "verse": 17,
+      "question": "Who did the women say Obed was the father of?",
+      "options": [
+        "The father of Jesse, the father of David",
+        "The father of Joseph, the father of Jacob",
+        "The father of Samuel, the father of Elkanah",
+        "The father of Solomon, the father of David"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+} 

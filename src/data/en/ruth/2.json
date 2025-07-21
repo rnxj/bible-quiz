@@ -1,0 +1,512 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "Ruth",
+  "chapter": 2,
+  "description": "This chapter focuses on Ruth's gleaning in the fields, her encounter with Boaz, a wealthy kinsman of Elimelech, his kindness toward her, and Naomi's revelation that Boaz is one of their near kinsmen and redeemers.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What kind of man was Boaz, who was a kinsman of Naomi's husband?",
+      "options": [
+        "A poor man",
+        "A mighty man of wealth",
+        "An ordinary man",
+        "A sick man"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "Of which family was Boaz?",
+      "options": [
+        "Of the family of Mahlon",
+        "Of the family of Elimelech",
+        "Of the family of Chilion",
+        "Of the family of Naomi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "What did Ruth the Moabitess ask Naomi?",
+      "options": [
+        "Let me go to the market",
+        "Let me now go to the field, and glean ears of corn after him in whose sight I shall find grace",
+        "Let me go to the temple",
+        "Let me go to the city"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "How did Naomi respond to Ruth's request?",
+      "options": [
+        "No, don't go",
+        "Go, my daughter",
+        "Wait",
+        "Think about it"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "verse": 3,
+      "question": "What did Ruth do in the field?",
+      "options": [
+        "She planted seeds",
+        "She gleaned in the field after the reapers",
+        "She watered the crops",
+        "She sold grain"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 3,
+      "question": "To whom did the field belong where Ruth happened to glean?",
+      "options": [
+        "To a stranger",
+        "Unto Boaz, who was of the kindred of Elimelech",
+        "To Naomi",
+        "To the king"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "verse": 4,
+      "question": "From where did Boaz come?",
+      "options": [
+        "From Jerusalem",
+        "From Beth-lehem",
+        "From Moab",
+        "From Judah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "verse": 4,
+      "question": "What greeting did Boaz give to the reapers?",
+      "options": [
+        "Good day to you",
+        "The LORD be with you",
+        "Peace be with you",
+        "Hello"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "verse": 4,
+      "question": "How did the reapers respond to Boaz?",
+      "options": [
+        "Good day to you too",
+        "The LORD bless thee",
+        "Peace be with you too",
+        "Greetings"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 5,
+      "question": "To whom did Boaz address his question about Ruth?",
+      "options": [
+        "To the reapers",
+        "His servant that was set over the reapers",
+        "To his friends",
+        "To Ruth directly"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 6,
+      "question": "How did the servant describe Ruth?",
+      "options": [
+        "She is a local woman",
+        "It is the Moabitish damsel that came back with Naomi out of the country of Moab",
+        "She is a foreigner",
+        "I don't know who she is"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 7,
+      "question": "How long had Ruth been working in the field according to the servant?",
+      "options": [
+        "From noon until now",
+        "Even from the morning until now",
+        "From evening until now",
+        "Just for one hour"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "verse": 7,
+      "question": "Where had Ruth tarried a little according to the servant?",
+      "options": [
+        "Under the tree",
+        "In the house",
+        "By the well",
+        "In the shade"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 8,
+      "question": "How did Boaz address Ruth?",
+      "options": [
+        "Woman",
+        "My daughter",
+        "Lady",
+        "Sister"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "verse": 8,
+      "question": "With whom did Boaz tell Ruth to stay?",
+      "options": [
+        "With the reapers",
+        "Abide here fast by my maidens",
+        "With the servants",
+        "By herself"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "verse": 9,
+      "question": "What did Boaz tell Ruth to do when she was thirsty?",
+      "options": [
+        "Go home",
+        "Go unto the vessels, and drink of that which the young men have drawn",
+        "Go to the well",
+        "Drink rainwater"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "verse": 10,
+      "question": "How did Ruth respond to Boaz's kindness?",
+      "options": [
+        "She stood and spoke",
+        "She fell on her face, and bowed herself to the ground",
+        "She sat and spoke",
+        "She began to weep"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "verse": 10,
+      "question": "How did Ruth describe herself to Boaz?",
+      "options": [
+        "I am a local woman",
+        "Seeing I am a stranger",
+        "I am a relative",
+        "I am a servant"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "verse": 11,
+      "question": "To whom did Boaz say Ruth had shown kindness after her husband's death?",
+      "options": [
+        "To her father",
+        "Unto thy mother in law",
+        "To her sisters",
+        "To her friends"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "verse": 11,
+      "question": "What did Boaz say Ruth had left behind?",
+      "options": [
+        "Thy father and thy mother, and the land of thy nativity",
+        "Your brothers and sisters",
+        "Your friends and relatives",
+        "Your house and possessions"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "verse": 12,
+      "question": "Who did Boaz say would recompense Ruth's work?",
+      "options": [
+        "The king",
+        "The LORD",
+        "The people",
+        "Himself"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 22,
+      "verse": 12,
+      "question": "Under whose wings did Boaz say Ruth had come to trust?",
+      "options": [
+        "His own",
+        "The LORD God of Israel",
+        "Naomi's",
+        "Elimelech's"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 23,
+      "verse": 13,
+      "question": "How did Ruth address Boaz?",
+      "options": [
+        "Sir",
+        "My lord",
+        "Master",
+        "Brother"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "verse": 14,
+      "question": "What food did Boaz tell Ruth to eat at mealtime?",
+      "options": [
+        "Eat of the bread",
+        "Rice",
+        "Wheat",
+        "Fruits"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 25,
+      "verse": 14,
+      "question": "In what did Boaz tell Ruth to dip her morsel?",
+      "options": [
+        "In water",
+        "In the vinegar",
+        "In milk",
+        "In honey"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 14,
+      "question": "What kind of grain did Boaz give to Ruth?",
+      "options": [
+        "Raw corn",
+        "Parched corn",
+        "Ground corn",
+        "Fermented corn"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "verse": 15,
+      "question": "Where did Boaz tell his young men to let Ruth glean?",
+      "options": [
+        "At the edge of the field",
+        "Even among the sheaves",
+        "By herself",
+        "Near the house"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "verse": 16,
+      "question": "What did Boaz command his men to do for Ruth?",
+      "options": [
+        "Let fall also some of the handfuls of purpose for her",
+        "Give her extra grain",
+        "Give her money",
+        "Give her food"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 29,
+      "verse": 17,
+      "question": "Until when did Ruth glean in the field?",
+      "options": [
+        "Until noon",
+        "Until even",
+        "Until night",
+        "Until dawn"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "verse": 17,
+      "question": "How much barley did Ruth gather after beating out what she had gleaned?",
+      "options": [
+        "About half an ephah of barley",
+        "About an ephah of barley",
+        "About two ephahs of barley",
+        "About three ephahs of barley"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 31,
+      "verse": 18,
+      "question": "Besides what she had gleaned, what else did Ruth bring to Naomi?",
+      "options": [
+        "Money",
+        "She brought forth, and gave to her that she had reserved after she was sufficed",
+        "Clothes",
+        "Jewelry"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 32,
+      "verse": 19,
+      "question": "What questions did Naomi ask Ruth?",
+      "options": [
+        "How are you?",
+        "Where hast thou gleaned to day? and where wroughtest thou?",
+        "Who did you talk to?",
+        "How much wages did you get?"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "verse": 19,
+      "question": "What did Naomi say about the one who took knowledge of Ruth?",
+      "options": [
+        "He is a bad man",
+        "Blessed be he that did take knowledge of thee",
+        "He is a rich man",
+        "He is a good man"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 34,
+      "verse": 19,
+      "question": "What was the name of the man Ruth worked with that day?",
+      "options": [
+        "Elimelech",
+        "The man's name with whom I wrought to day is Boaz",
+        "Mahlon",
+        "Chilion"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 35,
+      "verse": 20,
+      "question": "To whom did Naomi say Boaz showed kindness?",
+      "options": [
+        "To the living and to the dead",
+        "To the poor and to the rich",
+        "To children and to the elderly",
+        "To men and to women"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 36,
+      "verse": 20,
+      "question": "How did Naomi describe Boaz's relationship to them?",
+      "options": [
+        "A distant relative",
+        "The man is near of kin unto us, one of our next kinsmen",
+        "An ordinary friend",
+        "A neighbor"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "verse": 21,
+      "question": "According to Ruth, until when did Boaz tell her to stay with his young men?",
+      "options": [
+        "For one week",
+        "Until they have ended all my harvest",
+        "For one month",
+        "Just for a few days"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "verse": 22,
+      "question": "Why did Naomi advise Ruth to go out with Boaz's maidens?",
+      "options": [
+        "That they anger thee not",
+        "That they meet thee not in any other field",
+        "That they hate thee not",
+        "That they speak not to thee"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "verse": 23,
+      "question": "Until the end of which harvests did Ruth keep fast by Boaz's maidens?",
+      "options": [
+        "Wheat harvest only",
+        "Barley harvest only",
+        "Barley harvest and of wheat harvest",
+        "Rice harvest"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 40,
+      "verse": 23,
+      "question": "Where did Ruth dwell during the harvest time?",
+      "options": [
+        "In Boaz's house",
+        "With her mother in law",
+        "With the maidens",
+        "In the field"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 41,
+      "verse": 7,
+      "question": "What did the servant say Ruth requested to do among the sheaves?",
+      "options": [
+        "Let me glean and gather after the reapers among the sheaves",
+        "Let me cut",
+        "Let me collect",
+        "Let me sell"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 42,
+      "verse": 9,
+      "question": "What did Boaz say he had charged the young men not to do to Ruth?",
+      "options": [
+        "That they shall not speak to thee",
+        "That they shall not touch thee",
+        "That they shall not look at thee",
+        "That they shall not mock thee"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+} 

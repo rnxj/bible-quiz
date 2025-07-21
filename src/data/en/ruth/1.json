@@ -1,0 +1,488 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "Ruth",
+  "chapter": 1,
+  "description": "This chapter focuses on the story of Elimelech's family moving to Moab during a famine in Judah, the deaths of the men in the family, and Naomi's return to Bethlehem with Ruth, her Moabite daughter-in-law.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "What happened in the days when the judges ruled?",
+      "options": [
+        "There was war in the land",
+        "There was a famine in the land",
+        "There was disease in the land",
+        "There was flooding in the land"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "Where did the man of Beth-lehem-judah go to sojourn?",
+      "options": [
+        "In the country of Egypt",
+        "In the country of Moab",
+        "In the country of Assyria",
+        "In the country of Ethiopia"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "verse": 1,
+      "question": "Who went with the man to sojourn in the country of Moab?",
+      "options": [
+        "He, and his wife, and his two sons",
+        "He alone",
+        "He and his wife only",
+        "He and his sons only"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "What was the name of the man?",
+      "options": [
+        "Mahlon",
+        "Chilion",
+        "Elimelech",
+        "Naomi"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "verse": 2,
+      "question": "What was the name of Elimelech's wife?",
+      "options": [
+        "Ruth",
+        "Naomi",
+        "Orpah",
+        "Mary"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 2,
+      "question": "What was the name of one of Elimelech's two sons?",
+      "options": [
+        "Chilion",
+        "Elimelech",
+        "Mahlon",
+        "Naomi"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "verse": 2,
+      "question": "What was the name of Elimelech's other son?",
+      "options": [
+        "Mahlon",
+        "Chilion",
+        "Elimelech",
+        "Naomi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "verse": 2,
+      "question": "What were Elimelech's family called as inhabitants of Beth-lehem-judah?",
+      "options": [
+        "Moabites",
+        "Ephrathites",
+        "Egyptians",
+        "Assyrians"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "verse": 3,
+      "question": "What happened to Elimelech, Naomi's husband?",
+      "options": [
+        "He became ill",
+        "He died",
+        "He disappeared",
+        "He went to another city"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "verse": 3,
+      "question": "Who was left after Elimelech died?",
+      "options": [
+        "Naomi only",
+        "She was left, and her two sons",
+        "Her sons only",
+        "No one"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 4,
+      "question": "From what group did Mahlon and Chilion take wives?",
+      "options": [
+        "Of the Jews",
+        "Of the women of Moab",
+        "Of the Egyptians",
+        "Of the Ephrathites"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "verse": 4,
+      "question": "What was the name of one of the wives?",
+      "options": [
+        "Ruth",
+        "Orpah",
+        "Naomi",
+        "Mary"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "verse": 4,
+      "question": "What was the name of the other wife?",
+      "options": [
+        "Orpah",
+        "Ruth",
+        "Naomi",
+        "Mary"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "verse": 4,
+      "question": "How long did Mahlon and Chilion dwell in the country of Moab?",
+      "options": [
+        "About five years",
+        "About ten years",
+        "About fifteen years",
+        "About twenty years"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "verse": 5,
+      "question": "Who died after living in Moab?",
+      "options": [
+        "Elimelech only",
+        "Mahlon and Chilion died also both of them",
+        "Naomi",
+        "Orpah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 16,
+      "verse": 5,
+      "question": "What was the woman's situation after the deaths?",
+      "options": [
+        "She was happy",
+        "The woman was left of her two sons and her husband",
+        "She found a new family",
+        "She went to another city"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "verse": 6,
+      "question": "What had Naomi heard in the country of Moab?",
+      "options": [
+        "How that the LORD had visited his people in giving them bread",
+        "That the famine had increased",
+        "That war had broken out",
+        "That disease had spread"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 6,
+      "question": "What did Naomi do after hearing this news?",
+      "options": [
+        "She stayed there",
+        "Then she arose with her daughters in law, that she might return from the country of Moab",
+        "She went to another country",
+        "She went alone"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "verse": 7,
+      "question": "Who went with Naomi when she went forth from where she was?",
+      "options": [
+        "Her friends",
+        "Her two daughters in law with her",
+        "She went alone",
+        "Her neighbors"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "verse": 7,
+      "question": "Where were they going to return to?",
+      "options": [
+        "To the country of Moab",
+        "Unto the land of Judah",
+        "To the land of Egypt",
+        "To the land of Assyria"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 21,
+      "verse": 8,
+      "question": "What did Naomi tell her daughters-in-law to do?",
+      "options": [
+        "Go, return each to her mother's house",
+        "Stay with your friends",
+        "Go to another country",
+        "Stay with your neighbors"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "verse": 8,
+      "question": "How did Naomi say they had dealt with the dead and with her?",
+      "options": [
+        "They had dealt cruelly",
+        "Ye have dealt kindly",
+        "They had been indifferent",
+        "They had hated them"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 23,
+      "verse": 9,
+      "question": "Where did Naomi pray the LORD would grant them to find rest?",
+      "options": [
+        "In their mother's house",
+        "Each of you in the house of her husband",
+        "With their friends",
+        "With their neighbors"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 24,
+      "verse": 9,
+      "question": "What did Naomi do after speaking these words?",
+      "options": [
+        "She sent them away",
+        "Then she kissed them",
+        "She blessed them",
+        "She spoke with them more"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 25,
+      "verse": 9,
+      "question": "What did they do after she kissed them?",
+      "options": [
+        "They rejoiced",
+        "They lifted up their voice, and wept",
+        "They remained silent",
+        "They left"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 26,
+      "verse": 10,
+      "question": "What did the daughters-in-law say to Naomi?",
+      "options": [
+        "We will go to our homes",
+        "Surely we will return with thee unto thy people",
+        "We will stay here",
+        "We will go somewhere else"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 27,
+      "verse": 11,
+      "question": "How did Naomi address her daughters-in-law?",
+      "options": [
+        "My daughters",
+        "Turn again, my daughters",
+        "My friends",
+        "My sisters"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 28,
+      "verse": 11,
+      "question": "What question did Naomi ask about having more sons?",
+      "options": [
+        "Are there yet any more sons in my womb, that they may be your husbands?",
+        "Why are you crying?",
+        "Where do you want to go?",
+        "When will you return?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 29,
+      "verse": 12,
+      "question": "What did Naomi say about her age?",
+      "options": [
+        "I am young",
+        "I am too old to have an husband",
+        "I am sick",
+        "I am poor"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 30,
+      "verse": 13,
+      "question": "What question did Naomi ask about waiting for sons to grow up?",
+      "options": [
+        "Would ye tarry for them till they were grown?",
+        "Would you wait for them?",
+        "Would you work for them?",
+        "Would you pray for them?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 31,
+      "verse": 13,
+      "question": "Why did Naomi say she was grieved?",
+      "options": [
+        "For it grieveth me much for your sakes that the hand of the LORD is gone out against me",
+        "Because I am in poverty",
+        "Because I am sick",
+        "Because I am alone"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 32,
+      "verse": 14,
+      "question": "What did they do after hearing Naomi's words?",
+      "options": [
+        "They rejoiced",
+        "They lifted up their voice, and wept again",
+        "They remained silent",
+        "They became angry"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 33,
+      "verse": 14,
+      "question": "What did Orpah do?",
+      "options": [
+        "Orpah kissed her mother in law",
+        "She continued weeping",
+        "She argued back",
+        "She fell down"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 34,
+      "verse": 14,
+      "question": "What did Ruth do?",
+      "options": [
+        "She followed Orpah",
+        "But Ruth clave unto her",
+        "She went somewhere else",
+        "She kept weeping"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 35,
+      "verse": 15,
+      "question": "Where did Naomi tell Ruth her sister-in-law had gone back to?",
+      "options": [
+        "Thy sister in law is gone back unto her people, and unto her gods",
+        "To her home only",
+        "To another country",
+        "To her friends"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 36,
+      "verse": 16,
+      "question": "What did Ruth say to Naomi about leaving her?",
+      "options": [
+        "I will leave you",
+        "Intreat me not to leave thee, or to return from following after thee",
+        "I will go with my sister-in-law",
+        "I will stay here"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 37,
+      "verse": 16,
+      "question": "In Ruth's famous declaration, what did she say about where Naomi goes?",
+      "options": [
+        "I will go too",
+        "For whither thou goest, I will go",
+        "I will follow",
+        "I will see"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 38,
+      "verse": 16,
+      "question": "What did Ruth say about Naomi's people?",
+      "options": [
+        "Your people shall be my friends",
+        "Thy people shall be my people",
+        "Your people shall be my relatives",
+        "Your people shall be my brothers"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 39,
+      "verse": 17,
+      "question": "Where did Ruth say she would die?",
+      "options": [
+        "In my own homeland",
+        "Where thou diest, will I die",
+        "Anywhere",
+        "In a holy place"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 40,
+      "verse": 22,
+      "question": "When did Naomi and Ruth come to Beth-lehem?",
+      "options": [
+        "In the beginning of wheat harvest",
+        "In the beginning of barley harvest",
+        "After the harvest was over",
+        "In the rainy season"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+} 

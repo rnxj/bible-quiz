@@ -1,0 +1,488 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "Jonah",
+  "chapter": 1,
+  "description": "This chapter describes Jonah's disobedience to God's command, his flight to Tarshish, the great storm at sea, and his being swallowed by a great fish.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "Who was Jonah the son of?",
+      "options": [
+        "Amittai",
+        "Elijah",
+        "Elisha",
+        "Amos"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "Whose word came unto Jonah?",
+      "options": [
+        "The word of the LORD",
+        "The word of the angel",
+        "The word of the teacher",
+        "The word of the prophet"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "Where did the LORD tell Jonah to go?",
+      "options": [
+        "Jerusalem",
+        "Nineveh, that great city",
+        "Samaria",
+        "Damascus"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "What did the LORD tell Jonah to do in Nineveh?",
+      "options": [
+        "Cry against it",
+        "Bless it",
+        "Live there",
+        "Visit it"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "verse": 2,
+      "question": "What had come up before the LORD regarding Nineveh?",
+      "options": [
+        "Their goodness",
+        "Their wickedness",
+        "Their strength",
+        "Their wisdom"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "verse": 3,
+      "question": "Where did Jonah flee to?",
+      "options": [
+        "Tarshish from the presence of the LORD",
+        "Jerusalem from the presence of the LORD",
+        "Samaria from the presence of the LORD",
+        "Damascus from the presence of the LORD"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "verse": 3,
+      "question": "Where did Jonah go down to find a ship?",
+      "options": [
+        "Joppa",
+        "Sidon",
+        "Tyre",
+        "Ashkelon"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "verse": 3,
+      "question": "What did Jonah do before going down into the ship?",
+      "options": [
+        "Paid the fare thereof",
+        "Prayed",
+        "Made an offering",
+        "Sang"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "verse": 4,
+      "question": "Where did the LORD send out a great wind?",
+      "options": [
+        "Into the sea",
+        "Into the land",
+        "Into the mountain",
+        "Into the sky"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "verse": 4,
+      "question": "What was there in the sea?",
+      "options": [
+        "A small wave",
+        "A mighty tempest",
+        "Calm",
+        "A gentle breeze"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "verse": 4,
+      "question": "What was the ship like?",
+      "options": [
+        "Like to be broken",
+        "Safe",
+        "Fast",
+        "Slow"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 12,
+      "verse": 5,
+      "question": "What did the mariners do?",
+      "options": [
+        "Were afraid, and cried every man unto his god",
+        "Rejoiced",
+        "Sang",
+        "Danced"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "verse": 5,
+      "question": "What did the mariners cast forth to lighten the ship?",
+      "options": [
+        "The wares that were in the ship into the sea",
+        "The ship itself",
+        "The sails",
+        "The anchor"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 14,
+      "verse": 5,
+      "question": "Where had Jonah gone down?",
+      "options": [
+        "Into the sides of the ship",
+        "Into the top of the ship",
+        "Into the middle of the ship",
+        "Into the front of the ship"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 15,
+      "verse": 5,
+      "question": "What was Jonah doing?",
+      "options": [
+        "Lay, and was fast asleep",
+        "Working",
+        "Praying",
+        "Singing"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 16,
+      "verse": 6,
+      "question": "What did the shipmaster say to Jonah?",
+      "options": [
+        "What meanest thou, O sleeper?",
+        "Who art thou?",
+        "Where art thou going?",
+        "What art thou doing?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 17,
+      "verse": 6,
+      "question": "What did the shipmaster tell Jonah to do?",
+      "options": [
+        "Arise, call upon thy God",
+        "Lie down",
+        "Work",
+        "Sing"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 6,
+      "question": "Why did the shipmaster tell Jonah to call upon his God?",
+      "options": [
+        "If so be that God will think upon us, that we perish not",
+        "So we can work",
+        "So we can sing",
+        "So we can dance"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 19,
+      "verse": 7,
+      "question": "What did they do to know for whose cause the evil was upon them?",
+      "options": [
+        "Cast lots",
+        "Prayed",
+        "Sang",
+        "Worked"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 20,
+      "verse": 7,
+      "question": "Whose lot fell upon?",
+      "options": [
+        "Jonah",
+        "The shipmaster",
+        "The mariners",
+        "No one"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 21,
+      "verse": 8,
+      "question": "What did they ask Jonah to tell them?",
+      "options": [
+        "For whose cause this evil is upon us",
+        "Who art thou?",
+        "Where art thou going?",
+        "What art thou doing?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 22,
+      "verse": 8,
+      "question": "What questions did they ask Jonah?",
+      "options": [
+        "What is thine occupation? and whence comest thou? what is thy country? and of what people art thou?",
+        "Who art thou?",
+        "Where art thou going?",
+        "What art thou doing?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 23,
+      "verse": 9,
+      "question": "What did Jonah say he was?",
+      "options": [
+        "I am an Hebrew",
+        "I am a Greek",
+        "I am a Roman",
+        "I am an Egyptian"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 24,
+      "verse": 9,
+      "question": "Whom did Jonah say he feared?",
+      "options": [
+        "The LORD, the God of heaven, which hath made the sea and the dry land",
+        "The sun",
+        "The moon",
+        "The sky"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 25,
+      "verse": 10,
+      "question": "Why were the men exceedingly afraid?",
+      "options": [
+        "Because he had told them that he fled from the presence of the LORD",
+        "Because he was great",
+        "Because he was terrible",
+        "Because he was strong"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 26,
+      "verse": 10,
+      "question": "What did the men ask Jonah?",
+      "options": [
+        "Why hast thou done this?",
+        "Who art thou?",
+        "Where art thou going?",
+        "What art thou doing?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 27,
+      "verse": 11,
+      "question": "What did they ask Jonah when the sea wrought and was tempestuous?",
+      "options": [
+        "What shall we do unto thee, that the sea may be calm unto us?",
+        "Who art thou?",
+        "Where art thou going?",
+        "What art thou doing?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 28,
+      "verse": 12,
+      "question": "What did Jonah tell them to do?",
+      "options": [
+        "Take me up, and cast me forth into the sea",
+        "Take me to shore",
+        "Keep me in the ship",
+        "Set me free"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 29,
+      "verse": 12,
+      "question": "When did Jonah say the sea would be calm unto them?",
+      "options": [
+        "So shall the sea be calm unto you",
+        "Tomorrow",
+        "Next day",
+        "Next week"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 30,
+      "verse": 12,
+      "question": "What did Jonah say he knew?",
+      "options": [
+        "I know that for my sake this great tempest is upon you",
+        "I know not",
+        "I doubt",
+        "I believe"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 31,
+      "verse": 13,
+      "question": "What did the mariners do to bring the ship to land?",
+      "options": [
+        "Rowed hard to bring it to the land",
+        "Broke the ship",
+        "Changed the ship",
+        "Fixed the ship"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 32,
+      "verse": 13,
+      "question": "Why could the mariners not bring the ship to the land?",
+      "options": [
+        "For the sea wrought, and was tempestuous against them",
+        "They were tired",
+        "They were afraid",
+        "They were angry"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 33,
+      "verse": 14,
+      "question": "Whom did the mariners cry unto?",
+      "options": [
+        "Cried unto the LORD",
+        "Cried unto Jonah",
+        "Cried unto the shipmaster",
+        "Cried unto the mariners"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 34,
+      "verse": 14,
+      "question": "What did the mariners beseech the LORD?",
+      "options": [
+        "Let us not perish for this man's life",
+        "Save us",
+        "Help us",
+        "Bless us"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 35,
+      "verse": 14,
+      "question": "Where did the mariners ask not to lay innocent blood?",
+      "options": [
+        "Lay not upon us innocent blood",
+        "Upon Jonah",
+        "Upon the ship",
+        "Upon the sea"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 36,
+      "verse": 15,
+      "question": "What did the mariners do to Jonah?",
+      "options": [
+        "Took up Jonah, and cast him forth into the sea",
+        "Took Jonah to shore",
+        "Kept Jonah in the ship",
+        "Set Jonah free"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 37,
+      "verse": 15,
+      "question": "What happened when the mariners cast Jonah into the sea?",
+      "options": [
+        "The sea ceased from her raging",
+        "The sea raged more",
+        "The sea swelled",
+        "The sea dried up"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 38,
+      "verse": 16,
+      "question": "Whom did the mariners fear exceedingly?",
+      "options": [
+        "Feared the LORD exceedingly",
+        "Feared Jonah exceedingly",
+        "Feared the shipmaster exceedingly",
+        "Feared the mariners exceedingly"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 39,
+      "verse": 16,
+      "question": "What did the mariners do unto the LORD?",
+      "options": [
+        "Offered a sacrifice unto the LORD, and made vows",
+        "Sang unto the LORD",
+        "Danced unto the LORD",
+        "Worked unto the LORD"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 40,
+      "verse": 17,
+      "question": "What had the LORD prepared to swallow up Jonah?",
+      "options": [
+        "A great fish",
+        "A great bird",
+        "A great ship",
+        "A great tree"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+} 

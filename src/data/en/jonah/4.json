@@ -1,0 +1,248 @@
+{
+  "$schema": "../../schema/bible-quiz-schema.json",
+  "book": "Jonah",
+  "chapter": 4,
+  "description": "This chapter describes Jonah's anger, the LORD's lesson to him through the gourd plant, and the LORD's compassion for Nineveh.",
+  "questions": [
+    {
+      "id": 1,
+      "verse": 1,
+      "question": "How did it affect Jonah?",
+      "options": [
+        "It displeased Jonah exceedingly",
+        "It pleased Jonah exceedingly",
+        "It frightened Jonah exceedingly",
+        "It surprised Jonah exceedingly"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "verse": 1,
+      "question": "How was Jonah?",
+      "options": [
+        "He was very angry",
+        "He was very happy",
+        "He was very afraid",
+        "He was very sad"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "verse": 2,
+      "question": "Who did Jonah pray unto?",
+      "options": [
+        "Unto the LORD",
+        "Unto his friends",
+        "Unto the people of Nineveh",
+        "Unto his family"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 4,
+      "verse": 2,
+      "question": "Where was Jonah when he said this?",
+      "options": [
+        "When I was yet in my country",
+        "When I was in Nineveh",
+        "When I was on the ship",
+        "When I was on the shore"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 5,
+      "verse": 2,
+      "question": "Where did Jonah flee before?",
+      "options": [
+        "Before unto Tarshish",
+        "Before unto Nineveh",
+        "Before unto Jerusalem",
+        "Before unto Samaria"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 6,
+      "verse": 2,
+      "question": "What did Jonah know about the LORD?",
+      "options": [
+        "I knew that thou art a gracious God, and merciful, slow to anger, and of great kindness, and repentest thee of the evil",
+        "I knew that thou art a harsh God",
+        "I knew that thou art a just God",
+        "I knew that thou art a holy God"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 7,
+      "verse": 3,
+      "question": "What did Jonah ask the LORD to do?",
+      "options": [
+        "Take, I beseech thee, my life from me",
+        "Bless me",
+        "Forgive me",
+        "Protect me"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 8,
+      "verse": 3,
+      "question": "Why did Jonah say it is better for me to die than to live?",
+      "options": [
+        "For it is better for me to die than to live",
+        "For it is better for me to be rich than to live",
+        "For it is better for me to be famous than to live",
+        "For it is better for me to be comfortable than to live"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 9,
+      "verse": 4,
+      "question": "What did the LORD ask Jonah?",
+      "options": [
+        "Doest thou well to be angry?",
+        "Doest thou well to be happy?",
+        "Doest thou well to be afraid?",
+        "Doest thou well to be sad?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 10,
+      "verse": 5,
+      "question": "Where did Jonah go?",
+      "options": [
+        "Went out of the city, and sat on the east side of the city",
+        "Went into the city",
+        "Went to the west side of the city",
+        "Went to the north side of the city"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 11,
+      "verse": 5,
+      "question": "What did Jonah do there?",
+      "options": [
+        "There made him a booth, and sat under it in the shadow, till he might see what would become of the city",
+        "Built his house",
+        "Continued his journey",
+        "Continued his work"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 12,
+      "verse": 6,
+      "question": "What did the LORD God prepare?",
+      "options": [
+        "Prepared a gourd, and made it to come up over Jonah",
+        "Prepared a tree",
+        "Prepared a flower",
+        "Prepared grass"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 13,
+      "verse": 6,
+      "question": "What was the purpose of the gourd?",
+      "options": [
+        "That it might be a shadow over his head, to deliver him from his grief",
+        "That it might be food for him",
+        "That it might be medicine for him",
+        "That it might be decoration for him"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 14,
+      "verse": 6,
+      "question": "How did Jonah feel about the gourd?",
+      "options": [
+        "So Jonah was exceeding glad of the gourd",
+        "So Jonah was exceeding sad about the gourd",
+        "So Jonah was exceeding afraid of the gourd",
+        "So Jonah was exceeding surprised by the gourd"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 15,
+      "verse": 7,
+      "question": "When did God prepare a worm the next day?",
+      "options": [
+        "When the morning rose the next day",
+        "At noon",
+        "In the evening",
+        "At night"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 16,
+      "verse": 7,
+      "question": "What did the worm do to the gourd?",
+      "options": [
+        "It smote the gourd that it withered",
+        "It made the gourd grow",
+        "It protected the gourd",
+        "It made the gourd flourish"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 17,
+      "verse": 8,
+      "question": "When the sun did arise, what did God prepare?",
+      "options": [
+        "Prepared a vehement east wind",
+        "Prepared a cool wind",
+        "Prepared rain",
+        "Prepared snow"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 18,
+      "verse": 8,
+      "question": "What happened to Jonah when the sun beat upon his head?",
+      "options": [
+        "That he fainted, and wished in himself to die",
+        "That he was happy",
+        "That he was afraid",
+        "That he was surprised"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 19,
+      "verse": 9,
+      "question": "What did God ask Jonah?",
+      "options": [
+        "Doest thou well to be angry for the gourd?",
+        "Doest thou well to be happy for the gourd?",
+        "Doest thou well to be afraid for the gourd?",
+        "Doest thou well to be sad for the gourd?"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": 20,
+      "verse": 11,
+      "question": "How many people did the LORD say are in Nineveh?",
+      "options": [
+        "More than sixscore thousand persons that cannot discern between their right hand and their left hand",
+        "Ten thousand persons",
+        "Twenty thousand persons",
+        "Thirty thousand persons"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+} 
